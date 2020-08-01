@@ -1,0 +1,54 @@
+@import '../../style/main.scss';
+
+.menu {
+    align-items: baseline;
+    display: flex;
+    flex-flow: row nowrap;
+    
+    /* Hide the sub-menu */
+    &-sub {
+        display: none;
+    }
+
+    /* on mouseover display the submenu */
+    ul li:hover .menu-sub {
+        display: block;
+    }
+
+    /* position : absolute, remove from normal page flow and no impact the content */
+    &-sub {
+        display: none;
+        padding-top: 2rem;
+        position: absolute;
+        z-index: 100;
+    }
+
+    &-sub li {
+        line-height: 32px;
+        margin-bottom: 1rem;
+        text-align: left;
+        width: 100%;
+    }
+
+    /* add a symbol after the title mouse over use unicode and symbol */
+    &-title:hover::after {
+        color: pink;
+        content: "\00a0▼"; 
+        font-size: 16px;
+    } 
+
+    @media screen and (max-width: 800px) {
+
+        flex-direction: column !important;
+  
+        &-wrap {
+            color: khaki;
+            margin: 0;
+        }
+
+        ul:first-child {
+            margin: 1.3rem auto 0 1rem;
+            width: auto;
+        }
+    }
+}
