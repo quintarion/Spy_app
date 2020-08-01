@@ -169,3 +169,8 @@ $color-green: #DAEACD;
   75% { transform: rotate(5deg);}
   85% { transform: rotate(-5deg);}
 }
+
+
+@mixin width {
+  width: 75%;
+}

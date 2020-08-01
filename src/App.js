@@ -1,5 +1,6 @@
 import React from 'react';
 import Career from './components/about/Career';
+import Cathegory from './components/catherogy/Cathegory';
 import Footer from './components/footer/Footer';
 import Gretting from './components/gretting/Gretting';
 import Header from './components/header/Header';
@@ -13,6 +14,7 @@ function App() {
       <div className="site-header"><Header/></div>
       <div className="site-content">
         <Gretting/>
+        <Cathegory/>
         <Training/>
         <Career/>
       </div>
