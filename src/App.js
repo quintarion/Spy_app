@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 
 // import { library } from '@fortawesome/fontawesome-svg-core';
@@ -12,7 +13,10 @@ import './App.scss';
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <div className="site-header"><Header/></div>
+      <div className="site-content"></div>
+      <div className="site-footer"><Footer/></div>
+      
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

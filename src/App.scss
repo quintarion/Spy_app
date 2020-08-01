@@ -1,8 +1,12 @@
 @import './style/main.scss';
 
-// .App {
-//   text-align: center;
-// }
+.App {
+    /* site that takes all the available height */
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* site-header / site-content / site-footer */
+}
 
 // .App-logo {
 //   height: 40vmin;

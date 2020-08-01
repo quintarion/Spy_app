@@ -1,8 +1,9 @@
 import React from 'react';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
+import { items } from './items.js';
 import './Menu.scss'
 
-const Menu = ({items}) => (
+const Menu = () => (
     <div className="menu">
       {
         Object.keys(items).map(item_name => {

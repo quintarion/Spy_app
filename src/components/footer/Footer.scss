@@ -1,0 +1,40 @@
+@import '../../style/main.scss';
+
+.footer {
+    background-color: whitesmoke;
+
+    &_container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        margin: auto;
+        padding: 2rem 0 3rem;
+    }
+
+    p {
+        color: #403b3b;
+        font-family: Helvetica,Arial,Verdana,sans-serif;
+        line-height: 1.35;
+    }
+
+    /**
+    *
+    * Smaller screen + Mobile
+    *
+    */
+
+    @media screen and (max-width:799px) {
+
+        background-color: transparent;
+        font-size: .7rem;
+        padding: 1.5rem 0 1.5rem;
+
+        &_bottom {
+            margin-left: 5%;
+        }
+
+        &_container {
+            display: none;
+        }
+    }
+}
