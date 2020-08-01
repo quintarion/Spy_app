@@ -69,5 +69,16 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
-### `SASS`
+### ADD BY ME
+
+### `Polyfills for different browsers (ie9)`
+npm install react-app-polyfill
+
+### `SASS > CSS compiler`
 npm install node-sass --save
+
+### `REACT ROUTER`
+npm install --save react-router & npm install react-router-dom
+
+### `HASH LINK (ANCHORS)`
+npm install --save react-router-hash-link
