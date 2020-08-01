@@ -8,7 +8,7 @@
     flex-flow: row nowrap;
     justify-content: space-evenly;
     justify-content: space-between;
-    padding: 1rem 10%;
+    padding: 1rem 5%;
     position: fixed; 
     top: 0;
     width: 100vw;
@@ -29,8 +29,6 @@
     }
 
     &-home, &-links {
-        //align-items: center; /* we want children to be centered vertically*/
-        //display: flex;
         
         a, li {
             padding: 0 1rem;
@@ -60,6 +58,10 @@
     
     .toggle {
         display: none;
+
+        i {
+            font-size: 22px;
+        }
     }
 
     /* different properties for the additional pages */
@@ -110,6 +112,7 @@
 
         .opened {
             border-top: solid 1.6px khaki;
+            margin-top: 1rem;
         }
 
         .toggle {
