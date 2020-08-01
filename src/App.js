@@ -1,20 +1,20 @@
 import React from 'react';
+import Career from './components/about/Career';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
+import Training from './components/about/Training';
 
-// import { library } from '@fortawesome/fontawesome-svg-core';
-// import { fab } from '@fortawesome/free-brands-svg-icons';
-// import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 import './App.scss';
-
-//library.add(fab, faCheckSquare, faCoffee)
 
 function App() {
   return (
     <div className="App">
       <div className="site-header"><Header/></div>
-      <div className="site-content"></div>
+      <div className="site-content">
+        <Training/>
+        <Career/>
+      </div>
       <div className="site-footer"><Footer/></div>
       
       {/* <header className="App-header">

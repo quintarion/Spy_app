@@ -45,16 +45,26 @@
 
     @media screen and (max-width: 800px) {
 
-        flex-direction: column !important;
-  
+        flex-direction: column;
+
+        /* delete the arrow symbol after the title menu */
+        &-title:hover::after {
+            content: ""; 
+        } 
+
         &-wrap {
             color: khaki;
             margin: 0;
-        }
 
-        ul:first-child {
-            margin: 1.3rem auto 0 1rem;
-            width: auto;
+            /* on mouseover DO NOT display the submenu */
+            ul li:hover .menu-sub {
+                display: none;
+            }
+
+            ul:first-child {
+                margin: 1.3rem auto 0 1rem;
+                width: auto;
+            }
         }
     }
 }
