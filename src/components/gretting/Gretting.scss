@@ -1,0 +1,46 @@
+@import '../../style/main.scss';
+//BIG TITLE
+@import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
+//TITLES 
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+.gretting {
+    background-color: #fafafa;
+    background-image: url('../../assets/pictures/blob-twingo.svg');
+    background-size: 100%;
+    background-size: cover;
+    padding-top: 8rem;
+    position:relative;
+
+    h2 {
+        font-family: 'Lato', sans-serif;
+    }
+
+    img {
+        border-radius: 19% 110% / 50% 60%;
+        padding-left: 1rem;
+        width: 300px !important;
+    }
+
+    &-title {
+        h1 {
+            font-size: 3rem;
+            font-family: 'Raleway Dots', cursive;
+            position: absolute;
+            text-align: right;
+        }
+    }
+
+    @media screen and (max-width: 799px) {
+
+        h1 {
+            font-family: 'Raleway Dots', cursive;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-right: 2rem;
+            position: static;
+            text-align: right; 
+        }
+        
+    }
+}
