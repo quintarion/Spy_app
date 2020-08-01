@@ -1,9 +1,9 @@
 import React from 'react';
 import Career from './components/about/Career';
 import Footer from './components/footer/Footer';
+import Gretting from './components/gretting/Gretting';
 import Header from './components/header/Header';
 import Training from './components/about/Training';
-
 
 import './App.scss';
 
@@ -12,6 +12,7 @@ function App() {
     <div className="App">
       <div className="site-header"><Header/></div>
       <div className="site-content">
+        <Gretting/>
         <Training/>
         <Career/>
       </div>
