@@ -1,5 +1,5 @@
 import React from 'react';
-import LayoutSection from '../layouts/LayoutSection';
+import Layout from '../layouts/Layout';
 import fulllength from '../../assets/pictures/full-length.jpg';
 import './Gretting.scss';
 
@@ -20,7 +20,7 @@ const Gretting = () => {
             <div className="gretting-title">
                 <h1>Hélène QUINTANA-FAUR&Eacute;<br/><span>PSYCHOLOGUE CLINICIENNE - PSYCHOTH&Eacute;RAPEUTE</span></h1>
             </div>
-            <LayoutSection elements={elements}/>
+            <Layout elements={elements}/>
         </div>
     )
 }

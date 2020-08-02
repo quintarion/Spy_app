@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import LayoutSection from '../layouts/LayoutSection';
+import Layout from '../layouts/Layout';
 import woman from '../../assets/pictures/woman.jpg';
 import './Training.scss';
 
@@ -34,7 +34,7 @@ const elements = [
 const Training = () => {
     return (
         <section className="training" id="training">
-            <LayoutSection elements={elements}/>
+            <Layout elements={elements}/>
         </section>
     )
 }

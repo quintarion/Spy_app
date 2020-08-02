@@ -1,0 +1,136 @@
+@import '../../style/main.scss';
+
+.price {
+    border: 1px solid #007c89;
+    border-radius: 1%;
+    font-family: Helvetica,Arial,Verdana,sans-serif;
+    font-size: 13px;
+    height: 60vw;
+    margin-right: 3rem;
+    padding: 3rem;
+    text-align: justify;
+    width: 40vw;
+
+    hr {
+        border: .5px solid #dab5b5;
+    }
+    
+
+    /* animation*/
+    animation: moveleft 2s 1 normal forwards;
+
+    @keyframes moveleft {
+        from { transform: translateX(650px); }
+        to   { transform: translateX(0); }
+    }
+
+    li {
+        display: inline;
+        padding-right: 1rem;
+    }
+    
+    ul {
+        padding: 1rem 0 .5rem 0;
+    }
+
+    &_list { // ne fonctionne pas 
+        ul:first-child > li:last-child::after {
+            content: "♥ je te teste";
+        }    
+    }
+
+    &_note {
+        background-color: #ffe74c;
+        border: 1px solid grey;
+        padding: 1rem 0 1rem 1rem;
+
+        li {
+            display: block;
+            
+        }
+
+        li:first-child {
+            text-decoration: underline;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        ul {
+            list-style-type: disc !important; // ne fonctionne pas 
+        }
+       
+    }
+
+    /* Table properties */
+
+    caption { 
+        caption-side: top;
+        padding: 1rem 0;
+        text-align: right;
+    }
+      
+    table { 
+        border-collapse: collapse;
+        border-spacing: 0px; 
+        margin: auto;
+        text-align: center;
+        width: 30vw;
+    }
+
+    table, th, td { 
+        border: 1px solid grey; 
+    }
+
+    th, td {
+        padding: 1rem;
+        text-align: center;
+    }
+      
+    @media screen and (max-width:800px) {
+        
+        margin: auto;
+        width: 80vw;
+
+        h3 {
+            text-align: center;
+        }
+
+        li {
+            display: block;
+        }
+
+        &_note {
+            display: none;
+        }
+       
+        .price {
+            font-size: 2rem;
+            height: auto;
+
+            &_list {
+
+                table {
+                    width: 90%; 
+                }
+            }
+        }
+
+        ul {
+            padding-left: 3em;
+        }
+       
+    }
+
+    @media screen and (max-width: 545px) {
+        
+        height: auto;
+        padding: 0;
+
+        .price_list {
+            font-size: 2rem;
+        }
+   
+    }
+}
