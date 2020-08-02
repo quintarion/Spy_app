@@ -1,6 +1,9 @@
 import React from 'react';
+import Adult from './components/cathegories/Adult';
 import Career from './components/about/Career';
-import Cathegory from './components/catherogy/Cathegory';
+import Who from './components/cathegories/Who';
+import Child from './components/cathegories/Child';
+import Couple from './components/cathegories/Couple';
 import Footer from './components/footer/Footer';
 import Gretting from './components/gretting/Gretting';
 import Header from './components/header/Header';
@@ -14,9 +17,12 @@ function App() {
       <div className="site-header"><Header/></div>
       <div className="site-content">
         <Gretting/>
-        <Cathegory/>
+        <Who/>
         <Training/>
         <Career/>
+        <Adult/>
+        <Couple/>
+        <Child/>
       </div>
       <div className="site-footer"><Footer/></div>
       

@@ -1,5 +1,5 @@
 import React from "react";
-import LayoutSection from '../layouts/LayoutSection';
+import Layout from '../layouts/Layout';
 import myYouth from '../../assets/pictures/myYouth.jpg';
 import './Career.scss';
 
@@ -22,7 +22,7 @@ const elements = [
 const Career = () => {
     return (
         <section className="career" id="career">
-            <LayoutSection elements={elements}/>
+            <Layout elements={elements}/>
         </section>
     )
 }

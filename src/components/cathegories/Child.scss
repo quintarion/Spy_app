@@ -1,0 +1,12 @@
+@import '../../style/main.scss';
+
+.child {
+    background-image: url('../../assets/pictures/blob-blue.svg');
+
+    img {
+        float: left;
+        width: 40vw;
+        border-radius: 10% 110% /50% !important;
+        margin-left: 5rem;
+    }
+}

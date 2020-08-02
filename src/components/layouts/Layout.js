@@ -1,10 +1,10 @@
 import React from "react";
 import { NavHashLink as NavLink } from 'react-router-hash-link';
-import './LayoutSection.scss';
+import './Layout.scss';
 
 /* Map alls the props 'elements' in the Layout component */
 
-const LayoutSection = ({elements}) => {
+const Layout = ({elements}) => {
   return  (
     <div className="layout">
      { elements.map((element, index) =>
@@ -26,4 +26,4 @@ const LayoutSection = ({elements}) => {
   )
 }
 
-export default LayoutSection;
+export default Layout;

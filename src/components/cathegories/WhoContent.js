@@ -1,8 +1,8 @@
 import React from "react";
 import { HashLink as Link } from 'react-router-hash-link';
-import './Subcathegory.scss';
+import './WhoContent.scss';
 
-const Subcathegory = ({elements}) => {
+const WhoContent = ({elements}) => {
 
   return (
     <div className="subcathegory">
@@ -20,4 +20,4 @@ const Subcathegory = ({elements}) => {
   )
 }
   
-export default Subcathegory;
+export default WhoContent;
