@@ -3,6 +3,7 @@ import Adult from './components/cathegories/Adult';
 import Career from './components/about/Career';
 import Who from './components/cathegories/Who';
 import Child from './components/cathegories/Child';
+import Contact from './components/contact/Contact';
 import Couple from './components/cathegories/Couple';
 import Footer from './components/footer/Footer';
 import Gretting from './components/gretting/Gretting';
@@ -23,6 +24,7 @@ function App() {
         <Adult/>
         <Couple/>
         <Child/>
+        <Contact/>
       </div>
       <div className="site-footer"><Footer/></div>
       

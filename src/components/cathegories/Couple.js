@@ -13,18 +13,18 @@ const elements = [
         paragraph2: [<div><span>Si les deux membres du couple sont prêts à poursuivre, je proposerai des séances programmées selon ce qui me paraît le plus adapté soit :</span>
         <ul>
         <br/>
-            <li> <b>D’une thérapie</b> <NavLink to="/emdr" target="_blank"><strong>EMDR</strong></NavLink> de couple c’est à dire que les deux personnes assistent toujours  ensemble aux séances qui après "<i>l’ancrage du Lieu Sûr</i>", se décomposeront ainsi : séances de 2h (120 €)</li>
+            <li> <b>D’une thérapie</b> <NavLink to="/emdr" target="_blank" rel="nofollow noreferrer noopener"><strong>EMDR</strong></NavLink> de couple c’est à dire que les deux personnes assistent toujours  ensemble aux séances qui après "<i>l’ancrage du Lieu Sûr</i>", se décomposeront ainsi : séances de 2h (120 €)</li>
                 <ul>
                     <li> Echange pendant 15 minutes</li>
-                    <li> 3/4 d'heure d'<NavLink to="/emdr" target="_blank"><strong>EMDR</strong></NavLink> devant l’autre membre du couple qui observe avec bienveillance et en silence.</li>
+                    <li> 3/4 d'heure d'<NavLink to="/emdr" target="_blank" rel="nofollow noreferrer noopener"><strong>EMDR</strong></NavLink> devant l’autre membre du couple qui observe avec bienveillance et en silence.</li>
                     <li> 3/4 d heure pour l’autre personne dans les même conditions.</li>
                     <li> Echange pendant 15 minutes.</li>
                 </ul>
             <br/>
-            <li>- <b>D’une thérapie</b> <NavLink to="/icv" target="_blank"><strong>ICV</strong></NavLink> : chaque personne effectue deux séances d’une heure chacune d’ ICV seule (60 €) en alternance avec son conjoint.</li>
+            <li>- <b>D’une thérapie</b> <NavLink to="/icv" target="_blank" rel="nofollow noreferrer noopener"><strong>ICV</strong></NavLink> : chaque personne effectue deux séances d’une heure chacune d’ ICV seule (60 €) en alternance avec son conjoint.</li>
         </ul>
       </div>],
-        paragraph3: [<span>Au bout des 4 séances effectuées en alternance, on se retrouve pour une séance commune d’une heure  (60 €) et à l’issue de cette séance , nous évalueront ensemble si  les deux membres du couple sont d’accord pour poursuivre  une deuxième série de 5 séances (4 séances d’ <NavLink to="/icv" target='_blank'>ICV</NavLink> ,une d’évaluation )</span>],
+        paragraph3: [<span>Au bout des 4 séances effectuées en alternance, on se retrouve pour une séance commune d’une heure  (60 €) et à l’issue de cette séance , nous évalueront ensemble si  les deux membres du couple sont d’accord pour poursuivre  une deuxième série de 5 séances (4 séances d’ <NavLink to="/icv" target='_blank' rel="nofollow noreferrer noopener">ICV</NavLink> ,une d’évaluation )</span>],
         path: "/#contact",
         page: "Contact"
     }
