@@ -9,6 +9,7 @@ import Couple from './components/cathegories/Couple';
 import Footer from './components/footer/Footer';
 import Gretting from './components/gretting/Gretting';
 import Header from './components/header/Header';
+import Step from './components/step/Step';
 import Training from './components/about/Training';
 
 import './App.scss';
@@ -48,6 +49,7 @@ class App extends React.Component {
         <div className="site-content">
           <Gretting/>
           <Who/>
+          <Step/>
           <Training/>
           <Career/>
           <Adult/>
