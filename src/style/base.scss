@@ -2,6 +2,62 @@
 * Basics: animations, base, typography, and utilies
 */
 
+/* Font style */
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500&family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500&family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Karma:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Karma:wght@600&family=Ramabhadra&display=swap');
+
+
+// xx-small: minuscule ;
+// x-small: très petit ;
+// small: petit ;
+// medium: moyen ;
+// large: grand ;
+// x-large: très grand ;
+// xx-large: euh… gigantesque.
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../assets/fonts/Lato/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway Dots';
+  src: url('../assets/fonts/RalewayDots/RalewayDots-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway regular';
+  src: url('../assets/fonts/Raleway/static/Raleway-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Homemade Apple';
+  src: url('../assets/fonts/Homemade/HomemadeApple-Regular.ttf');
+}
+
+@mixin font-content {
+  font-family: 'Raleway', sans-serif;;
+}
+
+@mixin hand-written {
+  font-family: 'Homemade Apple', cursive;
+}
+
+@mixin main-title {
+  font-family: 'Raleway Dots', cursive;
+}
+
+@mixin title {
+  font-family: 'Lato', sans-serif;
+}
+
 * {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -37,3 +93,7 @@ $primary-text-color    : #212121;
 $secondary-text-color  : #757575; 
 $divider-color         : #BDBDBD;
 
+em
+{
+  font-style: normal;
+}

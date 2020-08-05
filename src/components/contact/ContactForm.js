@@ -2,7 +2,6 @@ import React from 'react';
 import axios from 'axios';
 import Button from '../layouts/Button';
 import FrenchPhoneField from './FrenchPhoneField';
-import hands from '../../assets/icons/hands.png';
 import './ContactForm.scss';
 
 const config = require('../../config/config');
@@ -101,7 +100,6 @@ class ContactForm extends React.Component {
                         name="lastname"
                         placeholder="Mon nom"
                         type="text" 
-                        required="false"
                         autoFocus
                         maxlength={42}
                         readonly={false}
@@ -147,7 +145,6 @@ class ContactForm extends React.Component {
                         value={this.state.message}
                         onChange={this.handleChange}
                         placeholder="Ecrivez ici votre message..."
-                        required
                     >
                     </textarea>
                     </span>

@@ -42,7 +42,7 @@ class Header extends React.Component {
           {/* navigation*/}
           <nav role="navigation" aria-label="Menu principal"
             className={
-              "header-links" + " " + (this.state.opened ? "opened" : "closed")
+              "header-links " + (this.state.opened ? "opened" : "closed")
             }
           >
             <Menu />
