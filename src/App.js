@@ -1,16 +1,24 @@
 import React from 'react';
 //import ReCAPTCHA from "react-google-recaptcha";
 import Adult from './components/cathegories/Adult';
+import At from './components/therapies/At';
 import Career from './components/about/Career';
-import Who from './components/cathegories/Who';
 import Child from './components/cathegories/Child';
 import Contact from './components/contact/Contact';
 import Couple from './components/cathegories/Couple';
+import Eft from './components/therapies/Eft';
+import Emdr from './components/therapies/Emdr';
 import Footer from './components/footer/Footer';
 import Gretting from './components/gretting/Gretting';
 import Header from './components/header/Header';
+import Icv from './components/therapies/Icv';
+import MoreTherapies from './components/therapies/MoreTherapies';
+import Reflexology from './components/therapies/Reflexology';
+import Sophrology from './components/therapies/Sophrology';
 import Step from './components/step/Step';
+import Therapies from './components/therapies/Therapies';
 import Training from './components/about/Training';
+import Who from './components/cathegories/Who';
 
 import './App.scss';
 
@@ -49,15 +57,26 @@ class App extends React.Component {
         <div className="site-content">
           <Gretting/>
           <Who/>
-          <Step/>
-          <Training/>
-          <Career/>
           <Adult/>
           <Couple/>
           <Child/>
+          <Step/>
+          <Therapies/>
+          <MoreTherapies/>
+          <Training/>
+          <Career/>
           <Contact/>
+         
         </div>
         <div className="site-footer"><Footer/></div>
+
+        <At/>
+        <Eft/>
+        <Emdr/>
+        <Icv/>
+        <Reflexology/>
+        <Sophrology/>
+
         
         {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />

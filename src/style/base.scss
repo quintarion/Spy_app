@@ -111,3 +111,11 @@ em
 {
   font-style: normal;
 }
+
+/* cancel the 'link' style */
+@mixin linkNoStyle {
+  box-shadow: none;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}

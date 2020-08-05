@@ -1,0 +1,48 @@
+@import './../../style/main.scss';
+
+.therapies {
+    padding-bottom: 3rem;
+    padding-top: 8rem;
+
+    &__container {
+        margin: auto;
+        @include width;
+
+        h2 {
+            text-align: center;
+            @include big-title;
+        }
+
+        .one {
+            img {
+                background-image: url('../../assets/pictures/blob12.svg');
+            }
+           
+        }
+    
+        .two {
+            img {
+                background-image: url('../../assets/pictures/blob8.svg');
+            }
+        }
+    
+        .three {
+            img {
+                background-image: url('../../assets/pictures/blob16.svg');
+            } 
+        }
+    }
+
+    &__flex {
+        align-content: space-around;
+        display: flex;
+    }
+
+    @media screen and (max-width:799px) {
+        padding: 0;
+        
+        h2 {
+            line-height: .8em;
+        }
+    }
+}

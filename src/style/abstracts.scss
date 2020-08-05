@@ -11,24 +11,6 @@ $color-blue: #d8e3e1;
 $color-mallow: #F8E0Fa;
 $color-green: #DAEACD;
 
-/* Font style */
-@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Poppins:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500&family=Julius+Sans+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500&family=Julius+Sans+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Karma:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Karma:wght@600&family=Ramabhadra&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
-//BIG TITLE
-@import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
-
-@mixin graphfont {
-  font-family: 'Fredericka the Great', cursive;
-}
 
 @mixin button {
   display:block; // [display:block and text-align] both properties to center element in the bloc
