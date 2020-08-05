@@ -1,8 +1,8 @@
 @import '../../style/main.scss';
 //BIG TITLE
-@import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
 //TITLES 
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+//@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 
 .gretting {
     background-color: #fafafa;
@@ -14,7 +14,7 @@
     position:relative;
 
     h2 {
-        font-family: 'Lato', sans-serif;
+        @include title;
     }
 
     img {
@@ -25,8 +25,8 @@
 
     &-title {
         h1 {
+            @include main-title;
             font-size: 3rem;
-            font-family: 'Raleway Dots', cursive;
             position: absolute;
             text-align: right;
         }
@@ -35,7 +35,7 @@
     @media screen and (max-width: 799px) {
 
         h1 {
-            font-family: 'Raleway Dots', cursive;
+            @include main-title;
             font-size: 2rem;
             font-weight: bold;
             margin-right: 2rem;
