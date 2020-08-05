@@ -7,7 +7,7 @@
 
     &__container {
         margin: auto;
-        //@include width;
+        @include width;
 
         h2 {
             text-align: center;
@@ -49,7 +49,7 @@
     }
 
     &__flex {
-        align-content: space-around;
+        align-content: space-between;
         display: flex;
         justify-content: center;
     }
