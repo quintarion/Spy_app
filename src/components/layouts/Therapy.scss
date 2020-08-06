@@ -1,0 +1,65 @@
+@import './../../style/main.scss';
+
+.layout-therapy {
+    background-color: rgba(0,0,0,.2);
+    border-radius: 2%;
+    height: auto;
+    margin-top: 2vh;
+    padding: 3rem;
+    width: 75vw;
+    
+    &_container {
+        align-items: flex-start;
+        display: flex;
+        flex-flow: row nowrap;
+
+        a {
+            @include button;
+            margin: 1rem auto;
+            padding: 1rem 2rem;
+        }
+
+        a:hover {
+            @include button-hover;
+        }
+
+        div {
+            align-self: center;
+        }
+
+        h2 {
+            font-size: 3rem;
+            text-align: left;
+            @include big-title;
+        }
+
+        .linkNoStyle {
+            @include linkNoStyle;
+        };
+
+        p {
+            max-height: 40vh;
+        }
+
+        &-text {
+            padding: 2rem;
+        }
+
+        @media screen and (max-width:799px) {
+            flex-direction: column;
+
+            .layout-therapy {
+                border-radius: none;
+                padding: 0;
+            }
+            
+            .layout-icon {
+                display: none;
+            }
+
+            h2 {
+                text-align: center;
+            }
+        }
+    }
+}

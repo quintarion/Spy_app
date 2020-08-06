@@ -1,0 +1,43 @@
+@import '../../style/main.scss';
+
+.career {
+    /* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
+    background-color: #e6e5e7;
+    background-image: url('../../assets/pictures/blob13.svg');
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    img {
+        border-radius: 10% 110% / 50% 70%;
+        width: 550px !important;
+        margin-left: 1rem;
+    }
+
+    .layout_container-text {
+        order: 1;
+    }
+
+    .layout_container-img {
+        order: 2;
+    }
+
+    @media screen and (max-width:799px) {
+
+        background-image: none;
+
+        // img {
+        //     border-radius: 0;
+        //     width: 350px !important;
+        // }
+
+        .layout_container-img {
+            background-image: url('../../assets/pictures/myYouth.jpg');
+            background-position: center;
+            background-size: 150%;
+            background-repeat: no-repeat;
+        }
+
+    }
+}
+   

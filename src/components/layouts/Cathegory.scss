@@ -1,0 +1,76 @@
+@import '../../style/main.scss';
+
+.layout-cathegory {
+    width: 100vw;
+    padding-bottom: 3rem;
+
+    &-btn {
+        @include button;
+        float: right;
+        margin: 1rem;
+
+        &:hover {
+            @include button-hover;
+        }
+    }
+
+    img {
+        float: left;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin: 0 0 2rem 2rem;
+        max-height: 60vh;
+        width: 50vw;
+    }
+
+    // &__container {
+    //     align-items: baseline;
+    //     align-content: stretch;
+    //     display: flex;
+    //     flex-flow: row nowrap;
+    //     justify-content: center;
+    //     margin: auto;
+
+    //     div {
+    //         align-self: center;
+    //     }
+
+    //     div img {
+    //         display: block;
+    //         margin: auto;
+    //         padding: 2em;
+    //         width: 360px;
+    //         margin-bottom: 1rem;
+    //     }
+
+    //     // place the link on the right //ne fonctionne pas
+    //     a {
+    //         float: right;
+    //     }
+    //}
+
+    @media screen and (max-width:799px) {
+
+        // a {
+        //     float: none;
+        // }
+        
+        div {
+            max-height: 50vh;
+            overflow: auto;
+            width: 80vw;
+        }
+        
+        div p {
+            margin-bottom: 2rem;
+            margin-left: auto;
+            width: 80vw;
+        }
+        
+        .layout-icon {
+            display: none;
+        }
+    }
+}

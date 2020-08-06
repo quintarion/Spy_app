@@ -19,7 +19,7 @@ class Header extends React.Component {
           <div className="header-home">
             {/* logo brand */}
             <div className="header-brand">
-              <Link to="#gretting">
+              <Link to="#home">
                 <img
                   className="logo"
                   src={hands}
@@ -42,7 +42,7 @@ class Header extends React.Component {
           {/* navigation*/}
           <nav role="navigation" aria-label="Menu principal"
             className={
-              "header-links" + " " + (this.state.opened ? "opened" : "closed")
+              "header-links " + (this.state.opened ? "opened" : "closed")
             }
           >
             <Menu />

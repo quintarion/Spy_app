@@ -1,0 +1,20 @@
+@import '../../style/main.scss';
+
+.brand {
+    left: 2vw;
+    position: absolute;
+    top: 1vw;
+
+    figcaption {
+        text-align: center;
+    }
+}
+
+.logo {
+    background-image: url('../../assets/pictures/blob-beige.svg');
+    width: 5rem;
+}
+
+.logo:hover {
+    @include animate(icon-bounce, 0.5s, alternate);
+}

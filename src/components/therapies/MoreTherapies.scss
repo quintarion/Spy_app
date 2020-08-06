@@ -1,0 +1,51 @@
+@import './../../style/main.scss';
+
+.moreTherapies {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    background-color: #fafafa;
+
+    &__container {
+        margin: auto;
+        @include width;
+
+        h2 {
+            text-align: center;
+            @include big-title;
+        }
+
+        .one {
+            img {
+                //background-color: $color-blue;
+                background-image: url('../../assets/pictures/blob8.svg');
+            }
+           
+        }
+    
+        .two {
+            img {
+                //background-color: $color-mallow;
+                background-image: url('../../assets/pictures/blob13.svg');
+            }
+        }
+    
+        .three {
+            img {
+                //background-color: $color-green;
+                background-image: url('../../assets/pictures/blob6.svg');
+            } 
+        }
+    }
+
+    &__flex {
+        align-content: space-between;
+        display: flex;
+    }
+
+    @media screen and (max-width:799px) {
+
+        h2 {
+            font-size: 2.5rem;
+        }
+    }
+}

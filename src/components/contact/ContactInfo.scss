@@ -1,0 +1,129 @@
+@import '../../style/main.scss';
+
+.contactInfo {
+    align-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+
+    figcaption {
+        text-align: center;
+    }
+    
+    h2 {
+        margin-bottom: 1em;
+    }
+
+    h3 span {
+        font-size: 1.5rem;
+    }
+
+    img {
+        width: 35vw;
+        //box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.3); 
+        margin: 3rem auto 1rem;
+        //border-radius: 12% 112%/50% 70%;
+    }
+
+    &_card {
+        align-items: center;
+        background-image: url('../../assets/pictures/blob-beige.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        height: 40vw;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 2rem;
+        width: 40vw;
+
+        div {
+            margin: .7rem auto;
+            width: 20vw;
+        }
+
+        h3, h4, h5, p, a {
+            color: black;
+            font-family: Helvetica,Arial,Verdana,sans-serif;
+            font-size: .8rem;
+            font-weight: bold; 
+        }
+
+        h3 {
+            text-transform: uppercase;
+        }
+
+        h3, h5 {
+            text-decoration: underline;
+        }
+
+        iframe {
+            height: 15vw;
+            padding: .5rem;
+            width: 15vw;
+        }
+    }
+
+    @media screen and (max-width:799px) {
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+
+        &_card {
+            box-shadow: none;
+            height: 80vw;
+            padding: 1rem;
+            width: 80vw;
+
+            h3 {
+                font-weight: bold;
+                text-align: center;
+            }
+
+            h3, a, span, p {
+                font-family: 'Poppins', sans-serif !important;
+                font-size: 1rem !important;  
+                letter-spacing: -.044rem;
+                word-wrap: break-word;
+            }
+
+            div {
+                font-size: 16px;
+            
+                h4 {
+                    font-family: 'Poppins', sans-serif !important;
+                    font-size: 1rem !important;
+                    word-wrap: break-word;
+                }
+            }
+
+            &-iframe {
+                max-height: 40vw !important;
+                max-width: 40vw !important;
+            }
+            
+        }
+
+        &_card, img {
+            width: 80vw;
+        }
+
+        figcaption {
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width:545px) {
+
+        p {
+            font-size: 80%;
+        }
+
+        &_card, img {
+            height: 100vw;
+            width: 100vw;
+        }
+    }
+}

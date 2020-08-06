@@ -12,7 +12,9 @@
 
     /* on mouseover display the submenu */
     ul li:hover .menu-sub {
+        background-color: white;
         display: block;
+        font-size: .5rem;
     }
 
     /* position : absolute, remove from normal page flow and no impact the content */
@@ -32,7 +34,7 @@
 
     /* add a symbol after the title mouse over use unicode and symbol */
     &-title:hover::after {
-        color: pink;
+        color: #bde9db;
         content: "\00a0▼"; 
         font-size: 16px;
     } 
@@ -45,16 +47,26 @@
 
     @media screen and (max-width: 800px) {
 
-        flex-direction: column !important;
-  
+        flex-direction: column;
+
+        /* delete the arrow symbol after the title menu */
+        &-title:hover::after {
+            content: ""; 
+        } 
+
         &-wrap {
             color: khaki;
             margin: 0;
-        }
 
-        ul:first-child {
-            margin: 1.3rem auto 0 1rem;
-            width: auto;
+            /* on mouseover DO NOT display the submenu */
+            ul li:hover .menu-sub {
+                display: none;
+            }
+
+            ul:first-child {
+                margin: 1.3rem auto 0 1rem;
+                width: auto;
+            }
         }
     }
 }

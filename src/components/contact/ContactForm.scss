@@ -1,0 +1,113 @@
+.contactForm {
+    width: 50vw;
+    // background-image: url('../../assets/pictures/blob-beige.svg');
+    // background-size: 100%;
+    // background-repeat: no-repeat;
+
+    .button {
+        display: block;
+        float: right;
+        margin: auto;
+    }
+
+    h2 {
+        margin-bottom: 1em;
+    }
+
+    .form {
+        padding: 0;
+
+        fieldset {
+            border: .0625rem solid rgba(0, 0, 0, .6);
+            border-radius: 1.5%;
+            margin-bottom: 2rem;
+            padding: 1rem;
+        }
+
+        #firstname {
+            text-transform: capitalize;
+
+            &::placeholder {
+                text-transform: none;
+            }
+        }
+
+        i {
+            color: rgba(0, 0, 0, 0.5);
+            font-size: .8rem;
+        }
+
+        &_input {
+            overflow: hidden;
+        }
+
+        input:invalid, textarea:invalid, select:invalid {
+            border: 1px dotted #ca2f72;
+        }
+          
+        input:valid, textarea:valid, select:valid {
+            border: 1px solid greenyellow;
+        }
+
+        label, legend, i {
+            color: rgba(0, 0, 0, 0.7);
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        #lastname {
+            text-transform: uppercase;
+
+            &::placeholder {
+                text-transform: none;
+            }
+        }
+
+        // legend, select {
+        //     color: rgba(0, 0, 0, 0.5);
+        //     font-size: 1.25rem;
+        // }
+
+        &-select select, input, textarea {  
+            /* cancel default browser view appaearance */
+            -webkit-appearance: none; 
+            -moz-appearance: none;  
+            appearance: none;   
+
+            background: none;
+            border-bottom-color: currentcolor;
+            border-bottom-style: none;
+            border-bottom-width: medium;
+            border: none;
+            border-bottom: .0625rem solid rgba(0, 0, 0, .3);
+            border-radius: 0;
+            cursor: pointer;
+            display: inline-block;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.25rem;
+            letter-spacing: 0;
+            margin: 0;
+            margin-bottom: 1.5rem;
+            position: relative;
+            width: 100%;
+        }
+
+        /* customize select tag */
+
+        select option {
+            font-family: 'FontAwesome', 'Poppins'; //???
+        }
+
+    }
+
+    p {
+        padding-bottom: 2rem;
+    }
+
+    @media screen and (max-width:799px) {
+
+        display: none;
+    }
+
+}

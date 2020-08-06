@@ -82,3 +82,17 @@ npm install --save react-router & npm install react-router-dom
 
 ### `HASH LINK (ANCHORS)`
 npm install --save react-router-hash-link
+
+### `AXIOS`
+npm install axios
+
+### `CAPTCHA`
+npm install --save react-google-recaptcha
+or 
+npm install recaptcha-v3
+
+### `IFRAME`
+npm install react-iframe
+
+### `SECURITY`
+npm install react-app-rewired customize-cra csp-html-webpack-plugin --save-dev

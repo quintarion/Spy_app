@@ -1,0 +1,30 @@
+@import './../../style/main.scss';
+
+.step {
+    background-color: #fafafa;
+    padding-top: 8rem;
+    padding-top: 3rem;
+    
+    &_container {
+        margin: auto;
+        @include width;
+
+        h2 {
+            text-align: center;
+            @include big-title;
+            padding-bottom: 3rem;
+        }
+
+        &-text {
+            height: 58vh;
+            overflow: auto;
+        }
+    }
+
+    @media screen and (max-width:799px) {
+
+        h2 {
+            line-height: .8rem;
+        }
+    }
+}
