@@ -1,24 +1,24 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 //import ReCAPTCHA from "react-google-recaptcha";
+import Training from './components/about/Training';
 import Adult from './components/cathegories/Adult';
 import At from './components/therapies/At';
-import Career from './components/about/Career';
 import Child from './components/cathegories/Child';
 import Contact from './components/contact/Contact';
 import Couple from './components/cathegories/Couple';
 import Eft from './components/therapies/Eft';
 import Emdr from './components/therapies/Emdr';
 import Footer from './components/footer/Footer';
-import Gretting from './components/gretting/Gretting';
-import Header from './components/header/Header';
+import Home from './components/home/Home';
 import Icv from './components/therapies/Icv';
-import MoreTherapies from './components/therapies/MoreTherapies';
+import Main from './pages/Main';
 import Reflexology from './components/therapies/Reflexology';
-import Sophrology from './components/therapies/Sophrology';
 import Step from './components/step/Step';
+import Sophrology from './components/therapies/Sophrology';
 import Therapies from './components/therapies/Therapies';
-import Training from './components/about/Training';
 import Who from './components/cathegories/Who';
+
 
 import './App.scss';
 
@@ -53,30 +53,51 @@ class App extends React.Component {
     //const { value, callback, load, expired } = this.state || {};
     return (
       <div className="App">
-        <div className="site-header"><Header/></div>
-        <div className="site-content">
-          <Gretting/>
-          <Who/>
-          <Adult/>
-          <Couple/>
-          <Child/>
-          <Step/>
-          <Therapies/>
-          <MoreTherapies/>
-          <Training/>
-          <Career/>
-          <Contact/>
+        
+
+        {/* <Router>
+            <Switch>
+            <Route exact path="/" component={Home}/>
+            <Route path="/who" component={Who}/>
+            <Route path="/step" component={Step}/>
+            <Route path="/therapies" component={Therapies}/>
+            <Route path="/moreTherapies" component={MoreTherapies}/>
+            <Route path="/training" component={Training}/>
+            <Route path="/career" component={Career}/>
+            <Route path="/contact" component={Contact}/>
+            </Switch>
+        </Router> */}
+
+        
+        <Router>
+          <div>
+          <Switch>
          
-        </div>
-        <div className="site-footer"><Footer/></div>
-
-        <At/>
-        <Eft/>
-        <Emdr/>
-        <Icv/>
-        <Reflexology/>
-        <Sophrology/>
-
+          {/* Showcase*/}
+           <Route exact path='/' component={Main} />
+          {/* <Route path="/" component={Home}/> */}
+                        {/* <Route path="/why" component={Why}/> */}
+                        {/* <Route path="/who" component={Who}/>
+                        <Route path="/How" component={Step}/>
+                        <Route path="/terapies" component={Therapies}/>
+                        <Route path="/about" component={Training}/>
+                        <Route path="/contact" component={Contact}/>
+                        <Route path="/footer" component={Footer}/> */}
+         
+            {/* Description therapies*/}
+            <Route exact path='/icv' component={Icv} />
+            <Route exact path='/emdr' component={Emdr} />
+            <Route exact path='/eft' component={Eft} />
+            <Route exact path='/at' component={At} />
+            <Route exact path='/reflexology' component={Reflexology} />
+            <Route exact path='/sophrology' component={Sophrology} />
+            {/* Description clients*/}
+            <Route exact path='/adult' component={Adult} />
+            <Route exact path='/couple' component={Couple} />
+            <Route exact path='/child' component={Child} />
+            </Switch>
+            </div>
+        </Router>    
         
         {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />

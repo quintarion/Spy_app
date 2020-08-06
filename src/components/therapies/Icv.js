@@ -1,4 +1,5 @@
 import React from 'react';
+import Brand from '../layouts/Brand';
 import Therapy from '../layouts/Therapy';
 import raincoat from '../../assets/icons/raincoat.png';
 import '../../style/main.scss';
@@ -25,7 +26,8 @@ export const elements = [
 
 const Icv = () => {
     return (
-        <section className="pageTherapy">
+        <section className="pageTherapy" id="icv">
+            <Brand/>
             <Therapy elements={elements} />
         </section>
     )

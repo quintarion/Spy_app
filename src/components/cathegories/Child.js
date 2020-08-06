@@ -1,4 +1,5 @@
 import React from 'react';
+import Brand from '../layouts/Brand';
 import Prices from '../layouts/Prices';
 import Cathegory from '../layouts/Cathegory';
 import children from '../../assets/pictures/children.jpg';
@@ -32,13 +33,16 @@ const cells = [
 
 const Child = () => {
     return (
-        <section className="child pageCathegory" id="child">
-            <h2>Enfants &amp; Adolescents</h2>
-            <div className="pageCathegory_box">
-                <Cathegory elements={elements} />
-                <Prices cells={cells} />
-            </div>
-        </section>
+        <>
+            <Brand/>
+            <section className="child pageCathegory" id="child">
+                <h2>Enfants &amp; Adolescents</h2>
+                <div className="pageCathegory_box">
+                    <Cathegory elements={elements} />
+                    <Prices cells={cells} />
+                </div>
+            </section>
+        </>
     )
 }
 

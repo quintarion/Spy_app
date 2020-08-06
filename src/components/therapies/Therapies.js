@@ -38,13 +38,13 @@ const elements = [
 const Therapies = () => {
     return (
         <div className="therapies" id="therapies">
-        <div className="therapies__container">
-            <h2>Quelles sont  les techniques que j’utilise ?</h2>
-            <div className="therapies__flex">
-                <Subcathegory elements={elements}/>
+            <div className="therapies__container">
+                <h2>Quelles sont  les techniques que j’utilise ?</h2>
+                <div className="therapies__flex">
+                    <Subcathegory elements={elements}/>
+                </div>
             </div>
         </div>
-      </div>
     )
 }
 

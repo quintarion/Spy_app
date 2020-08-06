@@ -1,4 +1,5 @@
 import React from 'react';
+import Brand from '../layouts/Brand';
 import Therapy from '../layouts/Therapy';
 import maya_2 from '../../assets/icons/maya_2.png';
 import '../../style/main.scss';
@@ -26,7 +27,8 @@ export const elements = [
 
 const Eft = () => {
     return (
-        <section className="pageTherapy">
+        <section className="pageTherapy" id="eft">
+            <Brand/>
             <Therapy elements={elements} />
         </section>
     )

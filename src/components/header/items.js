@@ -4,7 +4,19 @@ export const items = {
       sub_items: [
         {
           li: "Pour qui ?",
-          link: "#consult"
+          link: "#who"
+        },
+        {
+          li: "Adulte",
+          link: "adult"
+        },
+        {
+          li: "Couple",
+          link: "couple"
+        },
+        {
+          li: "Enfant / Adolescent",
+          link: "child"
         },
         {
           li: "Déroulé d'une thérapie",
@@ -17,23 +29,27 @@ export const items = {
       sub_items: [
         {
           li: "E.M.D.R",
-          link: "#emdr"
+          link: "emdr"
         },
         {
           li: "I.C.V",
-          link: "#icv"
+          link: "icv"
         },
         {
           li: "E.F.T",
-          link: "#eft"
+          link: "eft"
         },
         {
           li: "A.T",
-          link: "#at"
+          link: "at"
         },
         {
           li: "Réfléxologie polarisée",
-          link: "#reflexology"
+          link: "reflexology"
+        },
+        {
+          li: "Relaxation sophronique",
+          link: "sophrology"
         }
       ]
     },

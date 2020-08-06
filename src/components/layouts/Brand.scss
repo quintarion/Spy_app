@@ -1,0 +1,10 @@
+@import '../../style/main.scss';
+
+.logo {
+    background-image: url('../../assets/pictures/blob-beige.svg');
+    width: 5rem;
+}
+
+.logo:hover {
+    @include animate(icon-bounce, 0.5s, alternate);
+}

@@ -10,7 +10,7 @@ const SiteMap = () => {
     return (
         <>
             <nav className="sitemap">
-                {/* filter the path handle navigation in the SPA or to the annex pages */}
+                {/* filter the path handle navigation in the Main Page or to the annex pages */}
                 { Object.keys(items).map(item_name => {
 
                     if (items[item_name].subitems.filter(({path}) => path.match(regex))) {
