@@ -30,17 +30,28 @@
             width: 360px;
         }
 
+        &-text {
+
+            li {
+                list-style-type: disc;
+                @include p-large;
+            } 
+        }
+
         h2 {
+            @include title-medium;
             margin-bottom: .5rem;
             text-align: left;
         }
 
         p {
+            @include p-large;
             max-height: 60vh;
             margin-bottom: 3rem;
         }
 
         span a {
+            margin-top: 1rem;
             @include button;
         }
 
@@ -52,12 +63,12 @@
     @media screen and (max-width:799px) {
 
         height: auto;
-        margin: auto;
         max-width: 80vw;
-        padding-bottom: 3rem;
+        padding: 0 0 3rem;
 
-        a {
+        span a {
             margin: 2rem 0;
+            padding: 0;
         }
         
         &_container {
@@ -77,10 +88,6 @@
         .layout_container-img {
             width: 60vw;
             height: 60vw;
-        }
-
-        .layout-icon {
-            display: none;
         }
 
         h2 {

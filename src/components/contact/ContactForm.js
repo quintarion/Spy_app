@@ -59,10 +59,10 @@ class ContactForm extends React.Component {
     render() {
         return (
             <div className="contactForm">
+            <p>Veuillez remplir le formulaire de contact ci-dessous et je vous répondrai dans les plus brefs délais.</p>
             <form onSubmit={this.submitForm} className="form">
-                <fieldset>
-                    <legend>Envoyer un message</legend>
-                    <label mtmlfor="topic">Objet</label>
+                {/* <fieldset> */}
+                    <label mtmlfor="topic">Quel est l'objet de votre message ?</label>
                     <div className="form-select">
                         <select type="select" id="topic" name="topic" className="contact-topic" value={this.state.value} onChange={this.topicChange} required>
                             <option  disabled value="" selected="selected">Veuillez sélectionnez un objet :</option> 
@@ -75,7 +75,7 @@ class ContactForm extends React.Component {
                     </div>
 
                     <span className="form_input">
-                    <label htmlFor="firstname">Prénom*</label>
+                    <label htmlFor="firstname">Prénom *</label>
                     <input 
                         id="firstname"
                         aria-required="true"
@@ -109,7 +109,7 @@ class ContactForm extends React.Component {
                     </span>
                         
                     <span className="form_input">
-                    <label htmlFor="email">Adresse électronique*</label>
+                    <label htmlFor="email">Adresse électronique *</label>
                     <input
                         id="email"
                         aria-required="true"
@@ -128,12 +128,12 @@ class ContactForm extends React.Component {
                     </span>
                 
                     <span className="form_input">
-                    <label htmlFor="tel">Numéro de téléphone*</label>
+                    <label htmlFor="tel">Numéro de téléphone *</label>
                     <span className="contact-phone"><FrenchPhoneField getPhone={this.setPhoneState} /></span>
                     </span>
 
                     <span className="form_input">
-                    <label htmlFor="message">Votre message*</label>
+                    <label htmlFor="message">Votre message *</label>
                     <textarea
                         required='true'
                         aria-required="true"
@@ -148,7 +148,7 @@ class ContactForm extends React.Component {
                     >
                     </textarea>
                     </span>
-                </fieldset>
+                {/* </fieldset> */}
                 <Button
                         className="contact-button"
                         type="Submit"

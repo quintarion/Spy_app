@@ -14,6 +14,7 @@
     ul li:hover .menu-sub {
         background-color: white;
         display: block;
+        font-size: .5rem;
     }
 
     /* position : absolute, remove from normal page flow and no impact the content */
@@ -33,7 +34,7 @@
 
     /* add a symbol after the title mouse over use unicode and symbol */
     &-title:hover::after {
-        color: pink;
+        color: #bde9db;
         content: "\00a0▼"; 
         font-size: 16px;
     } 

@@ -1,5 +1,8 @@
 .contactForm {
-    width: 40vw;
+    width: 50vw;
+    // background-image: url('../../assets/pictures/blob-beige.svg');
+    // background-size: 100%;
+    // background-repeat: no-repeat;
 
     .button {
         display: block;
@@ -50,6 +53,7 @@
             color: rgba(0, 0, 0, 0.7);
             font-family: 'Poppins', sans-serif;
             font-weight: bold;
+            text-transform: uppercase;
         }
 
         #lastname {
@@ -60,10 +64,10 @@
             }
         }
 
-        legend, select {
-            color: rgba(0, 0, 0, 0.5);
-            font-size: 1.25rem;
-        }
+        // legend, select {
+        //     color: rgba(0, 0, 0, 0.5);
+        //     font-size: 1.25rem;
+        // }
 
         &-select select, input, textarea {  
             /* cancel default browser view appaearance */
@@ -95,6 +99,10 @@
             font-family: 'FontAwesome', 'Poppins'; //???
         }
 
+    }
+
+    p {
+        padding-bottom: 2rem;
     }
 
     @media screen and (max-width:799px) {

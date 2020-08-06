@@ -25,8 +25,10 @@ const At = () => {
     return (
         <>
         <section className="pageTherapy" id="at">
-            <Brand/>
-            <Therapy elements={elements} />
+            <div>
+                <Brand/>
+                <Therapy elements={elements} />
+            </div>
         </section>
         </>
     )

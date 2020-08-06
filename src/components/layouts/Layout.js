@@ -11,9 +11,7 @@ const Layout = ({elements}) => {
       <div key={index} className="layout_container" id={element.id}>
         <div className="layout_container-text">
           <h2>{element.title}</h2>
-          <p>
-            {element.text}
-          </p>
+          {element.text}
           <span>
             <NavLink activeClassName="selected" to={element.path}>{element.page}</NavLink>
           </span>

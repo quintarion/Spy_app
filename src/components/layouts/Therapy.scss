@@ -4,9 +4,9 @@
     background-color: rgba(0,0,0,.2);
     border-radius: 2%;
     height: auto;
-    margin-top: 6vw;
+    margin-top: 2vh;
     padding: 3rem;
-    width: 80vw;
+    width: 75vw;
     
     &_container {
         align-items: flex-start;
@@ -16,6 +16,7 @@
         a {
             @include button;
             margin: 1rem auto;
+            padding: 1rem 2rem;
         }
 
         a:hover {
@@ -32,13 +33,17 @@
             @include big-title;
         }
 
-        &-text {
-            padding: 2rem;
-        }
-
         .linkNoStyle {
             @include linkNoStyle;
         };
+
+        p {
+            max-height: 40vh;
+        }
+
+        &-text {
+            padding: 2rem;
+        }
 
         @media screen and (max-width:799px) {
             flex-direction: column;

@@ -84,10 +84,19 @@
                 word-wrap: break-word;
             }
 
-            div h4 {
-                font-family: 'Poppins', sans-serif !important;
-                font-size: 1rem !important;
-                word-wrap: break-word;
+            div {
+                font-size: 16px;
+            
+                h4 {
+                    font-family: 'Poppins', sans-serif !important;
+                    font-size: 1rem !important;
+                    word-wrap: break-word;
+                }
+            }
+
+            &-iframe {
+                max-height: 40vw !important;
+                max-width: 40vw !important;
             }
             
         }
