@@ -107,9 +107,18 @@ $primary-text-color    : #212121;
 $secondary-text-color  : #757575; 
 $divider-color         : #BDBDBD;
 
-em
-{
+em {
   font-style: normal;
+}
+
+@media screen and (max-width:799px) {
+  figcaption, i, p, strong {
+    font-size: 16px !important;
+  }
+
+  h2 {
+    font-size: 23px !important;
+  }
 }
 
 /* cancel the 'link' style */

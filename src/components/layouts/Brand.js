@@ -7,13 +7,15 @@ const Brand = () => {
     return (
         <>
             {/* logo brand */}
-            <div className="header-brand">
+            <div className="brand">
                 <Link to="/#home">
-                    <img
+                    <figure>
+                        <img
                         className="logo"
                         src={hands}
-                        alt="logo représentant deux mains"
-                    />
+                        alt="logo représentant deux mains"/>
+                        <figcaption>Accueil</figcaption>
+                    </figure>
                 </Link>
             </div>
         </>

@@ -14,7 +14,7 @@
     position:relative;
 
     h2 {
-        @include title;
+        @include title-medium;
     }
 
     img {
@@ -41,6 +41,10 @@
             margin-right: 2rem;
             position: static;
             text-align: right; 
+        }
+
+        img {
+            padding-right: 1rem;
         }
         
     }

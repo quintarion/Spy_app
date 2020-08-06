@@ -1,11 +1,15 @@
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
+import ContactInfo from '../contact/ContactInfo';
 import SiteMap from './SiteMap';
 import './Footer.scss';
 
 const Footer = () => {
     return (
         <div className="footer">
+            <div>
+                <ContactInfo/>
+            </div>
             <div className="footer_container">
                 {/* <Information /> */}
                 <SiteMap />

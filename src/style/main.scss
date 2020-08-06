@@ -213,8 +213,8 @@ h3 {
   @include title-medium;
 }
 
-figcaption, p {
-   @include p-large;
+figcaption, p, li {
+  @include p-large;
 }
 
 ul {

@@ -7,14 +7,16 @@ const Subcathegory = ({elements}) => {
   return (
     <div className="subcathegory">
       {elements.map((element, index) =>
-      <figure key={index} className={element.class}>
-        <img src={element.img} alt={element.alt}/>
-          <figcaption>
-            <Link to={element.path}><h3>{element.title}</h3></Link>
-            {element.text}
-          </figcaption>
+      <div key={index} className={element.class}>
+        <figure>
+          <img src={element.img} alt={element.alt}/>
+            <figcaption>
+              <Link to={element.path}><h3>{element.title}</h3></Link>
+            </figcaption>
+        </figure> 
+        <div className="subcathegory-text">{element.text}</div>
         <Link activeClassName="" to={element.path}>{element.page}</Link>
-      </figure>  
+      </div>
       )}
     </div>
   )

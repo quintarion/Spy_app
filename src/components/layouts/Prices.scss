@@ -1,8 +1,8 @@
 @import '../../style/main.scss';
 
 .price {
-    border: 1px solid #007c89;
-    border-radius: 1%;
+    //border: 1px solid #007c89;
+    //border-radius: 1%;
     font-family: Helvetica,Arial,Verdana,sans-serif;
     font-size: 13px;
     height: 60vw;
@@ -11,10 +11,22 @@
     text-align: justify;
     width: 40vw;
 
+    &_table {
+        border: 1px solid #007c89;
+    }
+
+    table:first-child {
+        border: 1px solid #007c89;
+        margin: 1rem;
+    }
+
+    ul {
+        text-align: justify;
+    }
+
     hr {
         border: .5px solid #dab5b5;
     }
-    
 
     /* animation*/
     animation: moveleft 2s 1 normal forwards;

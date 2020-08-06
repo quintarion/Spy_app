@@ -5,6 +5,7 @@
     align-self: flex-start;
     //background-color: rgba(0,0,0,.3);
     background-color: white;
+    box-shadow: 3px 3px 3px -1px rgba(17,30,71,0.15);
     display: flex;  /* flex container */
     flex-flow: row nowrap;
     justify-content: space-evenly;
@@ -47,6 +48,10 @@
 
         /* hover effect */
         @include hoverEffect;
+        
+        a {
+            padding: 0;
+        }
     }
 
     .logo {
