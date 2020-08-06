@@ -1,4 +1,5 @@
 import React from 'react';
+import Brand from '../layouts/Brand';
 import {HashLink as Link} from 'react-router-hash-link';
 import Therapy from '../layouts/Therapy';
 import maya_8 from '../../assets/icons/maya_8.png';
@@ -33,7 +34,8 @@ export const elements = [
 
 const Sophrology = () => {
     return (
-        <section className="pageTherapy">
+        <section className="pageTherapy" id="sophology">
+            <Brand/>
             <Therapy elements={elements} />
         </section>
     )

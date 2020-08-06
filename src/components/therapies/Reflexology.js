@@ -1,4 +1,5 @@
 import React from 'react';
+import Brand from '../layouts/Brand';
 import Therapy from '../layouts/Therapy';
 import maya_5 from '../../assets/icons/maya_5.png';
 import '../../style/main.scss';
@@ -23,7 +24,8 @@ export const elements = [
 
 const Reflexology = () => {
     return (
-        <section className="pageTherapy">
+        <section className="pageTherapy" id="reflexology">
+            <Brand/>
             <Therapy elements={elements} />
         </section>
     )

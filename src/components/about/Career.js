@@ -14,7 +14,7 @@ const elements = [
         </ul>],
     img: myYouth,
     alt: "",
-    path: "#gretting",
+    path: "#home",
     page: "Accueil",
     }
 ];

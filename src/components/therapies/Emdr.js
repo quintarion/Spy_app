@@ -1,4 +1,5 @@
 import React from 'react';
+import Brand from '../layouts/Brand';
 import Therapy from '../layouts/Therapy';
 import trust from '../../assets/icons/trust.png';
 import '../../style/main.scss';
@@ -22,7 +23,8 @@ export const elements = [
 
 const Emdr = () => {
     return (
-        <section className="pageTherapy">
+        <section className="pageTherapy" id="emdr">
+            <Brand/>
             <Therapy elements={elements} />
         </section>
     )

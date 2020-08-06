@@ -19,7 +19,7 @@ class Header extends React.Component {
           <div className="header-home">
             {/* logo brand */}
             <div className="header-brand">
-              <Link to="#gretting">
+              <Link to="#home">
                 <img
                   className="logo"
                   src={hands}
