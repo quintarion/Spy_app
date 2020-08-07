@@ -4,6 +4,7 @@ import 'react-app-polyfill/stable';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
+import { ParallaxProvider } from 'react-scroll-parallax';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
@@ -11,7 +12,9 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
   <BrowserRouter>
   <React.StrictMode>
+  <ParallaxProvider>
     <App />
+  </ParallaxProvider>
   </React.StrictMode>
   </BrowserRouter>,
   document.getElementById('root')

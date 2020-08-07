@@ -1,6 +1,6 @@
 export const items = { 
     consultations: {
-      link: "#consult",
+      link: "#who",
       sub_items: [
         {
           li: "Pour qui ?",
@@ -25,7 +25,7 @@ export const items = {
       ]
     },
     thérapies: {
-      link: "#therapy",
+      link: "#therapies",
       sub_items: [
         {
           li: "E.M.D.R",
@@ -54,7 +54,7 @@ export const items = {
       ]
     },
     'A propos': {
-      link: "#about",
+      link: "#training",
       sub_items: [
         {
           li: "Ma formation",

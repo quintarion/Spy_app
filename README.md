@@ -96,3 +96,6 @@ npm install react-iframe
 
 ### `SECURITY`
 npm install react-app-rewired customize-cra csp-html-webpack-plugin --save-dev
+
+### `parallax effect`
+npm install react-scroll-parallax

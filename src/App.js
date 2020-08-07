@@ -53,38 +53,12 @@ class App extends React.Component {
     //const { value, callback, load, expired } = this.state || {};
     return (
       <div className="App">
-        
-
-        {/* <Router>
-            <Switch>
-            <Route exact path="/" component={Home}/>
-            <Route path="/who" component={Who}/>
-            <Route path="/step" component={Step}/>
-            <Route path="/therapies" component={Therapies}/>
-            <Route path="/moreTherapies" component={MoreTherapies}/>
-            <Route path="/training" component={Training}/>
-            <Route path="/career" component={Career}/>
-            <Route path="/contact" component={Contact}/>
-            </Switch>
-        </Router> */}
-
-        
         <Router>
           <div>
           <Switch>
-         
-          {/* Showcase*/}
-           <Route exact path='/' component={Main} />
-          {/* <Route path="/" component={Home}/> */}
-                        {/* <Route path="/why" component={Why}/> */}
-                        {/* <Route path="/who" component={Who}/>
-                        <Route path="/How" component={Step}/>
-                        <Route path="/terapies" component={Therapies}/>
-                        <Route path="/about" component={Training}/>
-                        <Route path="/contact" component={Contact}/>
-                        <Route path="/footer" component={Footer}/> */}
-         
-            {/* Description therapies*/}
+            {/* Showcase*/}
+            <Route exact path='/' component={Main} />
+            {/* Description therapies */}
             <Route exact path='/icv' component={Icv} />
             <Route exact path='/emdr' component={Emdr} />
             <Route exact path='/eft' component={Eft} />

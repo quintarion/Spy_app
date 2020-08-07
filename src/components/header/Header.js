@@ -12,10 +12,11 @@ class Header extends React.Component {
   toggle = () => {
     this.setState({ opened: !this.state.opened });
   }
-  
+
   render() {
     return (
-        <header className="header" role="banner">
+      <div> {/* wrap the navbar to add the fade effect to the scroll */}
+        <header className="header" role="banner"> 
           <div className="header-home">
             {/* logo brand */}
             <div className="header-brand">
@@ -48,6 +49,7 @@ class Header extends React.Component {
             <Menu />
           </nav>
         </header>
+      </div>
       )
     }
 }
