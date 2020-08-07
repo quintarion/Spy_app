@@ -1,11 +1,11 @@
 @import '../../style/main.scss';
 
 .header {
+    @include shadow;
     align-items: baseline; /* by default: align-items: strech -> child elements' heights = the container's height */
     align-self: flex-start;
     //background-color: rgba(0,0,0,.3);
     background-color: white;
-    box-shadow: 3px 3px 3px -1px rgba(17,30,71,0.15);
     display: flex;  /* flex container */
     flex-flow: row nowrap;
     justify-content: space-evenly;

@@ -65,6 +65,13 @@
           //scrollbar-color: transparent;
 }
 
+// p::-webkit-scrollbar { 
+//   display: none; 
+// }
+
+* {
+  overflow: -moz-scrollbars-none; 
+}
 // *::-webkit-scrollbar {
 //   -webkit-appearance: none;
 // }

@@ -12,6 +12,8 @@ import Who from '../components/cathegories/Who';
 
 import './Main.scss';
 
+import Modal from '../components/layouts/Modal';
+
 const Main = () => {
     return (
         <>
@@ -27,6 +29,10 @@ const Main = () => {
             <Training/>
             <Career/>
             <Contact/>
+            <Modal 
+            name={'Mentions Légales'}
+            title={'Mentions Légales'}
+            />
         </div>
         <div className="site-footer">
             <Footer/>

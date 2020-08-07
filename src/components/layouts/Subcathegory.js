@@ -1,5 +1,6 @@
 import React from "react";
 import { HashLink as Link } from 'react-router-hash-link';
+import { Parallax } from 'react-scroll-parallax';
 import './Subcathegory.scss';
 
 const Subcathegory = ({elements}) => {
@@ -9,7 +10,9 @@ const Subcathegory = ({elements}) => {
       {elements.map((element, index) =>
       <div key={index} className={element.class}>
         <figure>
-          <img src={element.img} alt={element.alt}/>
+          <Parallax className="custom-class" y={[-30, 30]} tagOuter="figure">
+            <img src={element.img} alt={element.alt}/>
+          </Parallax>
             <figcaption>
               <Link to={element.path}><h3>{element.title}</h3></Link>
             </figcaption>

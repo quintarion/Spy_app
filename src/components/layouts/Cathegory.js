@@ -1,5 +1,6 @@
 import React from "react";
 import { HashLink as Link } from 'react-router-hash-link';
+import { Parallax } from 'react-scroll-parallax';
 import './Cathegory.scss';
 
 const Catherogy = (props) => {
@@ -11,7 +12,9 @@ const Catherogy = (props) => {
         <p>
           {element.paragraph1}
         </p>
-        <img src={element.img} className="layout-cathegory-icon" alt={element.alt}/>
+        <Parallax className="custom-class" x={[-5, 5]} y={[20,-20]} tagOuter="figure">
+          <img src={element.img} className="layout-cathegory-icon" alt={element.alt}/>
+        </Parallax>
         <p>
           {element.paragraph2}
         </p>

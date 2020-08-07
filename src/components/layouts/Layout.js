@@ -1,5 +1,6 @@
 import React from "react";
 import { NavHashLink as NavLink } from 'react-router-hash-link';
+import { Parallax } from 'react-scroll-parallax';
 import './Layout.scss';
 
 /* Map alls the props 'elements' in the Layout component */
@@ -17,7 +18,9 @@ const Layout = ({elements}) => {
           </span>
         </div>
         <div className="layout_container-img">
-            <img src={element.img} className="layout-icon" alt={element.alt} />
+            <Parallax className="custom-class" y={[-20, 10]} tagOuter="figure">
+              <img src={element.img} className="layout-icon" alt={element.alt} />
+            </Parallax>
         </div>
      </div> )}
     </div>
