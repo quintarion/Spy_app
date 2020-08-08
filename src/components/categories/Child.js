@@ -1,7 +1,7 @@
 import React from 'react';
 import Brand from '../layouts/Brand';
 import Prices from '../layouts/Prices';
-import Cathegory from '../layouts/Cathegory';
+import Category from '../layouts/Category';
 import children from '../../assets/pictures/children.jpg';
 import './Child.scss';
 
@@ -35,10 +35,10 @@ const Child = () => {
     return (
         <>
             <Brand/>
-            <section className="child pageCathegory" id="child">
+            <section className="child pageCategory" id="child">
                 <h2>Enfants &amp; Adolescents</h2>
-                <div className="pageCathegory_box">
-                    <Cathegory elements={elements} />
+                <div className="pageCategory_box">
+                    <Category elements={elements} />
                     <Prices cells={cells} />
                 </div>
             </section>

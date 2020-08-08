@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Subcathegory from "../layouts/Subcathegory";
+import Subcategory from "../layouts/Subcategory";
 import kiss from '../../assets/icons/kiss.png';
 import touristWoman from '../../assets/icons/touristWoman.png';
 import treeSwing from '../../assets/icons/treeSwing.png';
@@ -77,7 +77,7 @@ class Who extends Component {
               <p> Mes consultations s’adressent aux adultes (<i>mon local est accessible <mark>personne en situation de handicap</mark> et <mark>personne à mobilité réduite</mark></i>), mais aussi aux enfants quelque soit leur âge (<i>toujours accompagnés de leurs parents ou de toutes les personnes partageant leur domicile au moins lors de la première séance</i>), aux adolescents,  aux couples.</p>
             </div>
             <div className="who_flex">
-                <Subcathegory elements={elements} />
+                <Subcategory elements={elements} />
             </div>
         </div>
       </div>

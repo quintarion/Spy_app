@@ -42,17 +42,21 @@
         }
 
         input:invalid, textarea:invalid, select:invalid {
-            border: 1px dotted #ca2f72;
+            border-radius: 3px;
+            border: 1px solid black;
         }
           
         input:valid, textarea:valid, select:valid {
-            border: 1px solid greenyellow;
+            border-radius: 3px;
+            border: 1px solid black;
         }
 
         label, legend, i {
             color: rgba(0, 0, 0, 0.7);
-            font-family: 'Poppins', sans-serif;
-            font-weight: bold;
+            font-family: 'Open Sans Condensed',Helvetica,sans-serif;
+            //font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            letter-spacing: .144rem;
             text-transform: uppercase;
         }
 
@@ -64,6 +68,9 @@
             }
         }
 
+        p {
+            font-weight: 600;
+        }
         // legend, select {
         //     color: rgba(0, 0, 0, 0.5);
         //     font-size: 1.25rem;

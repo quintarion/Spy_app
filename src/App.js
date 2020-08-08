@@ -1,24 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 //import ReCAPTCHA from "react-google-recaptcha";
-import Training from './components/about/Training';
-import Adult from './components/cathegories/Adult';
+
+import Adult from './components/categories/Adult';
 import At from './components/therapies/At';
-import Child from './components/cathegories/Child';
-import Contact from './components/contact/Contact';
-import Couple from './components/cathegories/Couple';
+import Child from './components/categories/Child';
+import Couple from './components/categories/Couple';
 import Eft from './components/therapies/Eft';
 import Emdr from './components/therapies/Emdr';
-import Footer from './components/footer/Footer';
-import Home from './components/home/Home';
 import Icv from './components/therapies/Icv';
 import Main from './pages/Main';
 import Reflexology from './components/therapies/Reflexology';
-import Step from './components/step/Step';
 import Sophrology from './components/therapies/Sophrology';
-import Therapies from './components/therapies/Therapies';
-import Who from './components/cathegories/Who';
-
 
 import './App.scss';
 

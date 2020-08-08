@@ -1,12 +1,12 @@
 import React from "react";
 import { HashLink as Link } from 'react-router-hash-link';
 import { Parallax } from 'react-scroll-parallax';
-import './Subcathegory.scss';
+import './Subcategory.scss';
 
-const Subcathegory = ({elements}) => {
+const Subcategory = ({elements}) => {
 
   return (
-    <div className="subcathegory">
+    <div className="subcategory">
       {elements.map((element, index) =>
       <div key={index} className={element.class}>
         <figure>
@@ -17,7 +17,7 @@ const Subcathegory = ({elements}) => {
               <Link to={element.path}><h3>{element.title}</h3></Link>
             </figcaption>
         </figure> 
-        <div className="subcathegory-text">{element.text}</div>
+        <div className="subcategory-text">{element.text}</div>
         <Link activeClassName="" to={element.path}>{element.page}</Link>
       </div>
       )}
@@ -25,4 +25,4 @@ const Subcathegory = ({elements}) => {
   )
 }
   
-export default Subcathegory;
+export default Subcategory;

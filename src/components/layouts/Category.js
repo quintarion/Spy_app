@@ -1,19 +1,19 @@
 import React from "react";
 import { HashLink as Link } from 'react-router-hash-link';
 import { Parallax } from 'react-scroll-parallax';
-import './Cathegory.scss';
+import './Category.scss';
 
-const Catherogy = (props) => {
+const Caterogy = (props) => {
 
   return (
-    <div className="layout-cathegory">
+    <div className="layout-category">
       {props.elements.map((element, index) =>
       <div key={index}>
         <p>
           {element.paragraph1}
         </p>
         <Parallax className="custom-class" x={[-5, 5]} y={[20,-20]} tagOuter="figure">
-          <img src={element.img} className="layout-cathegory-icon" alt={element.alt}/>
+          <img src={element.img} className="layout-category-icon" alt={element.alt}/>
         </Parallax>
         <p>
           {element.paragraph2}
@@ -21,7 +21,7 @@ const Catherogy = (props) => {
         <p>
           {element.paragraph3}
         </p>
-        <span className="layout-cathegory-btn">
+        <span className="layout-category-btn">
           <Link activeClassName="" to={element.path}>{element.page}</Link>
         </span>  
       </div>
@@ -30,4 +30,4 @@ const Catherogy = (props) => {
     );
 }
 
-export default Catherogy;
+export default Caterogy;

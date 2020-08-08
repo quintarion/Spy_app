@@ -8,11 +8,9 @@ import MoreTherapies from '../components/therapies/MoreTherapies';
 import Therapies from '../components/therapies/Therapies';
 import Training from '../components/about/Training';
 import Step from '../components/step/Step';
-import Who from '../components/cathegories/Who';
+import Who from '../components/categories/Who';
 
 import './Main.scss';
-
-import Modal from '../components/layouts/Modal';
 
 const Main = () => {
     return (
@@ -29,10 +27,6 @@ const Main = () => {
             <Training/>
             <Career/>
             <Contact/>
-            <Modal 
-                name={'Mentions Légales'}
-                title={'Mentions Légales'}
-            />
         </main>
         <div className="site-footer">
             <Footer/>

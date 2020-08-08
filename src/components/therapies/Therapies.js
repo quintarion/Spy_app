@@ -1,5 +1,5 @@
 import React from 'react';
-import Subcathegory from '../layouts/Subcathegory';
+import Subcathegory from '../layouts/Subcategory';
 import maya_2 from '../../assets/icons/maya_2.png';
 import trust from '../../assets/icons/trust.png';
 import raincoat from '../../assets/icons/raincoat.png';

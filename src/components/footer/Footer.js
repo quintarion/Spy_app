@@ -7,7 +7,7 @@ import './Footer.scss';
 
 const props = {
     name: 'Mentions Légales',
-    title: [<h2>Politique de confidentialité et de traitement des données personnelles<br/>Conditions générales d\'utilisation</h2>],
+    title: [<h2>Politique de Protection et de Gestion des données personnelles<br/>Conditions générales d\'utilisation</h2>],
     content: [<article>
         <h3>&Eacute;diteur</h3>
         <p>Hélène Quintana-Fauré<br/>
@@ -70,8 +70,8 @@ const Footer = () => {
     return (
         <div className="footer">
             <div className="footer_container">
-                <ContactInfo />
                 <SiteMap />
+                <ContactInfo />
             </div>
             <div className="footer_bottom">
                 <Modal {...props}/>

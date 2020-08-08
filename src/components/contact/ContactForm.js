@@ -62,18 +62,6 @@ class ContactForm extends React.Component {
             <p>Veuillez remplir le formulaire de contact ci-dessous et je vous répondrai dans les plus brefs délais.</p>
             <form onSubmit={this.submitForm} className="form">
                 {/* <fieldset> */}
-                    <label mtmlfor="topic">Quel est l'objet de votre message ?</label>
-                    <div className="form-select">
-                        <select type="select" id="topic" name="topic" className="contact-topic" value={this.state.value} onChange={this.topicChange} required>
-                            <option  disabled value="" selected="selected">Veuillez sélectionnez un objet :</option> 
-                            <option value={this.state.value}>Je souhaite prendre ou décaler un rendez-vous</option>
-                            <option value={this.state.value}>Je souhaite me renseigner sur votre activité...</option>
-                            <option value={this.state.value}>Je suis un partenaire ou un paire</option>
-                            <option value={this.state.value}>Autre</option>
-                            <i class="fa fa-caret-down" aria-hidden="true"></i>
-                        </select>
-                    </div>
-
                     <span className="form_input">
                     <label htmlFor="firstname">Prénom *</label>
                     <input 
@@ -81,7 +69,6 @@ class ContactForm extends React.Component {
                         aria-required="true"
                         className="contact-firstname"
                         name="firstname"
-                        placeholder="Mon prénom"
                         required='true'
                         type="text" 
                         autoFocus
@@ -98,7 +85,6 @@ class ContactForm extends React.Component {
                         id="lastname"
                         className="contact-lastname"
                         name="lastname"
-                        placeholder="Mon nom"
                         type="text" 
                         autoFocus
                         maxlength={42}
@@ -116,7 +102,6 @@ class ContactForm extends React.Component {
                         className="contact-email"
                         name="email"
                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" //REGEX
-                        placeholder="Mon adresse mèl"
                         required='true'
                         autoFocus
                         maxlength={42}
@@ -128,14 +113,25 @@ class ContactForm extends React.Component {
                     </span>
                 
                     <span className="form_input">
-                    <label htmlFor="tel">Numéro de téléphone *</label>
+                    <label htmlFor="tel">Numéro de téléphone </label>
                     <span className="contact-phone"><FrenchPhoneField getPhone={this.setPhoneState} /></span>
                     </span>
+
+                    <label htmlfor="topic">Quel est l'objet de votre message ?</label>
+                    <div className="form-select">
+                        <select type="select" id="topic" name="topic" className="contact-topic" value={this.state.value} onChange={this.topicChange} required>
+                            <option  disabled value="" selected="selected">Veuillez sélectionnez un objet :</option> 
+                            <option value={this.state.value}>Je souhaite prendre ou décaler un rendez-vous</option>
+                            <option value={this.state.value}>Je souhaite me renseigner sur votre activité...</option>
+                            <option value={this.state.value}>Je suis un partenaire ou un paire</option>
+                            <option value={this.state.value}>Autre</option>
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </select>
+                    </div>
 
                     <span className="form_input">
                     <label htmlFor="message">Votre message *</label>
                     <textarea
-                        required='true'
                         aria-required="true"
                         name="message"
                         id="message"
@@ -144,7 +140,6 @@ class ContactForm extends React.Component {
                         maxlength={250}
                         value={this.state.message}
                         onChange={this.handleChange}
-                        placeholder="Ecrivez ici votre message..."
                     >
                     </textarea>
                     </span>

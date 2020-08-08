@@ -1,4 +1,5 @@
 import React from "react";
+import hands from '../../assets/icons/hands.png';
 import Iframe from 'react-iframe';
 import './ContactInfo.scss';
 
@@ -7,13 +8,12 @@ const Contact = () => {
         <div className="contactInfo" id="information">
             <div className="contactInfo_card">
                 <div>
-                    <h3>Informations pratiques :</h3><br/>
+                    <h3>coordonnées :</h3><br/>
+                    <img src={hands} alt=''/>
                     <h4>Hélène QUINTANA-FAUR&Eacute;<br/><span>Psychologue Clinicienne</span></h4><br/>
-                    <h5>Ecrire</h5>
-                    <p>adresse@emeple.fr</p>
+                    <p>cheminversite@gmail.com</p>
                     <p><a href="sms:0602010304">Message SMS</a></p>
-                    <a href="mailto:adresse@exemple.fr">écrire ici</a><br/>
-                    <h5>Adresse</h5>
+                    <a href="mailto:chemeinversite@gmail.com">écrire ici</a><br/>
                     <p>19 Chemin du Mas de Bouran <br/>
                     34 290 SERVIAN<br/>
                     FRANCE</p>
@@ -23,7 +23,6 @@ const Contact = () => {
                     allowfullscreen="" 
                     aria-hidden="false" 
                     tabindex="0" /> */}
-                    <h5>Téléphone</h5>
                     <p><a href="tel:0602010304">06 02 01 03 04</a></p>
                 </div>
             </div>
