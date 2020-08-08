@@ -7,15 +7,36 @@ import './Header.scss';
 class Header extends React.Component {
   state = {
     opened: false,
+    // scroll animation :
+    show: true, 
+    scrollPos: 0
   }
     
   toggle = () => {
     this.setState({ opened: !this.state.opened });
   }
 
+  // set the event listener after the component mounts
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+
+  // a function attached to the scroll event the function that will fire
+  handleScroll = () => {
+    const { scrollPos } = this.state
+    this.setState({
+      scrollPos: document.body.getBoundingClientRect().top, //send the size of an element in viewport 
+      show: document.body.getBoundingClientRect().top > scrollPos
+    });
+  }
+
   render() {
     return (
-      <div> {/* wrap the navbar to add the fade effect to the scroll */}
+      <div className={this.state.show ? "active" : "hidden"}> {/* show true if we’re scrolling up and false if we’re scrolling up */}
         <header className="header" role="banner"> 
           <div className="header-home">
             {/* logo brand */}

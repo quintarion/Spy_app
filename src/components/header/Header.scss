@@ -1,19 +1,33 @@
 @import '../../style/main.scss';
 
+ /* scroll animation */
+ .active {
+    transition: all 500ms ease-in;
+    visibility: visible;
+}
+
+.hidden {
+    transform: translate(0, -100%);
+    transition: all 500ms ease-out;
+    visibility: hidden;
+}
+
 .header {
     @include shadow;
     align-items: baseline; /* by default: align-items: strech -> child elements' heights = the container's height */
     align-self: flex-start;
-    //background-color: rgba(0,0,0,.3);
-    background-color: white;
+    background-color: rgba(0,0,0,.3);
+    //background-color: white;
     display: flex;  /* flex container */
     flex-flow: row nowrap;
+    height: 5.8rem;
     justify-content: space-evenly;
     justify-content: space-between;
+    left: 0;
     padding: 1rem 5%;
     position: fixed; 
     top: 0;
-    width: 100vw;
+    width: 100%;
     z-index: 2;
 
     /* adds animation for all transitions */ 
@@ -69,6 +83,8 @@
             font-size: 22px;
         }
     }
+
+   
 
     /* different properties for the additional pages */
     // .header-out {

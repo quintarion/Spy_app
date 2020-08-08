@@ -16,12 +16,12 @@ const elements = [
 
 const Home = () => {
     return (
-        <div className="home" id="home">
+        <section className="home" id="home">
             <div className="home-title">
                 <h1>Hélène QUINTANA-FAUR&Eacute;<br/><span>PSYCHOLOGUE CLINICIENNE - PSYCHOTH&Eacute;RAPEUTE</span></h1>
             </div>
             <Layout elements={elements}/>
-        </div>
+        </section>
     )
 }
 

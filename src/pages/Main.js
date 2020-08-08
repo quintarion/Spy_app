@@ -20,7 +20,7 @@ const Main = () => {
         <div className="site-header">
             <Header/>
         </div>
-        <div className="site-content">
+        <main className="site-content">
             <Home/>
             <Who/>
             <Step/>
@@ -30,10 +30,10 @@ const Main = () => {
             <Career/>
             <Contact/>
             <Modal 
-            name={'Mentions Légales'}
-            title={'Mentions Légales'}
+                name={'Mentions Légales'}
+                title={'Mentions Légales'}
             />
-        </div>
+        </main>
         <div className="site-footer">
             <Footer/>
         </div>
