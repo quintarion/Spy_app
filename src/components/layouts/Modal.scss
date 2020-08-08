@@ -58,6 +58,9 @@
   
     .modal-security-save-bloc-title{
       background-color:#ffe74c;
+      @include shadow;
+      position: fixed;
+      width: 80vw;
     
       padding:1px;
       .security-modal-save{
@@ -75,6 +78,7 @@
 
 
     .text-modal-security-save{
+        margin-top: 5rem;
 
         hr {
             color: rgba(17, 30, 71, 0.15);
