@@ -33,17 +33,21 @@ render() {
           <a href={element.path} target='_blanck' rel="nofollow noreferrer noopener">{element.page}</a>
       </div>
 
-      <div className="layout-therapy_container-therapy">
+      <div className="layout-therapy_container">
       {
       (this.state.hideVideo)? 
       <img src={element.img} className="layout-icon" alt={element.alt} id="picture"/> 
         :
-      <Iframe url={element.iframe}
+        <div className="video">
+        <Iframe 
+        url={element.iframe} 
+        id="video"
         width="450px"
         height="450px"
-        id="video"
         display="initial"
-        position="relative"/> 
+        position="relative"
+        /> 
+        </div>
         ||
         <img src={element.img} className="layout-icon" alt={element.alt} id="picture"/>
       }

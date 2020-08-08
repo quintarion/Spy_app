@@ -26,7 +26,7 @@ class FrenchPhoneField extends React.Component {
         name="tel"
         autoComplete="tel"
         onChange={this.phoneChange}
-        placeholder="Mon numéro de téléphone"
+        placeholder=""
         required="required"
         type="tel"
         value={this.state.value}

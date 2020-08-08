@@ -1,5 +1,5 @@
 import React from 'react';
-import Subcategory from '../layouts/Subcathegory';
+import Subcategory from '../layouts/Subcategory';
 import maya_7 from '../../assets/icons/maya_7.png';
 import maya_5 from '../../assets/icons/maya_5.png';
 import maya_8 from '../../assets/icons/maya_8.png';

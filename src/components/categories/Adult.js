@@ -1,7 +1,7 @@
 import React from 'react';
 import Brand from '../layouts/Brand';
 import Prices from '../layouts/Prices';
-import Cathegory from '../layouts/Cathegory';
+import Category from '../layouts/Category';
 import adults from '../../assets/pictures/adluts.jpg';
 import './Adult.scss';
 
@@ -39,10 +39,10 @@ const Adult = () => {
     return (
         <>
             <Brand/>
-            <section className="adult pageCathegory" id="adult">
+            <section className="adult pageCategory" id="adult">
                 <h2>Adulte</h2>
-                <div className="pageCathegory_box">
-                    <Cathegory elements={elements} />
+                <div className="pageCategory_box">
+                    <Category elements={elements} />
                     <Prices cells={cells} />
                 </div>
             </section>

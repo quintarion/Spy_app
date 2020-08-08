@@ -2,7 +2,7 @@ import React from 'react';
 import Brand from '../layouts/Brand';
 import {NavLink} from 'react-router-dom';
 import Prices from '../layouts/Prices';
-import Cathegory from '../layouts/Cathegory';
+import Category from '../layouts/Category';
 import couple from '../../assets/pictures/couple.jpg';
 import './Couple.scss';
 
@@ -53,10 +53,10 @@ const Couple = () => {
     return (
         <>
             <Brand/>
-            <section className="couple pageCathegory" id="couple">
+            <section className="couple pageCategory" id="couple">
                 <h2>En couple</h2>
-                <div className="pageCathegory_box">
-                    <Cathegory elements={elements} />
+                <div className="pageCategory_box">
+                    <Category elements={elements} />
                     <Prices cells={cells} />
                 </div>
             </section>
