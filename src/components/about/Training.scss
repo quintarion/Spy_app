@@ -1,11 +1,10 @@
 @import '../../style/main.scss';
 
 .training {
-    padding-top: 8rem;
     background-color: whitesmoke;
     background-image: url('../../assets/pictures/blob16.svg');
-    background-size: 80%;
-    background-size: contain;
+    background-size: 50%;
+    //background-size: contain;
     background-repeat: no-repeat;
 
     .layout_container-text {
