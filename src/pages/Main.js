@@ -9,6 +9,7 @@ import Therapies from '../components/therapies/Therapies';
 import Training from '../components/about/Training';
 import Step from '../components/step/Step';
 import Who from '../components/categories/Who';
+import Why from '../components/why/Why';
 
 import './Main.scss';
 
@@ -20,6 +21,7 @@ const Main = () => {
         </div>
         <main className="site-content">
             <Home/>
+            <Why/>
             <Who/>
             <Step/>
             <Therapies/>

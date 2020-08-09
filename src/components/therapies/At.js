@@ -24,12 +24,12 @@ export const elements = [
 const At = () => {
     return (
         <>
-        <section className="pageTherapy" id="at">
-            <div>
-                <Brand/>
-                <Therapy elements={elements} />
-            </div>
-        </section>
+            <section className="pageTherapy" id="at">
+                <div>
+                    <Brand/>
+                    <Therapy elements={elements} />
+                </div>
+            </section>
         </>
     )
 }

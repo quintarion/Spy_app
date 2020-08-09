@@ -3,16 +3,16 @@ import { HashLink as Link } from 'react-router-hash-link';
 import { Parallax } from 'react-scroll-parallax';
 import './Category.scss';
 
-const Caterogy = (props) => {
+const Caterogy = ({elements}) => {
 
   return (
     <div className="layout-category">
-      {props.elements.map((element, index) =>
+      {elements.map((element, index) =>
       <div key={index}>
         <p>
           {element.paragraph1}
         </p>
-        <Parallax className="custom-class" x={[-5, 5]} y={[20,-20]} tagOuter="figure">
+        <Parallax className="custom-class" x={[-5, 10]} y={[20,-10]} tagOuter="figure">
           <img src={element.img} className="layout-category-icon" alt={element.alt}/>
         </Parallax>
         <p>

@@ -1,0 +1,36 @@
+@import '../../style/main.scss';
+
+.why {
+    padding-top: 4rem;
+
+    &_container {
+        margin: auto;
+        @include width;
+
+        h2 {
+            text-align: center;
+            @include big-title;
+        }
+
+        ul {
+            padding: 2rem 0;
+        }
+    }
+
+    @media screen and (max-width:799px) {
+        margin: auto;
+        padding: 0;
+        padding-top: 15rem;
+
+        &_container {
+
+            p {
+                padding: 0;
+            }
+
+            h2 {
+                padding: 1rem;
+            }
+        }
+    }
+}

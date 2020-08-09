@@ -2,9 +2,10 @@
 
 .who {
     padding-top: 4rem;
-    //max-width: 100vw;
-    //padding-bottom: 3rem;
-    //padding-top: 8rem;
+
+    h2 {
+        padding-bottom: 2rem;
+    }
 
     &_container {
         margin: auto;
@@ -19,11 +20,9 @@
             img {
                 background-image: url('../../assets/pictures/blob.svg');
             }
-           
         }
 
         p {
-            padding: 2rem;
 
             i {
                 font-weight: bold;
@@ -33,7 +32,6 @@
                 font-weight: bold;
                 background-color: darken(#fafafa, 5%);
             }
-
         }
 
         .three {
@@ -48,11 +46,20 @@
             }
         }
 
+        // &_intro {   
+
+        //     p {
+        //         padding: 2rem 0;
+        //     }
+
+        // }
+
         &_flex {
             align-content: space-between;
             display: flex;
             flex-flow: row nowrap;
             justify-content: center;
+
         }
     }
 
@@ -70,17 +77,6 @@
             h2 {
                 padding: 1rem;
             }
-
-            // &_intro {
-            //     width: 100vw;
-
-            //     h2 {
-            //         line-height: .8em;
-            //         text-align: center;
-            //         font-family: 'Raleway Dots', cursive;
-            //         font-size: 3rem;
-            //     }
-            // }
         }
     }
 }
