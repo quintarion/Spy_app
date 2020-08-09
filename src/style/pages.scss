@@ -2,14 +2,14 @@
 * Pages: Have a single scss for each specific page
 */
 
-.pageCathegory {
+.pageCategory {
     background-repeat: no-repeat;
     height: auto;
     margin: 7rem auto 5rem;
     max-width: 100vw;
 
     h2 {
-        margin-left: 2rem;
+        padding: 3rem 2rem 2rem !important;
         text-align: left;
         @include big-title;
     }
@@ -49,8 +49,7 @@
 .pageTherapy {
     display: flex;
     justify-content: center;
-    width: 100vw;
-    //height: 100vh;
+    max-width: 100vw;
     background-image: url('../assets/pictures/gradient6.jpg');
     background-repeat: no-repeat; 
 }
