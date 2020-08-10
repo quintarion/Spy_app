@@ -1,18 +1,19 @@
 import axios from 'axios';
 
 export const GET_PERSON = 'GET_PERSON'; 
-export const FILTER_PERSONS = 'FILTER_PERSONS';
-export const SELECT_PERSON = 'SELECT_PERSON';
+export const FILTER_PERSONS = 'FILTER_PERSONS'
+export const SELECT_PERSON = "SELECT_PERSON"
 
-// GET USER
+// Get PERSONs 
 export const fetchPersons = (persons) => {
     return {
-        type: GET_PERSON,
-        payload:{
-          persons
+      type: GET_PERSON,
+      payload:{
+        persons
       }
+     
     }
-};
+  };
 
 export const fetchAllPersons = () => {
     return (dispatch) => {
@@ -24,18 +25,18 @@ export const fetchAllPersons = () => {
           throw(error);
         });
     };
-};
+  };
 
-// FILTER PERSONS
-export const filter_persons = (value) => {
+  // FILTER PERSONS
+  export const filter_persons = (value) => {
     return {
       type: FILTER_PERSONS,
       payload: value
     }
-};
+  };
 
-// SELECT ID PERSON
-export const select_person = id => ({
+  // SELECT ID PERSON
+  export const select_person = id => ({
     type: SELECT_PERSON,
     payload: id
-});
+  })

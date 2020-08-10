@@ -1,13 +1,16 @@
 import React from 'react';
-import SearchPerson from '../components/search/SearchPerson';
+import { connect } from 'react-redux';
+import SearchBar from './containers/SearchBar';
+import FilterPersonList from './containers/FilterPersonList';
 import './SearchPerson.scss';
 
 const SearchPerson = () => {
     return (
-        <div className='admin-searchPerson'>
-            <SearchPerson/>
+        <div className='searchPerson'>
+            <SearchBar/>
+            <FilterPersonList/>
         </div>
     )
 }
 
-export default SearchPerson;
+export default connect(null)(SearchPerson);

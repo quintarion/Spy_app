@@ -1,23 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import { filter_persons } from '../actions/index';
-import './SearchBar.scss';
 
-class SearchBar extends Component {
+class SearchBar extends React.Component {
 
-    onChange = (event) => {
-        this.props.filter_persons(event.target.value)
+    onChange = (e) => {
+        this.props.filter_persons(e.target.value)
     }
 
     render() {
         return (
-            <div className="search-bar">
-                <h1>Rechercher un contact... cliquer sur le contact sélectionné</h1>
+            <div>
+                <h1>Contact</h1>
                 <input
                     className="form-control"
                     placeholder="Search Contact"
                     onChange={this.onChange}
-                    />
+                />
             </div>
         );
     }
@@ -25,8 +24,7 @@ class SearchBar extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        persons:state.persons.value
-
+      persons:state.persons.value
     };
 }
 

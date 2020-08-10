@@ -3,9 +3,7 @@ import { GET_PERSON, FILTER_PERSONS, SELECT_PERSON } from '../actions/index';
 
 const initState = {
     persons: [],
-    value: [],
     filter_results: [],
-    persons: ""
 }
 
 // la fonction prend en paramètre la state que l'on définit et l'action
