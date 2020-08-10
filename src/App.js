@@ -6,11 +6,13 @@ import Adult from './components/categories/Adult';
 import At from './components/therapies/At';
 import Child from './components/categories/Child';
 import Couple from './components/categories/Couple';
+import Dashboard from './pages/Dashboard';
 import Eft from './components/therapies/Eft';
 import Emdr from './components/therapies/Emdr';
 import Icv from './components/therapies/Icv';
 import Main from './pages/Main';
 import Reflexology from './components/therapies/Reflexology';
+import SignIn from './components/dashboard/SignIn';
 import Sophrology from './components/therapies/Sophrology';
 
 import './App.scss';
@@ -62,6 +64,9 @@ class App extends React.Component {
             <Route exact path='/adult' component={Adult} />
             <Route exact path='/couple' component={Couple} />
             <Route exact path='/child' component={Child} />
+            {/* Section ADMIN  */}
+            <Route path="/signIn" component={SignIn} />
+            <Route path="/dashboard" component={Dashboard}/>
             </Switch>
             </div>
         </Router>    

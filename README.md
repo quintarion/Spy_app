@@ -99,3 +99,23 @@ npm install react-app-rewired customize-cra csp-html-webpack-plugin --save-dev
 
 ### `parallax effect`
 npm install react-scroll-parallax
+
+### `full calendar`
+npm install --save @fullcalendar/core @fullcalendar/daygrid
+
+### `plugin fullcalendar`
+npm install @fullcalendar/core @fullcalendar/daygrid @fullcalendar/timegrid @fullcalendar/list
+@fullcalendar/interaction
+
+### `REDUX`
+npm install --save redux react-redux redux-thunk
+npm install --save-dev redux-devtools
+
+Redux-thunk is a middleware that extends Redux to let you write asynchronous logic that interacts with the store. For example for fetching data from remote resources.
+
+### `sweetalert2`
+npm install --save sweetalert2
+
+### `reactstrap`
+npm install bootstrap
+npm install reactstrap react react-dom

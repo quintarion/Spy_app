@@ -1,0 +1,97 @@
+@import '../../style/main.scss';
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+.navigation {
+    float: left;
+    position: relative;
+    z-index: 100;
+    margin-bottom: 0;
+    color: #5F6876;
+    font-size: .5rem;
+    min-height: 100vh;
+    padding-left: 5vw;
+    width: calc(100vw/3);
+    background: white;
+        border-right:1px solid #e5e5e5;
+        //position:absolute;
+        top:0;
+        bottom:0;
+        height:100vh;
+        left:0;
+        width: 5.2vw;
+        overflow:hidden;
+        -webkit-transition:width .05s linear;
+        transition: width .05s linear;
+        -webkit-transform: translateZ(0) scale(1,1);
+        z-index:100;
+    
+        display:table-cell;
+        vertical-align:middle;
+        font-family: 'Titillium Web', sans-serif;
+
+    a {
+        color: $color-white;
+
+        &:hover {
+            color: #adf4ae;
+            text-decoration: none;
+        }
+    }
+
+    div {
+        height: 100%;
+    }
+
+    h1 {
+        color: #66575a;
+        position:absolute; 
+        padding-bottom: 310px;
+        white-space: nowrap;
+        text-align: end;
+        font-family: 'Cedarville Cursive', cursive;
+        font-size: 2rem;
+        text-transform: capitalize;
+
+        //Rotate 
+        transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        -khtml-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+    }
+
+    img {
+        width: 3em;
+    }
+
+    i {
+        font-size: 16px;
+    }
+
+
+    &:hover h1 {
+        //Over effect : change the title display axis 
+        position: relative;
+        padding-bottom: 0;
+        text-align: center;
+        //color: #66575a;
+
+        //Rotate 
+        transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -khtml-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+
+        padding: 1rem;
+    }
+
+    li a {
+        color: #5F6876;
+    }
+
+    &:hover {
+        width: 30vw;
+        overflow:visible;
+    }
+}

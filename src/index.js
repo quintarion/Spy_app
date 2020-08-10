@@ -5,18 +5,24 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { ParallaxProvider } from 'react-scroll-parallax';
+// Redux
+import { Provider } from 'react-redux';
+import store from './store.js';
+
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
+  <Provider store={store}>
   <BrowserRouter>
   <React.StrictMode>
   <ParallaxProvider>
     <App />
   </ParallaxProvider>
   </React.StrictMode>
-  </BrowserRouter>,
+  </BrowserRouter>
+  </Provider>,
   document.getElementById('root')
 );
 
