@@ -1,0 +1,19 @@
+@import '../../style/main.scss';
+
+.post-contact {
+    width: 100vw;
+    height: 100vh;
+
+    form {
+        width: 55vw;
+        margin: 3rem 10rem;
+        width: 55vw;
+        max-height: 100vh;
+        padding: 0;
+    }
+
+    &_nav {
+        display: flex;
+        justify-content: space-between;
+    }
+}

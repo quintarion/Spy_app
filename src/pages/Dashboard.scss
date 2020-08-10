@@ -1,0 +1,39 @@
+// Fonts
+$body-font: 'Open Sans';
+$header-font: $body-font;
+
+// Font Weights
+$light: 300;
+$regular: 400;
+$semibold: 600;
+$bold: 700;
+$ultra: 800;
+
+// Colors
+$white: #FFF;
+$black: #000;
+$text-primary: #5F6876;
+$text-secondary: #C0C3C9;
+
+// Base
+$base-background: linear-gradient(45deg, #F4EBE5, #E3D4CA);
+$base-font-color: $text-secondary;
+$base-font-family: $body-font;
+$base-font-size: rem(12);
+$base-font-weight: $regular;
+$base-line-height: rem(14);
+
+// Dashboard
+$dashboard-background: $white;
+//$dashboard-width: rem(1024);
+//$dashboard-height: rem(680);
+$dashboard-border-color: #F2F2F2;
+//$dashboard-border-radius: rem(7);
+//$dashboard-box-shadow: rem(22) rem(32) rem(34) rgba($black, 0.06);
+
+.dashboard {
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: 100vw;
+    height: 100%;
+}

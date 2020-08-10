@@ -1,0 +1,15 @@
+.tabNav {
+    li {
+        padding: 1rem .5rem;
+        cursor: pointer;
+        border-bottom: #dab5b5 1px solid;
+
+        span {
+            margin-left: 12px;
+        }
+    }
+
+    .picked {
+        background-color: #dab5b5;
+    }
+}

@@ -1,0 +1,17 @@
+.adminHome {
+    background-image: url('../../assets/pictures/butterfly.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right 35% bottom 90%;
+    height: 100vh;
+    padding: 3rem;
+    top: 0;
+    max-width: 100vw;
+
+    p {
+        font-family: 'Cedarville Cursive', cursive;
+        font-size: 2rem;
+        margin-top: 3rem;
+        text-align: center;
+    }
+}
