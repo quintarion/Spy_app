@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import { connect } from 'react-redux';
 import { Redirect, Link } from 'react-router-dom';
 import Button from '../layouts/Button';
 
@@ -11,7 +12,6 @@ class PostEmail extends React.Component {
         email: '',
         email_kind: '',
         fk_idperson: 18,
-
         redirect: false
     };
 
@@ -120,5 +120,9 @@ class PostEmail extends React.Component {
         );
     }
 }
+
+// const mapStateToProps = (state) => ({
+//     item: 
+// });
         
-export default PostEmail;
+export default (PostEmail);

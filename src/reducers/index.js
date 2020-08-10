@@ -1,9 +1,10 @@
-import { combineReducers } from 'redux';
-import fetchPerson from './FetchPerson';
+import { combineReducers } from 'redux'
+import fetch_data from "./FetchPerson"
 
-// Combine tous les reducers dans une seul fonction qui est combineReducers
+
+// Combine tout les reducers dans une seul fonction qui est combineReducers
  const RootReducers = combineReducers({
-    persons: fetchPerson
+    persons: fetch_data
   })
 
-export default RootReducers;
+  export default RootReducers

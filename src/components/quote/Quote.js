@@ -22,9 +22,10 @@ class Quote extends React.Component {
 	}
 
     componentDidMount() {
-        this.interval = setInterval(() => this.generateQuote(), 15000);
+        this.interval = setInterval(() => this.generateQuote(), 5000);
     }
-    
+	
+	// The clearInterval() method clears a timer set with the setInterval() method.
     componentWillMount() {
         clearInterval(this.interval);
     }
