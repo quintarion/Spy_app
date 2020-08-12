@@ -4,7 +4,7 @@ import SearchBar from '../../containers/SearchBar';
 import FilterPersonList from '../../containers/FilterPersonList';
 //import './SearchPerson.scss';
 
-const SearchPerson = () => {
+const SearchPersonTwo = () => {
     return (
         <div className='searchPerson'>
             <SearchBar/>
@@ -13,4 +13,4 @@ const SearchPerson = () => {
     )
 }
 
-export default connect(null)(SearchPerson);
+export default connect(null)(SearchPersonTwo);

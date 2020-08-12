@@ -1,17 +1,18 @@
 import React from 'react';
 import axios from 'axios';
-import { connect } from 'react-redux';
 import { Redirect, Link } from 'react-router-dom';
 import Button from '../layouts/Button';
+//import './PostEmail.scss';
 
-const config = require('../../config/config.js');
+// IMPORT CONFIG 
+//const config = require('../../config/config');
 
 class PostEmail extends React.Component {
 
     state = {
         email: '',
         email_kind: '',
-        fk_idperson: 18,
+        fk_idperson: 2,
         redirect: false
     };
 
@@ -31,7 +32,14 @@ class PostEmail extends React.Component {
         if (process.env.NODE_ENV === 'production') {
           pathApi = process.env.REACT_APP_PATH_API_PROD + '/email/add_email'
         }
-        axios.post(`${pathApi}`, this.state)
+        axios.post(`${pathApi}`, 
+            {
+                email: this.state.email,
+                email_kind: this.state.email_kind,
+                fk_idperson: this.state.fk_idperson,
+            }
+        //this.state
+        )
             .then(res => {
                 if (res.error) {
                     alert(res.error);
@@ -45,16 +53,16 @@ class PostEmail extends React.Component {
             })
             .catch(e => {
                 console.error(e);
-                alert(`Erreur lors de l'ajout du contact`);
+                alert(`Erreur lors de l'adresse électronique`);
             });
     }
 
     render() {
         //redirect
-        const {redirect} = this.state
+        const {redirect} = this.state.redirect
         return (
             <div className="postcontact">
-            {!redirect?
+            {redirect?
             (<form onSubmit={this.onSubmit} className="form">
                 <h2>Ajouter un courriel au contact</h2>
                 
@@ -120,9 +128,5 @@ class PostEmail extends React.Component {
         );
     }
 }
-
-// const mapStateToProps = (state) => ({
-//     item: 
-// });
         
-export default (PostEmail);
+export default PostEmail;

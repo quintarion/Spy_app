@@ -15,6 +15,21 @@ import Reflexology from './components/therapies/Reflexology';
 import SignIn from './components/dashboard/SignIn';
 import Sophrology from './components/therapies/Sophrology';
 
+import Calendar from './components/calendar/Calendar';
+import Contact from './components/dashboard/Contact';
+import Event from './components/dashboard/Event';
+import Home from './components/dashboard/Home';
+import NavAddContact from './components/dashboard/NavAddContact';
+import PostContact from './components/dashboard/PostContact';
+import EditContact from './components/dashboard/EditContact';
+import DeleteContact from './components/dashboard/DeleteContact';
+import PostAddress from './components/dashboard/PostAddress';
+import PostEmail from './components/dashboard/PostEmail';
+import PostPhone from './components/dashboard/PostPhone';
+import NavContact from './components/dashboard/NavContact';
+import SearchPerson from './components/dashboard/SearchPerson';
+import SearchPersonTwo from './components/dashboard/SearchPersonTwo';
+
 import './App.scss';
 
 // const TEST_SITE_KEY = "6Lcla7oZAAAAAIKh5o4dv9HdCYIantCOo5peI0VT";
@@ -48,7 +63,7 @@ class App extends React.Component {
     //const { value, callback, load, expired } = this.state || {};
     return (
       <div className="App">
-        <Router>
+        
           <div>
           <Switch>
             {/* Showcase*/}
@@ -69,7 +84,7 @@ class App extends React.Component {
             <Route path="/dashboard" component={Dashboard}/>
             </Switch>
             </div>
-        </Router>    
+       
         
         {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />

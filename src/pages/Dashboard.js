@@ -1,6 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Calendar from '../components/calendar/Calendar';
 import Contact from '../components/dashboard/Contact';
 import Event from '../components/dashboard/Event';
@@ -14,7 +13,8 @@ import PostAddress from '../components/dashboard/PostAddress';
 import PostEmail from '../components/dashboard/PostEmail';
 import PostPhone from '../components/dashboard/PostPhone';
 import NavContact from '../components/dashboard/NavContact';
-import SearchPerson from '../components/search/SearchPerson';
+import SearchPerson from '../components/dashboard/SearchPerson';
+import SearchPersonTwo from '../components/dashboard/SearchPersonTwo';
 
 import './Dashboard.scss';
 
@@ -30,10 +30,10 @@ const Dashboard = () => {
                 
             <Navigation />
 
-            <Switch>
+            
+             
                 <Route path="/dashboard/home" component={Home}/>
                 <Route path="/dashboard/contact" component={Contact}/>
-                <Route path="/dashboard/navAddContact" component={NavAddContact}/>
                 <Route path="/dashboard/calendar" component={Calendar}/>
                 <Route path="/dashboard/event" component={Event}/>
                 <Route path="/dashboard/postContact" component={PostContact}/>
@@ -45,7 +45,11 @@ const Dashboard = () => {
                 <Route path="/dashboard/navContact" component={NavContact}/>
                 <Route path="/dashboard/navAddContact" component={NavAddContact}/>
                 <Route path="/dashboard/searchPerson" component={SearchPerson}/>
-            </Switch>
+                <Route path="/dashboard/searchPerson" component={SearchPersonTwo}/>
+            
+          
+       
+           
             </div>
            
         </>

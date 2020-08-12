@@ -1,10 +1,10 @@
 import React from 'react';
 import axios from 'axios';
-import { NavLink, Redirect, withRouter } from "react-router-dom";
+import { NavLink, Redirect } from "react-router-dom";
 import Button from '../layouts/Button';
 
 // IMPORT CONFIG 
-const config = require('../../config/config');
+//const config = require('../../config/config');
 
 class PostContact extends React.Component {
 

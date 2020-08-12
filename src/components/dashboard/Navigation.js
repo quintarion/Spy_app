@@ -23,24 +23,6 @@ const tabDatas = [
     path: "/dashboard/calendar",
     item: "Calendrier"
     },
-    // {
-    // icon: <FontAwesomeIcon icon="check-square" />, 
-    // alt: "",
-    // path: "/admin/who/child",
-    // item: "Enfants/Adolescents"
-    // },
-    // {
-    // icon: <FontAwesomeIcon icon="check-square" />, 
-    // alt: "",
-    // path: "/admin/who/adult",
-    // item: "Adulte"
-    // },
-    // {
-    // icon: <FontAwesomeIcon icon="check-square" />, 
-    // alt: "",
-    // path: "/admin/who/couple",
-    // item: "Couple"
-    // },
     {
     icon: <i class="fas fa-rss"></i>, 
     alt: "",

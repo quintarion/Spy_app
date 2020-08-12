@@ -3,7 +3,7 @@ import axios from 'axios';
 import {Redirect, Link} from 'react-router';
 import Button from '../layouts/Button';
 
-const config = require('../../config/config.js');
+//const config = require('../../config/config.js');
 
 class PostPhone extends React.Component {
 
@@ -11,7 +11,7 @@ class PostPhone extends React.Component {
         phone_number: '',
         phone_kind: '',
         phone_mobile: '',
-        fk_idperson: 18,
+        fk_idperson: 94,
 
         redirect: false,
     };
@@ -36,7 +36,16 @@ class PostPhone extends React.Component {
         if (process.env.NODE_ENV === 'production') {
           pathApi = process.env.REACT_APP_PATH_API_PROD + '/phone/add_phone'
         }
-        axios.post(`${pathApi}`, this.state)
+        axios.post(`${pathApi}`, 
+        {
+            phone_number: this.state.phone_number,
+            phone_kind: this.state.phone_kind,
+            phone_mobile: this.state.phone_mobile,
+            fk_idperson: this.state.fk_idperson,
+        }
+        
+        //this.state
+        )
             .then(res => {
                 if (res.error) {
                     alert(res.error);

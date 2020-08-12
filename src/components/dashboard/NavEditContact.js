@@ -21,11 +21,11 @@ const items = [
     }
 ];
 
-const NavAddContact = () => {
+const NavEditContact = () => {
     return (
         <div className="navAddContact">
             <div className="navAddContact_content">
-                <h1>Ajouter au <b>Contact</b>...</h1> 
+                <h1>Modifier au <b>Contact</b>...</h1> 
                 <ul>
                     {
                         items.map((item, index) => 
@@ -42,4 +42,4 @@ const NavAddContact = () => {
     )
 }
 
-export default NavAddContact;
+export default NavEditContact;

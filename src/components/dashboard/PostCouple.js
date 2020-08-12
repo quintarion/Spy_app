@@ -23,7 +23,13 @@ class PostCouple extends React.Component {
         if (process.env.NODE_ENV === 'production') {
           pathApi = process.env.REACT_APP_PATH_API_PROD + '/couple/add_couple'
         }
-        axios.post(`${pathApi}`, this.state)
+        axios.post(`${pathApi}`, 
+         {
+            fk_idperson1: this.state.fk_idperson1,
+            fk_idperson2: this.state.fk_idperson2,
+         }
+        //this.state
+        )
             .then(res => {
                 if (res.error) {
                     alert(res.error);

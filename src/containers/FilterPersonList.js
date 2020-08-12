@@ -30,7 +30,7 @@ class FilterPersonList extends Component {
           })}
         </ul>)
         :
-        (<Redirect to="displayContact"/>)
+        (<Redirect to="navAddContact"/>)
       }
     </>
     );

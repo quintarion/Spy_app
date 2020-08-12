@@ -16,7 +16,7 @@ class PostAddress extends React.Component {
         add_postalcode: '',
         add_town: '',
         add_country: '',
-        fk_idperson: this.props.test,
+        fk_idperson: 92,
 
         redirect: false
     };
@@ -52,7 +52,7 @@ class PostAddress extends React.Component {
             add_town: this.state.add_town,
             add_country: this.state.add_country,
             //fk_idperson: this.state.fk_idperson
-            fk_idperson: this.props.test
+            fk_idperson: this.state.fk_idperson
             })
         .then((res) =>  { 
             if (res.error) {
@@ -77,7 +77,7 @@ class PostAddress extends React.Component {
         const {redirect} = this.state
         return (
             <div className="postcontact">
-            {!redirect?
+            {redirect?
             (<form onSubmit={this.onSubmit} className="form">
                 <h2>Ajouter une adresse postale</h2>
                 

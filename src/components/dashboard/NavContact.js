@@ -15,7 +15,7 @@ const items = [
     },
     {
         title: 'Supprimer le contact',
-        path: '/dashboard/searchPerson',
+        path: '/dashboard/searchPersonTwo',
         icon: 'fas fa-user-minus'
     }
 ];
