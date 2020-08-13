@@ -1,6 +1,6 @@
 import React from 'react';
-//import { Link } from 'react-router-dom';
-import { HashLink as Link } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
+//import { HashLink as Link } from 'react-router-hash-link';
 import './NavAddContact.scss';
 
 const items = [
@@ -30,9 +30,11 @@ const NavAddContact = () => {
                     {
                         items.map((item, index) => 
                             <li key={index}>
+                                
                                 <Link to={item.path}>
                                     <i class={item.icon}></i>
                                 </Link>
+                                
                             </li>
                         )
                     }

@@ -63,7 +63,7 @@ class App extends React.Component {
     //const { value, callback, load, expired } = this.state || {};
     return (
       <div className="App">
-        
+        <Router>
           <div>
           <Switch>
             {/* Showcase*/}
@@ -83,8 +83,8 @@ class App extends React.Component {
             <Route path="/signIn" component={SignIn} />
             <Route path="/dashboard" component={Dashboard}/>
             </Switch>
-            </div>
-       
+          </div>
+        </Router>
         
         {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />

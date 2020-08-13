@@ -1,8 +1,13 @@
 .tabNav {
+
+    .is-active {
+        text-decoration: underline overline #adf0b0;
+    }
+
     li {
         padding: 1rem .5rem;
         cursor: pointer;
-        border-bottom: #dab5b5 1px solid;
+        //border-bottom: #dab5b5 1px solid;
 
         span {
             margin-left: 12px;
@@ -10,6 +15,6 @@
     }
 
     .picked {
-        background-color: #dab5b5;
+        //background-color: #dab5b5;
     }
 }

@@ -26,30 +26,25 @@ const Dashboard = () => {
           
             {/* ADMIN  ROUTING */}
             
-          <div className="dashboard" id="dashboard">
-                
-            <Navigation />
-
-            
-             
-                <Route path="/dashboard/home" component={Home}/>
-                <Route path="/dashboard/contact" component={Contact}/>
-                <Route path="/dashboard/calendar" component={Calendar}/>
-                <Route path="/dashboard/event" component={Event}/>
-                <Route path="/dashboard/postContact" component={PostContact}/>
-                <Route path="/dashboard/editContact" component={EditContact}/>
-                <Route path="/dashboard/deleteCoNtact" component={DeleteContact}/>
-                <Route path="/dashboard/postPhone" component={PostPhone}/>
-                <Route path="/dashboard/postEmail" component={PostEmail}/>
-                <Route path="/dashboard/postAddress" component={PostAddress}/>
-                <Route path="/dashboard/navContact" component={NavContact}/>
-                <Route path="/dashboard/navAddContact" component={NavAddContact}/>
-                <Route path="/dashboard/searchPerson" component={SearchPerson}/>
-                <Route path="/dashboard/searchPerson" component={SearchPersonTwo}/>
-            
-          
-       
-           
+            <div className="dashboard" id="dashboard">
+                <Navigation /> 
+                <Switch>
+                    <Route path="/dashboard/home" component={Home}/>
+                    <Route path="/dashboard/contact" component={Contact}/>
+                    <Route path="/dashboard/navAddContact" component={NavAddContact}/>
+                    <Route path="/dashboard/calendar" component={Calendar}/>
+                    <Route path="/dashboard/event" component={Event}/>
+                    <Route path="/dashboard/postContact" component={PostContact}/>
+                    <Route path="/dashboard/editContact" component={EditContact}/>
+                    <Route path="/dashboard/deleteCoNtact" component={DeleteContact}/>
+                    <Route path="/dashboard/postPhone" component={PostPhone}/>
+                    <Route path="/dashboard/postEmail" component={PostEmail}/>
+                    <Route path="/dashboard/postAddress" component={PostAddress}/>
+                    <Route path="/dashboard/navContact" component={NavContact}/>
+                    <Route path="/dashboard/navAddContact" component={NavAddContact}/>
+                    <Route path="/dashboard/searchPerson" component={SearchPerson}/>
+                    <Route path="/dashboard/searchPersonTwo" component={SearchPersonTwo}/>
+                </Switch>
             </div>
            
         </>

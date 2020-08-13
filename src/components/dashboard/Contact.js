@@ -2,7 +2,7 @@ import React from 'react';
 import NavContact from './NavContact';
 import './Contact.scss';
 
-const AdminContact = () => {
+const Contact = () => {
     return (
         <div className="admin-contact">
             <NavContact />
@@ -10,4 +10,4 @@ const AdminContact = () => {
     )
 }
 
-export default AdminContact;
+export default Contact;
