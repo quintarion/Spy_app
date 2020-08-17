@@ -49,7 +49,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    select_person: (id) => dispatch(select_person(id)) //DO NOT DELETE THE (id) !!!!
+    select_person: (id) => dispatch(select_person(id)) // DO NOT DELETE THE (id) !!!!
   }
 }
 

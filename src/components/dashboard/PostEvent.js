@@ -3,9 +3,11 @@ import axios from 'axios';
 import { Redirect, Link } from 'react-router-dom';
 import Button from '../layout/Button';
 
+import '../../style/components.scss';
+
 /* WARNING !!! THIS COMPONENT IS NOT WORKING, NOR ON THE NODE SERVER SIDE */
 
-const config = require('../../config/config.js');
+//const config = require('../../config/config.js');
 
 class PostEvent extends React.Component {
 
@@ -55,7 +57,7 @@ class PostEvent extends React.Component {
         //redirect
         const {redirect} = this.state
         return (
-            <div className="postcontact">
+            <div className="formAdmin">
             {!redirect?
             (<form onSubmit={this.onSubmit} className="form">
                 <h2>Ajouter un courriel au contact</h2>
@@ -102,21 +104,21 @@ class PostEvent extends React.Component {
                         onChange={this.handleChange}
                     />
                 </span>
-                <div>
-                <Link to="/admin/navContact">
-                    <Button name="Annuler"/>
-                </Link>
+                <nav className="formAdmin_nav">
+                    <Link to="/dashbaord/navContact">
+                        <i class="fas fa-undo-alt"></i>
+                    </Link>
 
-                <Button
-                    text="Valider" 
-                    type="Submit" 
-                    onClick={this.onSubmit}
-                    name="Créer un email" //props
-                />
-                </div>
+                    <button
+                        text="Valider" 
+                        type="Submit" 
+                        onClick={this.onSubmit}>
+                        <i class="fas fa-check"></i>
+                    </button>
+                </nav>
             </form>)
             :
-            (<Redirect to="/admin/navAddContact"/>)
+            (<Redirect to="/dashboard/navAddContact"/>)
             }
         </div>
         );

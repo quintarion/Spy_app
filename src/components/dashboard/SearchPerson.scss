@@ -1,11 +1,15 @@
 .searchPerson {
     background-color: #f1efe2;
-    background-image: url('../assets/pictures/bouquet.jpg');
+    background-image: url('./../../assets/pictures/bouquet.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
     
+    align-items: flex-end;
     display: flex;
+    flex-flow: column nowrap;
+    height: 50vh;
     width: 100vw;
-    justify-content: center;
+    justify-content: start;
+    overflow: hidden;
 }

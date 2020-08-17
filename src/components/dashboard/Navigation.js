@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from 'react-router-dom';
 import TabNav from './TabNav';
-//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Navigation.scss';
 
 const tabDatas = [
@@ -40,10 +39,12 @@ const tabDatas = [
 class Navigation extends React.Component {
     render() {
         return (
-            <nav className="navigation main-menu">
-                <NavLink to="/dashboard/home"><h1>helen ' dashboard</h1></NavLink>
-                <TabNav tabDatas={tabDatas}/>
-            </nav>
+            <>
+                <nav className="navigation main-menu">
+                    <NavLink to="/dashboard/home"><h1>helen ' dashboard</h1></NavLink>
+                    <TabNav tabDatas={tabDatas}/>
+                </nav>
+            </>
         ); 
     }    
 }

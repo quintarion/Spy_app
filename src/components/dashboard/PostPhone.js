@@ -1,7 +1,10 @@
 import React from 'react';
 import axios from 'axios';
-import {Redirect, Link} from 'react-router';
+import { Redirect, Link } from 'react-router-dom';
 import Button from '../layouts/Button';
+import FrenchPhoneField from '../layouts/FrenchPhoneField';
+
+import '../../style/components.scss';
 
 //const config = require('../../config/config.js');
 
@@ -22,6 +25,10 @@ class PostPhone extends React.Component {
 
     mobileChange = (event) => {
         this.setState({phone_mobile: event.target.value})
+    }
+
+    setPhoneState = (value) => {
+        this.setState({ phone_number: value });
     }
 
     handleChange = (event) => {
@@ -68,7 +75,7 @@ class PostPhone extends React.Component {
         const {redirect} = this.state;
 
         return (
-            <div className="postcontact">
+            <div className="formAdmin">
             {!redirect? 
             (<form onSubmit={this.onSubmit} className="form">
                 <h2>Ajouter un numéro de téléphone au contact</h2>
@@ -100,7 +107,8 @@ class PostPhone extends React.Component {
                 
                 <span className="form_input">
                     <label htmlFor="phone">Numéro professionnel</label>
-                    <input 
+                    <FrenchPhoneField getPhone={this.setPhoneState} />
+                    {/* <input 
                         id="phone"
                         aria-required="true" // ?
                         //className="contact-firstname"
@@ -113,7 +121,7 @@ class PostPhone extends React.Component {
                         readonly={false}
                         value={this.state.phone_number}
                         onChange={this.handleChange}
-                    />
+                    /> */}
                 </span>
 
                 <span>
@@ -141,21 +149,18 @@ class PostPhone extends React.Component {
                     </div>
                 </span>
 
-                <div className="post-phone_nav">
-                    <Redirect to="/admin/navAddContact">
-                        <Button name="Annuler"/>
-                    </Redirect>
-                    
-                    <Button
+                <nav className="formAdmin_nav">
+                    <Link to="/dashboard/contact"><i class="fas fa-undo-alt"></i></Link>
+                    <button
                         text="Valider" 
                         type="Submit" 
-                        onClick={this.onSubmit}
-                        name="Ajouter un numéro de téléphone" //props
-                    />
-                </div>
+                        onClick={this.onSubmit}>
+                        <i class="fas fa-check"></i>
+                    </button>
+                </nav>
             </form>)
             :
-            (<Redirect to="/admin/navAddContact"/>)
+            (<Redirect to="/dashboard/navAddContact"/>)
             }
         </div>
         );

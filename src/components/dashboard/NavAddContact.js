@@ -1,9 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-//import { HashLink as Link } from 'react-router-hash-link';
+import { NavLink } from 'react-router-dom';
 import './NavAddContact.scss';
 
-const items = [
+const tests = [
     {
         title: 'Ajouter un numéro de téléphone',
         path: '/dashboard/postPhone',
@@ -28,13 +27,11 @@ const NavAddContact = () => {
                 <h1>Ajouter au <b>Contact</b>...</h1> 
                 <ul>
                     {
-                        items.map((item, index) => 
+                        tests.map((test, index) => 
                             <li key={index}>
-                                
-                                <Link to={item.path}>
-                                    <i class={item.icon}></i>
-                                </Link>
-                                
+                                <NavLink to={test.path}>
+                                    <i class={test.icon}></i>
+                                </NavLink>
                             </li>
                         )
                     }

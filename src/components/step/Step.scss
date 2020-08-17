@@ -16,8 +16,15 @@
         }
 
         &-text {
-            height: 58vh;
+            height: 48vh;
             overflow: auto;
+            scrollbar-width: none; //Hide scrollbar
+            text-overflow: ellipsis;
+
+            p {
+                background-color: #e6e5e7;
+                padding: 1rem;
+            } 
         }
     }
 

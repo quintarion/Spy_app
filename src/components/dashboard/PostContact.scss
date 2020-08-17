@@ -1,19 +1,21 @@
 @import '../../style/main.scss';
+@import '../../style/components.scss';
 
-.post-contact {
-    width: 100vw;
-    height: 100vh;
+// .postcontact {
+//     margin: auto;
+//     max-height: 100vh;
+//     width: 80vw;
+    
+//     form {
+//         width: 80vw;
+//         margin: 3rem 10rem;
+//         width: 55vw;
+//         max-height: 100vh;
+//         padding: 0;
+//     }
 
-    form {
-        width: 55vw;
-        margin: 3rem 10rem;
-        width: 55vw;
-        max-height: 100vh;
-        padding: 0;
-    }
-
-    &_nav {
-        display: flex;
-        justify-content: space-between;
-    }
-}
+//     &_nav {
+//         display: flex;
+//         justify-content: space-between;
+//     }
+// }

@@ -62,5 +62,9 @@ export const quotes = [
     {
         author: "Proverbe Indien",
         quote: "Quand tu vois tout en gris, déplace l'éléphant",
+    },
+    {
+        author: "Proverbe malien",
+        quote: "Le chemin le plus court pour aller d'un point à un autre n'est pas la ligne droite, c'est le rêve."
     }
 ]

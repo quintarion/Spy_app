@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 //import ReCAPTCHA from "react-google-recaptcha";
 
 import Adult from './components/categories/Adult';
@@ -63,8 +63,9 @@ class App extends React.Component {
     //const { value, callback, load, expired } = this.state || {};
     return (
       <div className="App">
-        <Router>
+        
           <div>
+      
           <Switch>
             {/* Showcase*/}
             <Route exact path='/' component={Main} />
@@ -82,9 +83,25 @@ class App extends React.Component {
             {/* Section ADMIN  */}
             <Route path="/signIn" component={SignIn} />
             <Route path="/dashboard" component={Dashboard}/>
+                {/* <Route path="/dashboard/home" component={Home}/>
+                <Route path="/dashboard/contact" component={Contact}/>
+                <Route path="/dashboard/event" component={Event}/>
+                <Route path="/dashboard/calendar" component={Calendar}/>
+
+                <Route path="/dashboard/postContact" component={PostContact}/>
+                <Route path="/dashboard/searchPerson" component={SearchPerson}/>
+                <Route path="/dashboard/searchPersonTwo" component={SearchPersonTwo}/>
+
+                <Route path="/dashboard/navAddContact" component={NavAddContact}/>
+                
+                <Route path="/dashboard/postPhone" component={PostPhone}/>
+                <Route path="/dashboard/postEmail" component={PostEmail}/>
+                <Route path="/dashboard/postAddress" component={PostAddress}/> */}
+
             </Switch>
+           
           </div>
-        </Router>
+        
         
         {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />

@@ -5,7 +5,7 @@ import Button from '../layouts/Button';
 //import './PostEmail.scss';
 
 // IMPORT CONFIG 
-const config = require('../../config/config');
+//const config = require('../../config/config');
 
 class PostEmail extends React.Component {
 
@@ -115,7 +115,7 @@ class PostEmail extends React.Component {
                 </div>
             </form>)
             :
-            (<Redirect to="/admin/navAddContact"/>)
+            (<Redirect to="/dashboard/navAddContact"/>)
             }
         </div>
         );
