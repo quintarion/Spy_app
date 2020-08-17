@@ -4,6 +4,7 @@
     background-color: orange;
     display: flex;
     justify-content: center;
+    //position: absolute; // allows to fix the page
 
     &_content {
         padding: 3rem;

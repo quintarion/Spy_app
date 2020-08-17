@@ -4,7 +4,9 @@ import Button from '../layout/Button';
 import PostNote from './PostNote';
 import './PostAppointment.scss';
 
-const config = require('../../config/config.js');
+import '../../style/components.scss';
+
+//const config = require('../../config/config.js');
 
 class PostAppointment extends React.Component {
 
@@ -46,7 +48,7 @@ class PostAppointment extends React.Component {
 
     render() {
         return (
-            <div className="postappointement">
+            <div className="formAdmin">
             <form onSubmit={this.onSubmit} className="form">
                 <h2>Ajouter un rendez-vous</h2>
 
@@ -94,12 +96,14 @@ class PostAppointment extends React.Component {
 
                 <PostNote />
 
-                <Button
-                    text="Valider" 
-                    type="Submit" 
-                    onClick={this.onSubmit}
-                    name="Ajouter un rendez-vous" //props
-                />
+                <nav className="formAdmin_nav">
+                    <button
+                        text="Valider" 
+                        type="Submit" 
+                        onClick={this.onSubmit}>
+                        <i class="fas fa-check"></i>
+                    </button>
+                </nav>
             </form>
         </div>
         );

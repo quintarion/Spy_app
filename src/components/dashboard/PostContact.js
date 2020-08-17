@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
-import { NavLink, Redirect } from "react-router-dom";
-import Button from '../layouts/Button';
+import { Link, Redirect } from "react-router-dom";
+import './PostContact.scss';
 
 // IMPORT CONFIG 
 //const config = require('../../config/config');
@@ -75,11 +75,11 @@ class PostContact extends React.Component {
         const { redirect } = this.state;
 
         return (
-            <div className="post-contact layout-form">
+            <div className="formAdmin layout-form">
             
             {!redirect?
 
-            (<form onSubmit={this.onSubmit} className="form-group">
+            (<form onSubmit={this.onSubmit} className="formA">
                 <h2 class="heading">Créer un nouveau contact - Etat Civil</h2>
                
                 <fieldset>
@@ -198,16 +198,16 @@ class PostContact extends React.Component {
                         onChange={this.handleChange}
                     />
                 </div>
-                <div>
-                <NavLink to="/dashboard/contact"><Button name="Annuler"/></NavLink>
-                <Button
-                    text="Valider" 
-                    type="Submit" 
-                    onClick={this.onSubmit}
-                    className="contact-button"
-                    name="Créer ce contact" //props
-                />
-                </div>
+                <nav className="formAdmin_nav">
+                    <Link to="/dashboard/contact"><i class="fas fa-undo-alt"></i></Link>
+                    <button
+                        text="Valider" 
+                        type="Submit" 
+                        onClick={this.onSubmit}
+                        className="contact-button">
+                        <i class="fas fa-check"></i>
+                    </button>
+                </nav>
             </form>)
            : 
            (<Redirect to='/dashboard/navAddContact'/>)}

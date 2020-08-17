@@ -2,7 +2,8 @@ import React from 'react';
 import axios from 'axios';
 import { Redirect, Link } from 'react-router-dom';
 import Button from '../layouts/Button';
-//import './PostEmail.scss';
+
+import '../../style/components.scss';
 
 // IMPORT CONFIG 
 //const config = require('../../config/config');
@@ -13,6 +14,7 @@ class PostEmail extends React.Component {
         email: '',
         email_kind: '',
         fk_idperson: 2,
+
         redirect: false
     };
 
@@ -59,10 +61,10 @@ class PostEmail extends React.Component {
 
     render() {
         //redirect
-        const {redirect} = this.state.redirect
+        const {redirect} = this.state
         return (
-            <div className="postcontact">
-            {redirect?
+            <div className="formAdmin">
+            {!redirect?
             (<form onSubmit={this.onSubmit} className="form">
                 <h2>Ajouter un courriel au contact</h2>
                 
@@ -108,21 +110,19 @@ class PostEmail extends React.Component {
                         onChange={this.handleChange}
                     />
                 </span>
-                <div>
-                <Link to="/admin/navContact">
-                    <Button name="Annuler"/>
-                </Link>
-
-                <Button
-                    text="Valider" 
-                    type="Submit" 
-                    onClick={this.onSubmit}
-                    name="Créer un email" //props
-                />
-                </div>
+                <nav className="formAdmin_nav">
+                    <Link to="/dashboard/contact"><i class="fas fa-undo-alt"></i></Link>
+                    <button
+                        text="Valider" 
+                        type="Submit" 
+                        onClick={this.onSubmit}
+                        name="Créer un email">
+                        <i class="fas fa-check"></i>
+                    </button>
+                </nav>
             </form>)
             :
-            (<Redirect to="/admin/navAddContact"/>)
+            (<Redirect to="/dashboard/navAddContact"/>)
             }
         </div>
         );

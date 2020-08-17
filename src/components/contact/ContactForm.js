@@ -1,10 +1,10 @@
 import React from 'react';
 import axios from 'axios';
 import Button from '../layouts/Button';
-import FrenchPhoneField from './FrenchPhoneField';
+import FrenchPhoneField from '../layouts/FrenchPhoneField';
 import './ContactForm.scss';
 
-const config = require('../../config/config');
+//const config = require('../../config/config');
 
 class ContactForm extends React.Component {
 

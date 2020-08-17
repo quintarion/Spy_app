@@ -21,7 +21,7 @@ const Step = () => {
                     Au sommet, c’est la joie partagée !<br/> 
                     Il est alors possible de redescendre enrichi de cette épreuve et plus solide, plus déterminé.<br/>
                     En effet, les phases d’intégration font suite à une activation, souvent chargée d’émotions retenues dans le passé c’est quand, nous ne craignons pas la reviviscence dans le processus d’intégration que nous  peuvons nous se libérer de cette sorte de « <i>cristallisation psychique</i> » qui provoque un blocage (peur, phobie, obsession, etc…).<br/>
-                    Mon rôle est de vous accompagner en douceur et à votre rythme,  en co-construisant votre parcours thérapeutique .</p>
+                    Mon rôle est de vous accompagner en douceur et à votre rythme,  en co-construisant votre parcours thérapeutique.</p>
                 </div>
             </div>
       </section>

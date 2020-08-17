@@ -1,9 +1,11 @@
 import React from 'react';
 import axios from 'axios';
-import {Redirect, Link} from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 import Button from '../layouts/Button';
 
-const config = require('../../config/config.js');
+import '../../style/components.scss';
+
+//const config = require('../../config/config.js');
 
 class PostAddress extends React.Component {
 
@@ -76,8 +78,8 @@ class PostAddress extends React.Component {
         //redirect
         const {redirect} = this.state
         return (
-            <div className="postcontact">
-            {redirect?
+            <div className="formAdmin">
+            {!redirect?
             (<form onSubmit={this.onSubmit} className="form">
                 <h2>Ajouter une adresse postale</h2>
                 
@@ -214,19 +216,20 @@ class PostAddress extends React.Component {
                         onChange={this.handleChange}
                     />
                 </span>
-                <div>
-                <Link to="/dashboard/contact">
-                    <Button name="Retour accueil"/>
-                </Link>
-                
-                <Button
-                    text="Valider" 
-                    type="Submit" 
-                    onClick={this.onSubmit}
-                    className="contact-button"
-                    name="Ajouter cette addresse" //props
-                />
-                </div>    
+                <nav className="formAdmin_nav">
+                    <Link to="/dashboard/contact">
+                        <i class="fas fa-undo-alt"></i>
+                    </Link>
+                    
+                    <button
+                        text="Valider" 
+                        type="Submit" 
+                        onClick={this.onSubmit}
+                        className="contact-button"
+                        name="Ajouter cette addresse">
+                        <i class="fas fa-check"></i>
+                    </button>
+                </nav>    
             </form>)
             :
             (<Redirect to="dashboard/navAddContact"/>)

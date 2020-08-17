@@ -2,7 +2,9 @@ import React from 'react';
 import axios from 'axios';
 import Button from '../layout/Button';
 
-const config = require('../../config/config.js');
+import '../../style/components.scss';
+
+//const config = require('../../config/config.js');
 
 class PostCouple extends React.Component {
 
@@ -46,7 +48,7 @@ class PostCouple extends React.Component {
 
     render() {
         return (
-            <div className="postcontact">
+            <div className="formAdmin">
             <form onSubmit={this.onSubmit} className="form">
                 <h2>Ajouter des représentants légaux au contact mineur</h2>
                 
@@ -120,12 +122,14 @@ class PostCouple extends React.Component {
                     />
                 </span>
 
-                <Button
-                    text="Valider" 
-                    type="Submit" 
-                    onClick={this.onSubmit}
-                    name="Ajouter le(s) représentant(s)" //props
-                />
+                <nav className="formAdmin_nav">
+                    <button
+                        text="Valider" 
+                        type="Submit" 
+                        onClick={this.onSubmit}>
+                        <i class="fas fa-check"></i>
+                    </button>
+                </nav>
             </form>
         </div>
         );
