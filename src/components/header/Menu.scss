@@ -1,4 +1,8 @@
 @import '../../style/main.scss';
+// @font-face {
+//     font-family: 'NeutraText-Light';
+//     src: url('../../assets/fonts/NeutraTextLight/NeutraTextLight.otf');
+// }
 
 .menu {
     align-items: baseline;
@@ -19,17 +23,27 @@
 
     /* position : absolute, remove from normal page flow and no impact the content */
     &-sub {
+        //border: solid 2px khaki;
         display: none;
+        max-width: 15vw;
         padding-top: 2rem;
         position: absolute;
         z-index: 100;
     }
 
     &-sub li {
-        line-height: 32px;
         margin-bottom: 1rem;
         text-align: left;
         width: 100%;
+
+   
+
+font-family: NeutraText-Light,Arial,sans-serif;
+font-size: 14px;
+color: #454545;
+line-height: 2em;
+text-transform: uppercase;
+padding: 0 12px;
     }
 
     /* add a symbol after the title mouse over use unicode and symbol */
@@ -46,8 +60,10 @@
     */
 
     @media screen and (max-width: 800px) {
-
+        background-color: white;
+        border: 1px solid khaki;
         flex-direction: column;
+        padding-bottom: 1rem;
 
         /* delete the arrow symbol after the title menu */
         &-title:hover::after {
@@ -55,7 +71,7 @@
         } 
 
         &-wrap {
-            color: khaki;
+            //color: khaki;
             margin: 0;
 
             /* on mouseover DO NOT display the submenu */

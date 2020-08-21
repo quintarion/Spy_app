@@ -19,8 +19,10 @@ const Layout = ({elements}) => {
         </div>
         <div className="layout_container-img">
             <Parallax className="custom-class" y={[-20, 10]} tagOuter="figure">
-              <img src={element.img} className="layout-icon" alt={element.alt} />
+              <img src={element.img} className="layout_container-icon" alt={element.alt} />
             </Parallax>
+            {/* little screens picture */}
+            <img src={element.imgsmall} className="layout_container-icon-small" alt={element.altsmall} />
         </div>
      </div> )}
     </div>

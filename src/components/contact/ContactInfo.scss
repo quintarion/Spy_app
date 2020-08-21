@@ -28,9 +28,6 @@
 
     &_card {
         align-items: center;
-        background-image: url('../../assets/pictures/blob-beige.svg');
-        background-size: 100%;
-        background-repeat: no-repeat;
         display: flex;
         height: 35vw;
         justify-content: center;
@@ -38,9 +35,14 @@
         padding: 2rem;
         width: 40vw;
 
+        
+
         div {
             margin: .7rem auto;
             width: 20vw;
+            border: 1.2px solid khaki;
+            border-radius: 3%;
+            padding: 1rem;
         }
 
         h3, h4, h5, p, a {

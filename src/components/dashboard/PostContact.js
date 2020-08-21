@@ -75,7 +75,7 @@ class PostContact extends React.Component {
         const { redirect } = this.state;
 
         return (
-            <div className="formAdmin layout-form">
+            <div className="layout_form postcontact">
             
             {!redirect?
 
@@ -198,7 +198,7 @@ class PostContact extends React.Component {
                         onChange={this.handleChange}
                     />
                 </div>
-                <nav className="formAdmin_nav">
+                <nav className="layout_form-nav">
                     <Link to="/dashboard/contact"><i class="fas fa-undo-alt"></i></Link>
                     <button
                         text="Valider" 

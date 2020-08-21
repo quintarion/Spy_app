@@ -1,19 +1,22 @@
 import React from 'react';
 import axios from 'axios';
+import { connect } from 'react-redux';
 import { Redirect, Link } from 'react-router-dom';
-import Button from '../layouts/Button';
+import { select_person } from "../../actions/index";
 
 import '../../style/components.scss';
 
 // IMPORT CONFIG 
 //const config = require('../../config/config');
 
+
+
 class PostEmail extends React.Component {
 
     state = {
         email: '',
         email_kind: '',
-        fk_idperson: 2,
+        fk_idperson: this.props.select_person, // data exported from the store (select_person action)
 
         redirect: false
     };
@@ -28,7 +31,7 @@ class PostEmail extends React.Component {
 
     onSubmit = (event) => {
         console.log(this.state)
-
+        
         event.preventDefault();
         let pathApi = process.env.REACT_APP_PATH_API_DEV + '/email/add_email'
         if (process.env.NODE_ENV === 'production') {
@@ -128,5 +131,13 @@ class PostEmail extends React.Component {
         );
     }
 }
-        
-export default PostEmail;
+
+const mapStateToProps = (state) => {
+    console.log('redux state :', state) // state, give an object with all the persons
+    return {
+        //select_person: 12 
+        select_person: state //????
+    }
+}
+    
+export default connect(mapStateToProps)(PostEmail);

@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { filter_persons } from '../actions/index';
+import './SearchBar.scss';
 
 class SearchBar extends React.Component {
 
@@ -10,8 +11,8 @@ class SearchBar extends React.Component {
 
     render() {
         return (
-            <div>
-                <h1>Contact</h1>
+            <div className="search-bar">
+                <h1>Rechercher un contact...</h1>
                 <input
                     className="form-control"
                     placeholder="Search Contact"

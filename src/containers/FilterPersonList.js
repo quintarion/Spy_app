@@ -39,11 +39,10 @@ class FilterPersonList extends Component {
 
 const mapStateToProps = (state) => {
   const { filter_results } = state.persons
-  console.log('map to props :', filter_results)
+  console.log(filter_results)
 
   return {
     filter_results: state.persons.filter_results
-
   }
 }
 

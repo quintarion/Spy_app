@@ -1,24 +1,12 @@
 @import '../../style/main.scss';
 
 .price {
-    //border: 1px solid #007c89;
-    //border-radius: 1%;
     font-family: Helvetica,Arial,Verdana,sans-serif;
     font-size: 13px;
     height: 60vw;
-    margin-right: 3rem;
-    padding: 3rem;
+    padding: 0 2rem;
     text-align: justify;
     width: 40vw;
-
-    &_table {
-        border: 1px solid #007c89;
-    }
-
-    table:first-child {
-        border: 1px solid #007c89;
-        margin: 1rem;
-    }
 
     ul {
         text-align: justify;
@@ -51,10 +39,37 @@
         }    
     }
 
-    &_note {
-        background-color: #ffe74c;
-        border: 1px solid grey;
-        padding: 1rem 0 1rem 1rem;
+    /* Table properties */
+
+    caption { 
+        caption-side: top;
+        padding: 1rem 0;
+        text-align: right;
+    }
+
+    .notice {
+        margin-bottom: 1rem;
+
+        td {
+
+            border-bottom: 1px solid rgba(0,0,0,.3);
+            
+        
+            // & ~ td {
+            //     border-bottom: 1px solid rgba(0,0,0,.3);
+            //     border-right: 1px solid rgba(0,0,0,.3);
+            // }
+
+            // td:nth-child(2) {
+            //     border-bottom: 1px solid rgba(0,0,0,.3);
+            // }
+            
+        }
+
+        ul li {
+            font-size: 13px;
+        }
+
 
         li {
             display: block;
@@ -72,27 +87,26 @@
         ul {
             list-style-type: disc !important; // ne fonctionne pas 
         }
-       
-    }
 
-    /* Table properties */
-
-    caption { 
-        caption-side: top;
-        padding: 1rem 0;
-        text-align: right;
     }
       
     table { 
-        border-collapse: collapse;
+        border: .5px solid rgba(0,0,0,.3);
+        border-collapse: separate;
+        border-radius: 14px;
         border-spacing: 0px; 
         margin: auto;
         text-align: center;
         width: 30vw;
     }
 
-    table, th, td { 
-        border: 1px solid grey; 
+    table:first-child {
+        margin: 1rem;
+        border: 1px solid rgba(0,0,0,.3);
+        //background-color: white;
+	    border-collapse: separate; /* or collapse */
+	    border-spacing: 0px;
+	    border-radius: 14px;
     }
 
     th, td {
@@ -101,7 +115,6 @@
     }
       
     @media screen and (max-width:800px) {
-        
         margin: auto;
         width: 80vw;
 
@@ -113,8 +126,13 @@
             display: block;
         }
 
-        &_note {
-            display: none;
+        .notice {
+            //margin-bottom: 1rem;
+
+            tr:last-child {
+                display: none;
+            }
+
         }
        
         .price {
@@ -122,11 +140,15 @@
             height: auto;
 
             &_list {
-
                 table {
                     width: 90%; 
                 }
             }
+        }
+
+        caption, td, th, i {
+            font-size: 12px !important;
+            vertical-align: middle !important; /* DO NOT FORGET THE PROPERTY ! */
         }
 
         ul {

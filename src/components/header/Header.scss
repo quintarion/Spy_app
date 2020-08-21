@@ -1,7 +1,7 @@
 @import '../../style/main.scss';
 
- /* scroll animation */
- .active {
+/* scroll animation */
+.active {
     transition: all 500ms ease-in;
     visibility: visible;
 }
@@ -16,8 +16,8 @@
     @include shadow;
     align-items: baseline; /* by default: align-items: strech -> child elements' heights = the container's height */
     align-self: flex-start;
-    background-color: rgba(0,0,0,.3);
-    //background-color: white;
+    //background-color: rgba(0,0,0,.3);
+    background-color: white;
     display: flex;  /* flex container */
     flex-flow: row nowrap;
     height: 5.8rem;
@@ -27,7 +27,7 @@
     padding: 1rem 5%;
     position: fixed; 
     top: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 2;
 
     /* adds animation for all transitions */ 
@@ -54,6 +54,7 @@
 
     img {
         background-image: url('../../assets/pictures/blob-beige.svg');
+        margin: -.8rem 0 0 -.8rem;
     }
 
     &-links {
@@ -74,6 +75,10 @@
 
     .logo:hover {
         @include animate(icon-bounce, 0.5s, alternate);
+    }
+
+    nav {
+        margin-right: 3rem;
     }
     
     .toggle {
@@ -134,7 +139,7 @@
         }
 
         .opened {
-            border-top: solid 1.6px khaki;
+            //border-top: solid 1.6px khaki;
             margin-top: 1rem;
         }
 

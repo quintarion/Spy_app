@@ -2,7 +2,7 @@
 
 .layout-category {
     width: 100vw;
-    padding: 2rem auto 3rem 2rem;
+    //padding: 2rem auto 3rem 2rem;
 
     &-btn {
         @include button;
@@ -15,32 +15,30 @@
     }
 
     &-icon {
-        float: left;
+        //float: left;
         margin-bottom: 1rem;
     }
 
     p {
         margin: 0 0 2rem 2rem;
         max-height: 60vh;
-        width: 50vw;
+        //max-width: 50vw;
     }
 
     @media screen and (max-width:799px) {
+        //margin: auto;
+        //width: 100vw;
+        //max-height: 100vh;
 
-        div {
-            max-height: 50vh;
-            overflow: auto;
+        p {
+            margin: auto;
             width: 80vw;
         }
-        
-        div p {
-            margin-bottom: 2rem;
-            margin-left: auto;
-            width: 80vw;
-        }
-        
-        .layout-icon {
+
+        &-icon {
             display: none;
         }
+
+       
     }
 }

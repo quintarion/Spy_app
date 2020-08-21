@@ -24,10 +24,10 @@ const Main = () => {
             <Why/>
             <Who/>
             <Step/>
-            <Therapies/>
-            <MoreTherapies/>
             <Training/>
             <Career/>
+            <Therapies/>
+            <MoreTherapies/>
             <Contact/>
         </main>
         <div className="site-footer">

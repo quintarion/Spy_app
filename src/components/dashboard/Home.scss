@@ -1,5 +1,6 @@
 .adminHome {
-    background-image: url('../../assets/pictures/butterfly.jpg');
+    background:
+    url('../../assets/pictures/butterfly.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right 35% bottom 90%;
@@ -14,4 +15,6 @@
         margin-top: 3rem;
         text-align: center;
     }
+
+    
 }
