@@ -1,4 +1,7 @@
 .filter-person-list {
+    height: 40vh;
+    margin-top: 1rem;
+    overflow: auto;
 
     span:first-child {
         text-transform: capitalize;

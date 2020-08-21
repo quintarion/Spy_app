@@ -1,9 +1,9 @@
 @import './../../style/main.scss';
 
 .step {
-    background-color: #fafafa;
-    padding-top: 8rem;
+    //background-color: #fafafa;
     padding-top: 3rem;
+    padding-bottom: 3rem;
     
     &_container {
         margin: auto;
@@ -22,7 +22,7 @@
             text-overflow: ellipsis;
 
             p {
-                background-color: #e6e5e7;
+                //background-color: #e6e5e7;
                 padding: 1rem;
             } 
         }
@@ -31,7 +31,7 @@
     @media screen and (max-width:799px) {
 
         h2 {
-            line-height: .8rem;
+            line-height: auto;
         }
     }
 }

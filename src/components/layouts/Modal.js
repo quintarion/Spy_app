@@ -14,7 +14,6 @@ class ModalSaveSecurity extends React.Component {
         this.setState({ isModalSaveSecurity: false })
     }
 
-
     render() {
         return (
      

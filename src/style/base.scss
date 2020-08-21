@@ -13,7 +13,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter&family=Karma:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bitter&family=Karma:wght@600&family=Ramabhadra&display=swap');
 
-
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 // xx-small: minuscule ;
 // x-small: très petit ;
 // small: petit ;
@@ -52,6 +52,13 @@
 
 @mixin main-title {
   font-family: 'Raleway Dots', cursive;
+  //font-family: 'Noto Serif TC', serif;
+  //font-family: 'Poiret One', cursive;
+  //font-family: 'Cedarville Cursive', cursive;
+  font-weight: 100;
+  font-size: 3rem;
+  padding-top: 3rem;
+  text-align: center;
 }
 
 @mixin title {
@@ -134,4 +141,12 @@ em {
   display: inline;
   margin: 0;
   padding: 0;
+}
+
+/* external links, target all anchor tags that have an href beginning with http */
+a[href^="http"] {
+  background: url('../assets/icons/external-link-square-alt-solid.svg') no-repeat;
+  background-position-x: 100%;
+  background-size: 4%;
+  padding-left: 10px;
 }

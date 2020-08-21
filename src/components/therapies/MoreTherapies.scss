@@ -4,6 +4,11 @@
     padding-bottom: 3rem;
     padding-top: 3rem;
     background-color: #fafafa;
+    height: 120vh;
+    /* curve effect */
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 99%;
+    
 
     &__container {
         margin: auto;
@@ -49,3 +54,4 @@
         }
     }
 }
+ 

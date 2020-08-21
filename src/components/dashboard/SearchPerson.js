@@ -7,8 +7,10 @@ import './SearchPerson.scss';
 const SearchPerson = () => {
     return (
         <div className='searchPerson'>
-            <SearchBar/>
-            <FilterPersonList/>
+            <div>
+                <SearchBar/>
+                <FilterPersonList/>
+            </div>
         </div>
     )
 }

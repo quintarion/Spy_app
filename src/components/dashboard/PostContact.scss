@@ -1,21 +1,12 @@
 @import '../../style/main.scss';
 @import '../../style/components.scss';
 
-// .postcontact {
-//     margin: auto;
-//     max-height: 100vh;
-//     width: 80vw;
-    
-//     form {
-//         width: 80vw;
-//         margin: 3rem 10rem;
-//         width: 55vw;
-//         max-height: 100vh;
-//         padding: 0;
-//     }
+/* all the scss in ./style/layouts.scss */
 
-//     &_nav {
-//         display: flex;
-//         justify-content: space-between;
-//     }
-// }
+.postcontact {
+    background-color: #e9e8ea;
+    background-image: url('../../assets/pictures/sunflower.jpg');
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: right;
+}

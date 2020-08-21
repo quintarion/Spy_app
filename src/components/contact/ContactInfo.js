@@ -8,8 +8,6 @@ const Contact = () => {
         <div className="contactInfo" id="information">
             <div className="contactInfo_card">
                 <div>
-                    <h3>coordonnées :</h3><br/>
-                    <img src={hands} alt=''/>
                     <h4>Hélène QUINTANA-FAUR&Eacute;<br/><span>Psychologue Clinicienne</span></h4><br/>
                     <p>cheminversite@gmail.com</p>
                     <p><a href="sms:0602010304">Message SMS</a></p>

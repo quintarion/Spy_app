@@ -62,7 +62,8 @@ class ContactForm extends React.Component {
             <p>Veuillez remplir le formulaire de contact ci-dessous et je vous répondrai dans les plus brefs délais.</p>
             <form onSubmit={this.submitForm} className="form">
                 {/* <fieldset> */}
-                    <span className="form_input">
+                    <div className="form-flex">
+                    <div className="form-flex-one">
                     <label htmlFor="firstname">Prénom *</label>
                     <input 
                         id="firstname"
@@ -77,9 +78,7 @@ class ContactForm extends React.Component {
                         value={this.state.firstname}
                         onChange={this.handleChange}
                     />
-                    </span>
-    
-                    <span className="form_input">
+                    
                     <label htmlFor="lastname">Nom</label>
                     <input
                         id="lastname"
@@ -92,9 +91,7 @@ class ContactForm extends React.Component {
                         value={this.state.lastname}
                         onChange={this.handleChange}
                     />
-                    </span>
-                        
-                    <span className="form_input">
+               
                     <label htmlFor="email">Adresse électronique *</label>
                     <input
                         id="email"
@@ -110,13 +107,12 @@ class ContactForm extends React.Component {
                         value={this.state.email}
                         onChange={this.handleChange} 
                     />
-                    </span>
-                
-                    <span className="form_input">
-                    <label htmlFor="tel">Numéro de téléphone </label>
-                    <span className="contact-phone"><FrenchPhoneField getPhone={this.setPhoneState} /></span>
-                    </span>
 
+                    <label htmlFor="tel">Numéro de téléphone </label>
+                    <FrenchPhoneField getPhone={this.setPhoneState} />
+                    </div>
+
+                    <div className="form-flex-two">
                     <label htmlfor="topic">Quel est l'objet de votre message ?</label>
                     <div className="form-select">
                         <select type="select" id="topic" name="topic" className="contact-topic" value={this.state.value} onChange={this.topicChange} required>
@@ -128,21 +124,22 @@ class ContactForm extends React.Component {
                             <i class="fa fa-caret-down" aria-hidden="true"></i>
                         </select>
                     </div>
-
-                    <span className="form_input">
+                    
                     <label htmlFor="message">Votre message *</label>
                     <textarea
                         aria-required="true"
                         name="message"
                         id="message"
-                        rows={5}
-                        cols={33}
+                        rows={6}
+                        //cols={50}
                         maxlength={250}
                         value={this.state.message}
                         onChange={this.handleChange}
                     >
                     </textarea>
-                    </span>
+                    <i>(*) champs obligatoires, 250 caractères max.<br/>Ce formulaire est protégé par Google Recaptcha</i>
+                    </div>
+                    </div>
                 {/* </fieldset> */}
                 <Button
                         className="contact-button"
@@ -150,7 +147,7 @@ class ContactForm extends React.Component {
                         value="Send" 
                         name="Soumettre" /* here pros value */
                     />
-                <i>(*) champs obligatoires, 250 caractères max.<br/>Ce formulaire est protégé par Google Recaptcha</i>
+                
             </form>
         </div>
         );

@@ -1,7 +1,6 @@
 import React from "react";
 import { HashLink as Link } from 'react-router-hash-link';
 import Menu from './Menu';
-import hands from '../../assets/icons/hands.png';
 import './Header.scss';
 
 class Header extends React.Component {
@@ -30,7 +29,7 @@ class Header extends React.Component {
     const { scrollPos } = this.state
     this.setState({
       scrollPos: document.body.getBoundingClientRect().top, //send the size of an element in viewport 
-      show: document.body.getBoundingClientRect().top > scrollPos
+      show: document.body.getBoundingClientRect().top < scrollPos
     });
   }
 
@@ -44,7 +43,7 @@ class Header extends React.Component {
               <Link to="#home">
                 <img
                   className="logo"
-                  src={hands}
+                  src=""
                   alt="logo représentant deux mains"
                 />
                </Link>

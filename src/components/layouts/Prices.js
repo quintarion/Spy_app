@@ -31,11 +31,11 @@ class Prices extends Component {
                                 </tr>)}
                             </table>
                             {/* <hr/>  */}
-                            <table>
+                            <table className="notice">
                                 <caption>Paiment</caption>
                                 <tr>
-                                    <td><i class="fas fa-money-check">&nbsp;&nbsp;par chèque</i></td>
-                                    <td><i class="fas fa-coins">&nbsp;&nbsp;en espèce</i></td>
+                                    <td><i class="fas fa-money-check payment">&nbsp;&nbsp;par chèque</i></td>
+                                    <td><i class="fas fa-coins payment">&nbsp;&nbsp;en espèce</i></td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> 

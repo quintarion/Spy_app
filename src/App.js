@@ -65,44 +65,26 @@ class App extends React.Component {
       <div className="App">
         
           <div>
-      
-          <Switch>
-            {/* Showcase*/}
-            <Route exact path='/' component={Main} />
-            {/* Description therapies */}
-            <Route exact path='/icv' component={Icv} />
-            <Route exact path='/emdr' component={Emdr} />
-            <Route exact path='/eft' component={Eft} />
-            <Route exact path='/at' component={At} />
-            <Route exact path='/reflexology' component={Reflexology} />
-            <Route exact path='/sophrology' component={Sophrology} />
-            {/* Description clients*/}
-            <Route exact path='/adult' component={Adult} />
-            <Route exact path='/couple' component={Couple} />
-            <Route exact path='/child' component={Child} />
-            {/* Section ADMIN  */}
-            <Route path="/signIn" component={SignIn} />
-            <Route path="/dashboard" component={Dashboard}/>
-                {/* <Route path="/dashboard/home" component={Home}/>
-                <Route path="/dashboard/contact" component={Contact}/>
-                <Route path="/dashboard/event" component={Event}/>
-                <Route path="/dashboard/calendar" component={Calendar}/>
-
-                <Route path="/dashboard/postContact" component={PostContact}/>
-                <Route path="/dashboard/searchPerson" component={SearchPerson}/>
-                <Route path="/dashboard/searchPersonTwo" component={SearchPersonTwo}/>
-
-                <Route path="/dashboard/navAddContact" component={NavAddContact}/>
-                
-                <Route path="/dashboard/postPhone" component={PostPhone}/>
-                <Route path="/dashboard/postEmail" component={PostEmail}/>
-                <Route path="/dashboard/postAddress" component={PostAddress}/> */}
-
+            <Switch>
+              {/* Showcase*/}
+              <Route exact path='/' component={Main} />
+              {/* Description therapies */}
+              <Route exact path='/icv' component={Icv} />
+              <Route exact path='/emdr' component={Emdr} />
+              <Route exact path='/eft' component={Eft} />
+              <Route exact path='/at' component={At} />
+              <Route exact path='/reflexology' component={Reflexology} />
+              <Route exact path='/sophrology' component={Sophrology} />
+              {/* Description clients*/}
+              <Route exact path='/adult' component={Adult} />
+              <Route exact path='/couple' component={Couple} />
+              <Route exact path='/child' component={Child} />
+              {/* Section ADMIN  */}
+              <Route path="/signIn" component={SignIn} />
+              <Route path="/dashboard" component={Dashboard}/>
             </Switch>
-           
           </div>
-        
-        
+
         {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
