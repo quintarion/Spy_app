@@ -15,25 +15,27 @@ import './Main.scss';
 
 const Main = () => {
     return (
-        <>
-        <div className="site-header">
-            <Header/>
+        <div className="main">
+            <div className="site-header">
+                
+            </div>
+            <main className="site-content">
+                <Home/>
+                <div className="sticky">
+                <Header/>
+                </div>
+                <Training/>
+                <Why/>
+                <Who/>
+                <Step/>
+                <Therapies/>
+                <MoreTherapies/>
+                <Contact/>
+            </main>
+            <div className="site-footer">
+                <Footer/>
+            </div>
         </div>
-        <main className="site-content">
-            <Home/>
-            <Why/>
-            <Who/>
-            <Step/>
-            <Training/>
-            <Career/>
-            <Therapies/>
-            <MoreTherapies/>
-            <Contact/>
-        </main>
-        <div className="site-footer">
-            <Footer/>
-        </div>
-        </>
     )
 }
 

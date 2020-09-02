@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Redirect, Link } from 'react-router-dom';
 import Button from '../layouts/Button';
 
-import '../../style/components.scss';
+import '../../style/main.scss';
 
 //const config = require('../../config/config.js');
 
@@ -78,7 +78,7 @@ class PostAddress extends React.Component {
         //redirect
         const {redirect} = this.state
         return (
-            <div className="formAdmin">
+            <div className="layout_form postemail">
             {!redirect?
             (<form onSubmit={this.onSubmit} className="form">
                 <h2>Ajouter une adresse postale</h2>

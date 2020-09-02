@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
-import { select_person } from "../actions/index";
+import { select_person } from "../actions/rootActions.js";
 import './FilterPersonList.scss';
 
 class FilterPersonList extends Component {

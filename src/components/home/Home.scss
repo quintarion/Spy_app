@@ -26,26 +26,40 @@
 
     img {
         //border-radius: 19% 110% / 50% 60%;
-        border-radius: 70% 50% / 110% 19%;
-        margin-left: 10vw;
-        transform: translateY(-25%);
-        width: 300px !important;
+        filter: grayscale(80%);
+        border-radius: 50% 60%;
+        //transform: translateY(-15%);
+        width: 250px !important;
+        margin-left: 50vw;
+        //display: block;
+    }
+
+    p {
+        font-size: 17px;
+        line-height: 31px;
+        width: 60vw;
+        margin: auto;
+        //text-align: start;
+    }
+
+    // p::first-letter {
+    //     font-size: 2.3rem;
+    // }
+
+    p:nth-last-child(2) {
+        text-align: justify;
+    }
+
+    p:last-child {
+        margin-bottom: 1rem;
     }
 
     &-title {
         h1 {
             @include main-title;
-            // font-size: 3rem;
-            // position: absolute;
-            // text-align: right;
-
-            // font-size: 5rem;
-            // font-weight: 300;
-            // letter-spacing: 0;
-            // line-height: 1.3;
-            // font-family: 'Lato', sans-serif;
-            // color: #241C15;
-            // padding: 3rem;
+            text-align: left;
+            padding: 4rem;
+            font-size: 29px;
         }
     }
 

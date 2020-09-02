@@ -1,7 +1,7 @@
 @import '../../style/main.scss';
 
 .training {
-    background-color: whitesmoke;
+    //background-color: whitesmoke;
     background-image: url('../../assets/pictures/blob16.svg');
     background-size: 50%;
     //background-size: contain;
@@ -11,8 +11,8 @@
     /* curve effect */
     //border-top-left-radius: 50%;
     //border-top-right-radius: 0;
-    // border-bottom-left-radius: 50%;
-    // border-bottom-right-radius: 50%;
+    //border-bottom-left-radius: 50%;
+    //border-bottom-right-radius: 50%;
 
     .layout_container-text {
         order: 2;

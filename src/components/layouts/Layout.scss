@@ -8,11 +8,16 @@
     margin: auto 3rem;
     max-width: 100vw;
     //padding-top: 6rem;
-    
-    
+
     &_container {
         display: flex;
         flex-flow: row nowrap;
+
+        a, ul, li, strong, em, i {
+            @include p-large;
+            font-style : normal;
+            white-space: nowrap;
+        }
 
         div {
             //align-self: center;
@@ -51,6 +56,7 @@
         }
 
         &-text {
+            padding-left: 1rem;
 
             li {
                 list-style-type: disc;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { filter_persons } from '../actions/index';
+import { filter_persons } from '../actions/rootActions.js';
 import './SearchBar.scss';
 
 class SearchBar extends React.Component {

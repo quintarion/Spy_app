@@ -1,5 +1,5 @@
-import { combineReducers } from 'redux'
-import fetch_data from "./FetchPerson"
+import { combineReducers } from 'redux';
+import fetch_data from './FetchPerson';
 
 
 // Combine tout les reducers dans une seul fonction qui est combineReducers
@@ -7,4 +7,4 @@ import fetch_data from "./FetchPerson"
     persons: fetch_data
   })
 
-  export default RootReducers
+  export default RootReducers;

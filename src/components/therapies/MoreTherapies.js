@@ -13,7 +13,7 @@ const elements = [
         title: "A.T",
         text: [<p>L'analyse transactionnelle, appelée aussi AT, est une théorie de la personnalité, des rapports sociaux et de la communication . . .</p>],
         path: "/at",
-        page: "En savoir plus sur l'A.T",
+        page: "[...]",
     },
     {
         class: "three",
@@ -22,16 +22,16 @@ const elements = [
         title: "Réfléxologie Polarisée",
         text: [<p>La réflexologie est une méthode qui stimule les processus d’auto-guérison du corps par le biais de pressions exercées sur les zones réflexes situées sur les pieds et les mains . . .</p>],
         path: "/reflexology",
-        page: "En savoir plus sur la réfléxologie polarisée",
+        page: "[...]",
     },
     {
         class: "one",
         img: maya_7,
         alt: "",
         title: "Relaxation Sophronique",
-    text: [<p>Avec le «  terpnos logos  », la relaxation sophronique , s’adresse au système parasympathique et permet une détente  d’où vont émerger des pensées  et visualisations positives.</p>],
+        text: [<p>Avec le «  terpnos logos  », la relaxation sophronique , s’adresse au système parasympathique et permet une détente  d’où vont émerger des pensées  et visualisations positives.</p>],
         path: "/sophrology",
-        page: "En savoir plus sur la Sophrologie",
+        page: "[...]",
     },
 ];
 

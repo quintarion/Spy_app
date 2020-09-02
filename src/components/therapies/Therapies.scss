@@ -17,6 +17,10 @@
             img {
                 background-image: url('../../assets/pictures/blob12.svg');
             }
+
+            img:hover {
+                @include hover-picture($emdr);
+            }
            
         }
     
@@ -24,12 +28,20 @@
             img {
                 background-image: url('../../assets/pictures/blob8.svg');
             }
+
+            img:hover {
+                @include hover-picture($icv);
+            }
         }
     
         .three {
             img {
                 background-image: url('../../assets/pictures/blob16.svg');
             } 
+
+            img:hover {
+                @include hover-picture($eft);
+            }
         }
     }
 

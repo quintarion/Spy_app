@@ -13,7 +13,7 @@ const elements = [
     title: "E.M.D.R",
     text: [<p>L'EMDR (Eye Mouvement Desensitization et Reprocessing) est une méthode, qui permet une résolution rapide des symptômes liés à des blocages consécutifs à des événements vécus de façon douloureuse . . .</p>],
     path: "/emdr",
-    page: "En savoir plus sur l'EMDR",
+    page: "[...]",
     },
     {
     class: "two",
@@ -22,7 +22,7 @@ const elements = [
     title: "I.C.V",
     text: [<p>L’ICV (Intégration des Cycles de la Vie) permet la « digestion » des émotions du passé en connectant des réseaux de neurones les uns aux autres afin de dater les événements passés et faire en sorte que le corps n’y réagisse plus malgré nous . . .</p>],
     path: "/icv",
-    page: "En savoir plus sur l'ICV",
+    page: "[...]",
     },
     {
     class: "three",
@@ -31,7 +31,7 @@ const elements = [
     title: "E.F.T",
     text: [<p>EFT (Emotional Freedom Technique), il s'agit de tapoter certains points spécifiques situés sur nos méridiens . . .</p>],
     path: "/eft",
-    page: "En savoir plus sur l'E.F.T",
+    page: "[...]",
     },
 ];
 

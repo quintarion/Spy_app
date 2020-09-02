@@ -4,6 +4,7 @@ import { Route, Switch } from "react-router-dom";
 
 import Adult from './components/categories/Adult';
 import At from './components/therapies/At';
+import Career from './components/about/Career';
 import Child from './components/categories/Child';
 import Couple from './components/categories/Couple';
 import Dashboard from './pages/Dashboard';
@@ -68,6 +69,7 @@ class App extends React.Component {
             <Switch>
               {/* Showcase*/}
               <Route exact path='/' component={Main} />
+              <Route path='/career' component={Career} />
               {/* Description therapies */}
               <Route exact path='/icv' component={Icv} />
               <Route exact path='/emdr' component={Emdr} />

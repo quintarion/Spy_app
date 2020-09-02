@@ -71,16 +71,12 @@ const Footer = () => {
         <div className="footer">
             <div className="footer_container">
                 <SiteMap />
-                <ContactInfo />
             </div>
             <div className="footer_bottom">
+                {/* <Modal {...props}/> */}
+                <p>©2020 Tous droits réservés.</p>
                 <Modal {...props}/>
-                <p><i>&nbsp;
-                <Link to='#mentions'>&nbsp;Privacy &#x26; Terms
-                </Link>
-                </i>
-                &nbsp;
-                <span className="claw">&nbsp;Made with <span className="icon"><i class="fas fa-heart"></i></span> for my mother...</span>&nbsp;©2020 Tous droits réservés.</p>
+                <p>Made with <span className="icon"><i class="fas fa-heart"></i></span> for my mother...</p>
             </div>
         </div>
     )

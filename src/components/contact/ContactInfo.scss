@@ -1,140 +1,41 @@
 @import '../../style/main.scss';
 
 .contactInfo {
-    align-content: flex-start;
-    align-items: flex-start;
+    // align-content: flex-start;
+    // align-items: flex-start;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: left;
+    justify-content: center;
+    margin: auto;
+    padding-top: 1rem;
+    width: 100vw;
 
-    figcaption {
+    a, h3, h4, p {
+        display: block;
+        margin: auto;
         text-align: center;
     }
+
+    a, h4, p {
+        font-family: 'Open Sans Condensed',Helvetica,sans-serif;
+        font-size: 13px;
+        font-weight: 300;
+        letter-spacing: .144rem;
+    }
+
+    span a {
+        text-decoration: underline;
+    }
     
-    h2 {
-        margin-bottom: 1em;
-    }
-
-    h3 span {
-        font-size: 1.5rem;
-    }
-
-    img {
-        width: 9vw;
-        position: relative;
-        float: right;
-    }
-
-    &_card {
-        align-items: center;
-        display: flex;
-        height: 35vw;
-        justify-content: center;
-        margin: 0 auto;
-        padding: 2rem;
-        width: 40vw;
-
-        
-
-        div {
-            margin: .7rem auto;
-            width: 20vw;
-            border: 1.2px solid khaki;
-            border-radius: 3%;
-            padding: 1rem;
-        }
-
-        h3, h4, h5, p, a {
-            // color: black;
-            // font-family: Helvetica,Arial,Verdana,sans-serif;
-            // font-size: .8rem;
-            // font-weight: bold; 
-            color: rgba(0, 0, 0, 0.7);
-            font-family: 'Open Sans Condensed',Helvetica,sans-serif;
-            font-size: .8rem;
-            font-weight: 300;
-            letter-spacing: .144rem;
-            //text-transform: lowercase;
-            letter-spacing: -.044rem;
-            word-wrap: break-word;
-        }
-
-        h3 {
-            font-size: .8rem;
-            font-weight: 600;
-            text-transform: uppercase;
-        }
-
-        iframe {
-            height: 15vw;
-            padding: .5rem;
-            width: 15vw;
-        }
-    }
-
     @media screen and (max-width:799px) {
         align-content: center;
         align-items: center;
         justify-content: center;
-
-        &_card {
-            box-shadow: none;
-            height: 80vw;
-            padding: 1rem;
-            width: 80vw;
-
-            h3 {
-                font-weight: bold;
-                text-align: center;
-            }
-
-            h3, a, span, p {
-                //font-family: 'Poppins', sans-serif !important;
-                color: rgba(0, 0, 0, 0.7);
-                font-family: 'Open Sans Condensed',Helvetica,sans-serif;
-                font-weight: 300;
-                letter-spacing: .144rem;
-                text-transform: uppercase;
-                letter-spacing: -.044rem;
-                word-wrap: break-word;
-            }
-
-            div {
-                font-size: 16px;
-            
-                h4 {
-                    font-family: 'Poppins', sans-serif !important;
-                    font-size: 1rem !important;
-                    word-wrap: break-word;
-                }
-            }
-
-            &-iframe {
-                max-height: 40vw !important;
-                max-width: 40vw !important;
-            }
-            
-        }
-
-        &_card, img {
-            width: 80vw;
-        }
-
-        figcaption {
-            text-align: center;
-        }
     }
 
     @media screen and (max-width:545px) {
 
         p {
             font-size: 80%;
-        }
-
-        &_card, img {
-            height: 100vw;
-            width: 100vw;
         }
     }
 }

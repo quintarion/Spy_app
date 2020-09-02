@@ -150,3 +150,25 @@ a[href^="http"] {
   background-size: 4%;
   padding-left: 10px;
 }
+
+/* List */
+
+ul li {
+  display: list-item;
+  list-style-type: disc;
+}
+
+ul {
+  //display: list-item;
+  list-style-type: disc;
+//   //list-style-type: bengali !important;
+//   //-moz-bengali
+}
+
+p {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  word-break: break-word;
+}

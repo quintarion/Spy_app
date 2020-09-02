@@ -115,11 +115,11 @@ class ContactForm extends React.Component {
                     <div className="form-flex-two">
                     <label htmlfor="topic">Quel est l'objet de votre message ?</label>
                     <div className="form-select">
-                        <select type="select" id="topic" name="topic" className="contact-topic" value={this.state.value} onChange={this.topicChange} required>
-                            <option  disabled value="" selected="selected">Veuillez sélectionnez un objet :</option> 
-                            <option value={this.state.value}>Je souhaite prendre ou décaler un rendez-vous</option>
-                            <option value={this.state.value}>Je souhaite me renseigner sur votre activité...</option>
-                            <option value={this.state.value}>Je suis un partenaire ou un paire</option>
+                        <select type="select" id="topic" name="topic" value={this.state.value} className="contact-topic" onChange={this.topicChange} required>
+                            <option  disabled value="" selected="selected" >Veuillez sélectionnez un objet </option> 
+                            <option value={this.state.value}>Prendre ou décaler un rendez-vous</option>
+                            <option value={this.state.value}>Me renseigner sur votre activité</option>
+                            <option value={this.state.value}>Partenaire / Paire</option>
                             <option value={this.state.value}>Autre</option>
                             <i class="fa fa-caret-down" aria-hidden="true"></i>
                         </select>
@@ -130,7 +130,7 @@ class ContactForm extends React.Component {
                         aria-required="true"
                         name="message"
                         id="message"
-                        rows={6}
+                        rows={8}
                         //cols={50}
                         maxlength={250}
                         value={this.state.message}
@@ -145,7 +145,7 @@ class ContactForm extends React.Component {
                         className="contact-button"
                         type="Submit"
                         value="Send" 
-                        name="Soumettre" /* here pros value */
+                        name="Soumettre" /* here props value */
                     />
                 
             </form>
