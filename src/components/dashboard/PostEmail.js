@@ -2,9 +2,9 @@ import React from 'react';
 import axios from 'axios';
 import { connect } from 'react-redux';
 import { Redirect, Link } from 'react-router-dom';
-import { select_person } from "../../actions/index";
+import { select_person } from "../../actions/rootActions.js";
 
-import '../../style/components.scss';
+import './PostEmail.scss';
 
 // IMPORT CONFIG 
 //const config = require('../../config/config');
@@ -66,13 +66,12 @@ class PostEmail extends React.Component {
         //redirect
         const {redirect} = this.state
         return (
-            <div className="formAdmin">
+            <div className="layout_form postemail">
             {!redirect?
             (<form onSubmit={this.onSubmit} className="form">
                 <h2>Ajouter un courriel au contact</h2>
                 
                 <span>
-                    <p>Type</p>
                     <div>
                         <label htmlFor="perso">Email personnel</label>
                         <input 
@@ -134,10 +133,10 @@ class PostEmail extends React.Component {
 
 const mapStateToProps = (state) => {
     console.log('redux state :', state) // state, give an object with all the persons
-    return {
-        //select_person: 12 
-        select_person: state //????
-    }
+        return {
+            //select_person: 12 
+            select_person
+        }
 }
     
 export default connect(mapStateToProps)(PostEmail);

@@ -1,25 +1,37 @@
 @import '../../style/main.scss';
 
 .footer {
-    background: linear-gradient(white, #e6e5e7);
-
-    &_container {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        margin: auto;
-        //padding: 2rem 0 3rem;
-    }
-
-    p {
-        color: #403b3b;
-        font-family: Helvetica,Arial,Verdana,sans-serif;
-        line-height: 1.35;
-    }
+    background-color: $secondary;
 
     &_bottom {
-        background-color: #ffe74c;
-        padding: 1rem 0 1rem;
+        display: flex;
+        padding: 1rem .5rem 1rem;
+        font-family: 'Open Sans Condensed',Helvetica,sans-serif;
+        font-size: 13px;
+        font-weight: 300;
+        letter-spacing: .144rem;
+
+        p {
+            color: darken(#e6e5e7, 30%);
+            font-family: 'Open Sans Condensed',Helvetica,sans-serif;
+            font-size: 13px;
+            font-weight: 300;
+            letter-spacing: .144rem;
+        }
+
+        div:nth-child(2) {
+            color: darken(#e6e5e7, 40%);
+            padding: .2rem 1rem;
+
+            i {
+                text-decoration: underline;
+            }
+            
+
+            &:hover {
+                color: #007C89;
+            }
+        }
     }
 
     /**
@@ -34,9 +46,9 @@
         font-size: .7rem;
         padding: 1.5rem 0 1.5rem;
 
-        &_bottom {
-            margin-left: 5%;
-        }
+        // &_bottom {
+        //     margin-left: 5%;
+        // }
 
         &_container {
             display: none;

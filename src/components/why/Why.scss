@@ -8,12 +8,18 @@
         @include width;
 
         h2 {
-            text-align: center;
+            text-align: left !important;
             @include big-title;
+        }
+
+        i {
+            font-size: 30px;
+            text-align: center;
         }
 
         ul {
             padding: 2rem 0;
+            list-style-type: disc !important;
         }
     }
 

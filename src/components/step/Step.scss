@@ -16,10 +16,27 @@
         }
 
         &-text {
-            height: 48vh;
-            overflow: auto;
-            scrollbar-width: none; //Hide scrollbar
-            text-overflow: ellipsis;
+            // grid-template-areas: 
+            // " one one one"
+            // " one two one"
+            // " three two three"
+            // " three three three";
+            //height: 48vh;
+            //overflow: auto;
+            //scrollbar-width: none; //Hide scrollbar
+            //text-overflow: ellipsis;
+
+            .one {
+                grid-area: one;
+            }
+
+            .two {
+                grid-area: two;
+            }
+
+            .three {
+                grid-area: three;
+            }
 
             p {
                 //background-color: #e6e5e7;

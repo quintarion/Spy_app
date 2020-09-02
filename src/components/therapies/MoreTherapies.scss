@@ -24,6 +24,10 @@
                 //background-color: $color-blue;
                 background-image: url('../../assets/pictures/blob8.svg');
             }
+
+            img:hover {
+                @include hover-picture($icv);
+            }
            
         }
     
@@ -32,13 +36,21 @@
                 //background-color: $color-mallow;
                 background-image: url('../../assets/pictures/blob13.svg');
             }
+
+            img:hover {
+                @include hover-picture($at);
+            }
         }
     
         .three {
             img {
                 //background-color: $color-green;
                 background-image: url('../../assets/pictures/blob6.svg');
-            } 
+            }
+            
+            img:hover {
+                @include hover-picture($couple);
+            }
         }
     }
 

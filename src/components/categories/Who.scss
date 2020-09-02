@@ -1,11 +1,46 @@
 @import '../../style/main.scss';
 
+$child: #efee9d;
+$adult: #febf63;
+$couple: #ade498;
+$emdr: #fffbcb;
+$icv: #ede682;
+$eft: #bde9db;
+$at: #FFE74C;
+
+@mixin hover-picture ($color) {
+    background-color: $color;
+    background-repeat: no-repeat;
+    transition: background-color 1s ease, height 1s linear;
+}
+
+/*selecteur {
+    transition:
+        <transition-property>
+        <transition-duration>
+        <transition-timing-function> 
+        <transition-delay>;
+}*/
+
+////////////////////////////////
+
 .who {
     padding-top: 4rem;
 
     h2 {
         padding-bottom: 2rem;
     }
+
+    // h2::after {
+    //     content: '';
+    //     background-color: #1a191b;
+    //     display: block;
+    //     width: 50px;
+    //     height: 6px;
+    //     margin: 25px auto 20px;
+    //     position: absolute;
+    //     bottom: -50px;
+    // }
 
     &_container {
         margin: auto;
@@ -19,6 +54,10 @@
         .one {
             img {
                 background-image: url('../../assets/pictures/blob.svg');
+            }
+
+            img:hover {
+                @include hover-picture($child);
             }
         }
 
@@ -34,21 +73,21 @@
             img {
                 background-image: url('../../assets/pictures/blob5.svg');
             } 
+
+            img:hover {
+                @include hover-picture($couple);
+            }
         }
 
         .two {
             img {
                 background-image: url('../../assets/pictures/blob9.svg');
             }
+
+            img:hover {
+                @include hover-picture($adult);
+            }
         }
-
-        // &_intro {   
-
-        //     p {
-        //         padding: 2rem 0;
-        //     }
-
-        // }
 
         &_flex {
             align-content: space-between;

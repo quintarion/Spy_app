@@ -18,9 +18,9 @@ class ModalSaveSecurity extends React.Component {
         return (
      
             <div>
-                <div className="btn-security-save2">
-                    <button className="btn-save-modif" onClick={this.openModalSecuritySave}>{this.props.name}</button>
-                </div>
+                <menu className="btn-security-save2">
+                    <i className="btn-save-modif" onClick={this.openModalSecuritySave}>{this.props.name}</i>
+                </menu>
                 <div className={this.state.isModalSaveSecurity ? 'modal_overlay' : null }>
                     <div role="alert dialog"  className="container-security-save" role="dialog">
                         <div className={this.state.isModalSaveSecurity ? 'display-block-save' : 'display-none-save'}>
@@ -35,7 +35,7 @@ class ModalSaveSecurity extends React.Component {
                                     </div>
                                 </div>
                                 <menu className="container-open-security-save">
-                                    <button onClick={this.closeModalSecuritySave} className="btn-modal-close-security-save">J'accepte</button>
+                                    <button onClick={this.closeModalSecuritySave} className="btn-modal-close-security-save">J'accepte</button> 
                                 </menu>
                         </div>
                     </div>

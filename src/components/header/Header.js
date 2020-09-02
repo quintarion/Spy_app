@@ -1,5 +1,4 @@
 import React from "react";
-import { HashLink as Link } from 'react-router-hash-link';
 import Menu from './Menu';
 import './Header.scss';
 
@@ -20,18 +19,18 @@ class Header extends React.Component {
     window.addEventListener("scroll", this.handleScroll);
   }
 
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
-  }
+  // componentWillUnmount() {
+  //   window.removeEventListener("scroll", this.handleScroll);
+  // }
 
   // a function attached to the scroll event the function that will fire
-  handleScroll = () => {
-    const { scrollPos } = this.state
-    this.setState({
-      scrollPos: document.body.getBoundingClientRect().top, //send the size of an element in viewport 
-      show: document.body.getBoundingClientRect().top < scrollPos
-    });
-  }
+  // handleScroll = () => {
+  //   const { scrollPos } = this.state
+  //   this.setState({
+  //     scrollPos: document.body.getBoundingClientRect().top, //send the size of an element in viewport 
+  //     show: document.body.getBoundingClientRect().top < scrollPos
+  //   });
+  // }
 
   render() {
     return (
@@ -39,7 +38,7 @@ class Header extends React.Component {
         <header className="header" role="banner"> 
           <div className="header-home">
             {/* logo brand */}
-            <div className="header-brand">
+            {/* <div className="header-brand">
               <Link to="#home">
                 <img
                   className="logo"
@@ -47,7 +46,7 @@ class Header extends React.Component {
                   alt="logo représentant deux mains"
                 />
                </Link>
-            </div>
+            </div> */}
             {/* navigation links  */}
             <div className= "toggle" onClick= {this.toggle}>
         

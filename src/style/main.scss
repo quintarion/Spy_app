@@ -175,9 +175,9 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-nav ul {
-  list-style: none;
-}
+// nav ul {
+//   list-style: none;
+// }
 
 blockquote, q {
   quotes: none;
@@ -217,9 +217,9 @@ figcaption, p, li {
   @include p-large;
 }
 
-ul {
-  list-style: none;
-}
+// ul {
+//   list-style: none;
+// }
 
 @mixin width {
   width: 75%;

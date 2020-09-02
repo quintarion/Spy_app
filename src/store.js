@@ -1,6 +1,6 @@
 import { createStore, compose, applyMiddleware, combineReducers } from "redux";
 import thunk from "redux-thunk"; //Redux Middleware
-import { fetchAllPersons, select_person } from './actions/index';
+import { fetchAllPersons, select_person } from './actions/rootActions.js';
 import RootReducers from './reducers';
 
 const middleware = [thunk];

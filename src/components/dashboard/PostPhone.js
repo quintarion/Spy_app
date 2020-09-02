@@ -4,7 +4,7 @@ import { Redirect, Link } from 'react-router-dom';
 import Button from '../layouts/Button';
 import FrenchPhoneField from '../layouts/FrenchPhoneField';
 
-import '../../style/components.scss';
+import '../../style/main.scss';
 
 //const config = require('../../config/config.js');
 
@@ -75,7 +75,7 @@ class PostPhone extends React.Component {
         const {redirect} = this.state;
 
         return (
-            <div className="formAdmin">
+            <div className="layout_form postphone">
             {!redirect? 
             (<form onSubmit={this.onSubmit} className="form">
                 <h2>Ajouter un numéro de téléphone au contact</h2>

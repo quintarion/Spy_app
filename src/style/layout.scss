@@ -163,7 +163,12 @@ input[type='radio'] { vertical-align: baseline;}
 	select{
 		//@include appearance(none);
 		cursor: pointer;
-	}
+  }
+  
+  span {
+    display: block;
+  }
+  
 	label{
 		position: absolute;
 		left: 8px;

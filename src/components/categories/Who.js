@@ -14,7 +14,7 @@ const elements = [
     title: "Enfant, Adolescent",
     text: [<p>Votre enfant est hyper actif, trop rêveur, a des terreurs nocturnes ou cauchemars récurrents,  ne peut pas dormir seul, souffre de perturbation du transit intestinal, est énurétique ou violent... N’oubliez pas que je demanderai à rencontrer toutes les personnes vivant au foyer de l’enfant lors de la première séance et la plus part du temps chercherai à contacter l’autre parent en cas de séparation.</p>],
     path: "/child/#child",
-    page: "En savoir plus...",
+    page: "[...]",
     indent1: "testestest",
     indent2: "fffffff",
     indent3: "tttt"
@@ -26,7 +26,7 @@ const elements = [
     title: "Adulte",
     text: [<p>Powder halvah tart powder sugar plum liquorice marzipan. Oat cake chupa chups liquorice carrot cake macaroon. Liquorice gummies oat cake cookie pastry cake gingerbread dessert dessert. Powder chocolate brownie icing sweet brownie.</p>],
     path: "/adult/#adult",
-    page: "Adulte",
+    page: "[...]",
     indent1: "testestest",
     indent2: "fffffff",
     indent3: "tttt"
@@ -44,7 +44,7 @@ const elements = [
     Vous voulez évoluer ensemble, les conditions des séances sont énoncées dans le lien ci-dessous.<br/>
     </p>],
     path: "/couple/#couple",
-    page: "En savoir plus...",
+    page: "[...]",
     indent1: "testestest",
     indent2: "fffffff",
     indent3: "tttt"
