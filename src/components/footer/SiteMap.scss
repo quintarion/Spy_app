@@ -5,18 +5,18 @@
     flex-flow: row nowrap;
     flex-grow: 1;
     justify-content: space-evenly;
-    padding-top: 7rem;
+    padding-top: 3rem;
 
     a {
         font-size: .8rem;
     }
 
     div {
-        width: calc(60vw/6);
+        width: calc(75vw/4);
     }
 
     h3 {
-        color: #007C89;
+        color: $color-link;
         font-family: Helvetica,Arial,Verdana,sans-serif;
         font-size: .8rem;
         font-weight: bold;

@@ -1,11 +1,11 @@
 import React from 'react';
-import Career from '../components/about/Career';
 import Contact from '../components/contact/Contact';
 import Footer from '../components/footer/Footer';
 import Header from '../components/header/Header';
 import Home from '../components/home/Home';
 import MoreTherapies from '../components/therapies/MoreTherapies';
 import Therapies from '../components/therapies/Therapies';
+import ToTop from '../components/layouts/ToTop';
 import Training from '../components/about/Training';
 import Step from '../components/step/Step';
 import Who from '../components/categories/Who';
@@ -21,10 +21,14 @@ const Main = () => {
             </div>
             <main className="site-content">
                 <Home/>
-                <div className="sticky">
-                <Header/>
+                <div className="sticky-up">
+                    <Header/>
                 </div>
                 <Training/>
+                {/* effect sticky navigation */}
+                <div className="sticky-down">
+                    <ToTop/>
+                </div>
                 <Why/>
                 <Who/>
                 <Step/>

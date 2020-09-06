@@ -1,26 +1,5 @@
 @import '../../style/main.scss';
 
-$child: #efee9d;
-$adult: #febf63;
-$couple: #ade498;
-$emdr: #fffbcb;
-$icv: #ede682;
-$eft: #bde9db;
-$at: #FFE74C;
-
-@mixin hover-picture ($color) {
-    background-color: $color;
-    background-repeat: no-repeat;
-    transition: background-color 1s ease, height 1s linear;
-}
-
-/*selecteur {
-    transition:
-        <transition-property>
-        <transition-duration>
-        <transition-timing-function> 
-        <transition-delay>;
-}*/
 
 ////////////////////////////////
 

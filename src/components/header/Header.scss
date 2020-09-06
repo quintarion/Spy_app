@@ -33,11 +33,15 @@
     padding: 1rem 5%;
     
     width: 100vw;
-    z-index: 2;
 
-   
-
+        &:hover {
+            height: 7rem;
+        }
     }
+
+
+    
+
 
     a {
         pointer-events: auto;

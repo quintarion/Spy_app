@@ -3,25 +3,45 @@
 .footer {
     background-color: $secondary;
 
+    hr {
+        height: .5px;
+        width: 90%;
+        margin: auto;
+        padding: 0;
+        background-color: lighten($color-link, $amount: 30%);
+        border: 0;
+    }
+
+    &_content {
+        padding-bottom: 2rem;
+    }
+
     &_bottom {
         display: flex;
-        padding: 1rem .5rem 1rem;
-        font-family: 'Open Sans Condensed',Helvetica,sans-serif;
-        font-size: 13px;
-        font-weight: 300;
-        letter-spacing: .144rem;
+        justify-content: flex-end;
+        padding: 1rem 3rem 1rem;
+        // font-family: 'Open Sans Condensed',Helvetica,sans-serif;
+        // font-size: 13px;
+        // font-weight: 300;
+        // letter-spacing: .144rem;
 
         p {
-            color: darken(#e6e5e7, 30%);
-            font-family: 'Open Sans Condensed',Helvetica,sans-serif;
-            font-size: 13px;
-            font-weight: 300;
-            letter-spacing: .144rem;
+            // color: darken(#e6e5e7, 30%);
+            // font-family: 'Open Sans Condensed',Helvetica,sans-serif;
+            // font-size: 13px;
+            // font-weight: 300;
+            // letter-spacing: .144rem;
+            @include link;
+            font-size: 11px;
+            font-weight: 200;
+            cursor: none;
         }
 
         div:nth-child(2) {
-            color: darken(#e6e5e7, 40%);
-            padding: .2rem 1rem;
+            @include link;
+            font-size: 11px;
+            font-weight: 200;
+            padding: .2rem 2rem;
 
             i {
                 text-decoration: underline;
