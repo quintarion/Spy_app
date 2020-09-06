@@ -15,6 +15,8 @@ const props = {
         34 290 SERVIAN<br/>
         Téléphone: +33 (0)6 25 23 09 05<br/>
         Courriel: ...@....</p>
+        <p>Siret: </p>
+        <p>Code ape : </p>
         <hr/>
         <h3>Activité</h3>
         <p>Pour une activité réglementée, le site internet doit mentionner les informations suivantes :<br/>
@@ -69,9 +71,10 @@ const props = {
 const Footer = () => {
     return (
         <div className="footer">
-            <div className="footer_container">
+            <div className="footer_content">
                 <SiteMap />
             </div>
+            <hr/>
             <div className="footer_bottom">
                 {/* <Modal {...props}/> */}
                 <p>©2020 Tous droits réservés.</p>

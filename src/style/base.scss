@@ -70,6 +70,7 @@
           box-sizing: border-box;
           //text-overflow: ellipsis; //three dots = ellipsis
           //scrollbar-color: transparent;
+    //scroll-behavior: smooth; //smoothly animates the transition when a user clicks a link that targets an anchored position within a scrolling box
 }
 
 // p::-webkit-scrollbar { 
