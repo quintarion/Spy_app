@@ -47,13 +47,13 @@
         }
 
         span a {
-            margin-top: 1rem;
-            @include button;
+            margin-top: 2rem;
+            @include nav;
         }
 
-        span a:hover {
-            @include button-hover;
-        }
+        //span a:hover {
+            //@include button-hover;
+        //}
 
         &-text {
             padding-left: 1rem;
@@ -62,6 +62,10 @@
                 list-style-type: disc;
                 @include p-large;
             } 
+        }
+
+        ul {
+            padding-bottom: .3rem;
         }
     }
 

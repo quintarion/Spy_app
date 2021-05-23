@@ -1,7 +1,9 @@
 import React from 'react';
 
 class FrenchPhoneField extends React.Component {
+
   state = { value: '' }
+  
 
   /* This method is declared using an arrow function initializer solely
   to guarantee its binding, as we cannot use decorators just yet.*/

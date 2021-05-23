@@ -25,10 +25,9 @@ class Contact extends React.Component {
                 <div>
                     <h3>Hélène QUINTANA-FAUR&Eacute;</h3>
                     <h4>Psychologue Clinicienne</h4><br/>
-                    <p>cheminversite@gmail.com</p>
                     {/* change content according to screen size */}
-                    {!smaller ? (<a href="sms:0602010304">SMS</a>) : 
-                        (<span><a href="mailto:chemeinversite@gmail.com">écrire ici</a></span>)}
+                    {!smaller ? (<p>cheminversite@gmail.com<a href="sms:0602010304">SMS</a></p>) : 
+                        (<span><a href="mailto:chemeinversite@gmail.com">cheminversite@gmail.com</a></span>)}
                         <br/>
                         <p>19 Chemin du Mas de Bouran <br/>
                         34 290 SERVIAN<br/>

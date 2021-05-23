@@ -3,6 +3,11 @@
     margin-top: 1rem;
     overflow: auto;
 
+    li:hover {
+        background-color: rgba(0,0,0,.1);
+        cursor: grab;
+    }
+
     span:first-child {
         text-transform: capitalize;
     }

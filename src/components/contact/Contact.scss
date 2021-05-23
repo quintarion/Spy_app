@@ -5,7 +5,9 @@
     // background-image: url('../../assets/icons/send.png');
     // background-size: 40%;
     // background-repeat: no-repeat;
-    padding: 8rem 2rem;
+    padding-bottom: 4rem;
+    max-width: 85vw;
+    margin: auto;
 
     h2 {
         @include big-title;

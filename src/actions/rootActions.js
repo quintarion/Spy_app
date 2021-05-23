@@ -4,14 +4,13 @@ export const GET_PERSON = 'GET_PERSON';
 export const FILTER_PERSONS = 'FILTER_PERSONS';
 export const SELECT_PERSON = 'SELECT_PERSON';
 
-// Get PERSONs 
+// Get PERSONS 
 export const fetchPersons = (persons) => {
     return {
       type: GET_PERSON,
       payload:{
         persons
       }
-     
     }
 };
 
@@ -25,29 +24,18 @@ export const fetchAllPersons = () => {
           throw(error);
         });
     };
-  };
+};
 
-  // FILTER PERSONS
-  export const filter_persons = (value) => {
-    return {
-      type: FILTER_PERSONS,
-      payload: value
-    }
-  };
+// FILTER PERSONS
+export const filter_persons = (value) => {
+  return {
+    type: FILTER_PERSONS,
+    payload: value
+  }
+};
 
-  // SELECT ID PERSON
-  export const select_person = (id) => ({
-    type: SELECT_PERSON,
-    payload: id
-  })
-
-  // TEST ASMA //
-
-export const DISPLAYIMAGE="DISPLAYIMAGE"
-
-export const displayimage = payload => {
-    return {
-        type: DISPLAYIMAGE,
-        payload
-    }
-}  
+// SELECT ID PERSON
+export const select_person = (id) => ({
+  type: SELECT_PERSON,
+  payload: id
+})

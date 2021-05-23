@@ -1,21 +1,12 @@
+@import '../../style/main.scss';
+
 .contactForm {
-    border-top: 1px solid rgba(0,0,0,.1);
-    border-bottom: 1px solid rgba(0,0,0,.1);
-    //background-color: rgba(0, 0, 0, .4);
-    width: 75vw;
-    // background-image: url('../../assets/pictures/blob-beige.svg');
-    // background-size: 100%;
-    // background-repeat: no-repeat;
 
-    //background-color: #f5f5f5;
-    //border: 1.1px solid rgba(0, 0, 0, 0.3);
-    //border-radius: 50% 20% / 10% 40%;
-
-    
     .button {
-        display: block;
+        @include nav;
+        //display: block;
         float: right;
-        margin: .9rem;
+        //margin: .9rem;
     }
 
     h2 {
@@ -35,21 +26,26 @@
     .form {
         padding: 2rem;
 
-        .contact-topic {
-            background: url("../../assets/icons/sort-down-solid.svg") no-repeat right 10px center;
-            background-size: 13px;
-        }    
+        .contact-topic-open {
+            background: url("../../assets/icons/angle-down-solid.svg") no-repeat right 4% center;
+            background-size: 3%;
+        } 
 
+        .contact-topic-close {
+            background: url("../../assets/icons/times-solid.svg") no-repeat right 4% center;
+            background-size: 3%;
+        }
+        
         &-flex {
             display: flex;
             justify-content: space-between;
 
             &-one, &-two {
-                width: calc(75vw/2);
+                width: calc(75vw/3);
             }
 
             &-one {
-                padding-right: .76rem;
+                padding-right: 1.5rem;
             }
         }
 
@@ -62,6 +58,7 @@
 
         #firstname {
             text-transform: capitalize;
+            //text-transform: lowercase;
 
             &::placeholder {
                 text-transform: none;
@@ -95,12 +92,16 @@
         //}
 
         label, legend, i {
-            color: black;
-            font-family: 'Open Sans Condensed',Helvetica,sans-serif;
-            //font-family: 'Poppins', sans-serif;
-            font-weight: 300;
-            letter-spacing: .144rem;
+            font-family: NeutraText-Light,Arial,sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+            color: #454545 !important;
             text-transform: uppercase;
+        }
+
+        i {
+            font-weight: 300;
+            font-size: 9px;
         }
 
         #lastname {
@@ -136,15 +137,22 @@
             // font-family: 'Poppins', sans-serif;
             // font-size: 1.25rem;
             // letter-spacing: 0;
-            font-family: 'Open Sans Condensed',Helvetica,sans-serif;
-            font-size: 16px;
-            font-weight: 300;
-            letter-spacing: .144rem;
+            //font-family: 'Open Sans Condensed',Helvetica,sans-serif;
+            //font-size: 16px;
+            //font-weight: 300;
+            //letter-spacing: .144rem;
             padding-top: 1rem;
             margin: 0;
             margin-bottom: 1.5rem;
             //position: relative;
             width: 100%;
+
+            /*Font style*/
+            font-family: NeutraText-Light,Arial,sans-serif;
+            font-size: 14px;
+            font-weight: 200;
+            color: #454545 !important;
+           
         }
 
         /* customize select tag */
@@ -158,7 +166,7 @@
         }
 
         textarea {
-            background-color: rgba(191,170,143,.1);
+            //background-color: rgba(191,170,143,.1);
             margin-top: 1rem;
         }
 
@@ -166,6 +174,7 @@
 
     p {
         padding-bottom: 2rem;
+        @include p-font;
     }
 
     @media screen and (max-width:799px) {

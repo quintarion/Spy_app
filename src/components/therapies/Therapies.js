@@ -29,7 +29,7 @@ const elements = [
     img: maya_2,
     alt: "",
     title: "E.F.T",
-    text: [<p>EFT (Emotional Freedom Technique), il s'agit de tapoter certains points spécifiques situés sur nos méridiens . . .</p>],
+    text: [<p>EFT (Emotional Freedom Technique), il s'agit de tapoter certains points spécifiques situés sur nos méridiens [...]</p>],
     path: "/eft",
     page: "[...]",
     },

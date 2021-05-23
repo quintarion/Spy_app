@@ -1,7 +1,9 @@
 import React from 'react';
 import Brand from '../layouts/Brand';
+import Heading from '../layouts/Heading';
 import Therapy from '../layouts/Therapy';
 import trust from '../../assets/icons/trust.png';
+import './Emdr.scss';
 import '../../style/main.scss';
 
 export const elements = [
@@ -17,7 +19,7 @@ export const elements = [
         innerpath: "/#contact",
         innerpage: "Contact",
         path: "https://www.emdr-france.org/web/quest-therapie-emdr/",
-        page: "En savoir plus sur l'EMDR",
+        page: "En savoir plus",
     }
 ];
 
@@ -25,6 +27,7 @@ const Emdr = () => {
     return (
         <section className="pageTherapy" id="emdr">
             <Brand/>
+            <Heading img={trust} alt="" caption="E.M.D.R"/>
             <Therapy elements={elements} />
         </section>
     )

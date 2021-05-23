@@ -101,7 +101,7 @@ npm install react-app-rewired customize-cra csp-html-webpack-plugin --save-dev
 npm install react-scroll-parallax
 
 ### `full calendar`
-npm install --save @fullcalendar/core @fullcalendar/daygrid
+npm install --save @fullcalendar/react @fullcalendar/core @fullcalendar/daygrid
 
 ### `plugin fullcalendar`
 npm install @fullcalendar/core @fullcalendar/daygrid @fullcalendar/timegrid @fullcalendar/list

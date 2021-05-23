@@ -53,7 +53,7 @@ export const items = {
         }
       ]
     },
-    'A propos': {
+    'à propos': {
       link: "#training",
       sub_items: [
         {
@@ -62,7 +62,7 @@ export const items = {
         },
         {
           li: "Mon parcours",
-          link: "#career"
+          link: "/career"
         }
       ]
     },

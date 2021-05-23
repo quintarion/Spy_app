@@ -1,4 +1,5 @@
 import React from 'react';
+import { Parallax } from 'react-scroll-parallax';
 import Layout from '../layouts/Layout';
 import fulllength from '../../assets/pictures/full-length.jpg';
 import portrait from '../../assets/pictures/portrait.jpg';
@@ -30,7 +31,9 @@ const Home = () => {
                 <p>je suis <strong>Psychologue Clinicienne-Psychothérapeute</strong> et sur ce site je vais tenter de vous présenter les modalités pratiques pour suivre une psychothérapie,</p>
                 <p>mes différentes approches thérapeutiques et mon positionnement « <i>humain</i> ».</p>
             </div>
-            <img src={portrait} alt=""/>
+            <Parallax className="custom-class" y={[-25, 20]} tagOuter="figure">
+                <img src={portrait} alt=""/>
+            </Parallax>
         </section>
     )
 }

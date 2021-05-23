@@ -53,11 +53,19 @@
             padding-top: 1rem;
         }
 
+        a::after {
+            content: '[...]';
+        }
+
+        a:hover::after {
+            content: '[ lire la suite ]';
+        }
+
         p {
             font-size: 16px;
             
             //transform: translateY(-30px);
-            width: 19vw;
+            width: 21vw;
             margin: auto;
         }
     }

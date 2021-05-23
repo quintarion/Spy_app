@@ -26,11 +26,11 @@ render() {
         <div className="layout-therapy_container-text">
           <h2>{element.title}</h2>
           <h3>{element.subtitle}</h3>
-          <p>
-            {element.text}
-          </p>
+          {element.text}
+          <div>
             <NavLink activeClassName="selected" to={element.innerpath}>{element.innerpage}</NavLink>
             <a href={element.path} target='_blanck' rel="nofollow noreferrer noopener">{element.page}</a>
+          </div>
         </div>
 
       <div className="layout-therapy_container">

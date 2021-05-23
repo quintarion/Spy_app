@@ -8,7 +8,7 @@ const Brand = () => {
             {/* logo brand */}
             <div className="brand">
                 <Link to="/#home">
-                    <i class="fas fa-arrow-left"><br/>Accueil</i>
+                    retour
                     {/* <figure>
                         <img
                         className="logo"

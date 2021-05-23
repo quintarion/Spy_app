@@ -1,0 +1,28 @@
+.heading {
+
+    figcaption {
+        display: flex;
+        font-size: 1rem;
+        font-weight: 300;
+        justify-content: center;
+        letter-spacing: 0;
+        line-height: 1.4;
+        text-align: justify;
+        transform: translateY(-30px);
+    }
+
+    // figure {
+    //     padding-top: 1rem;
+    //     width: 24vw;
+    // }
+
+    img {
+        border-radius: 50%;
+        display: block;
+        height: calc(100vw/7);
+        margin: 1.25rem auto;
+        padding-top: 1rem;
+        width: calc(100vw/7);
+    } 
+
+}

@@ -19,7 +19,7 @@ const Subcategory = ({elements}) => {
         </figure> 
         <div className="subcategory-text">
           {element.text}
-          <Link activeClassName="" to={element.path}>{element.page}</Link>
+          <Link activeClassName="" to={element.path}></Link>
         </div>
       </div>
       )}

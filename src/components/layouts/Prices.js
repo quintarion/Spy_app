@@ -1,21 +1,19 @@
-import React, {Component} from "react";
+import React from "react";
 import './Prices.scss';
 
-class Prices extends Component {
+const Prices = ({cells}) => {
 
     // componentDidMount(){ 
     //     window.addEventListener("load", function(event) {
     //     document.querySelector(".move-left").classList.add("load");
     //     });
     // }
-
-    render() {
-        return  (
-            <aside className="price" id="move-left">
-                <div className="price_list">
-                    <table className="price_table">
-                        <tr>
-                            <table>
+    return  (
+        <aside className="price" id="move-left">
+            <div className="price_list">
+                <table className="price_table">
+                    <tr>
+                        <table>
                             <caption>Coût des consultations</caption>
                                 <tr>
                                     <th>Séances</th>
@@ -23,7 +21,7 @@ class Prices extends Component {
                                     <th>Tarif</th>
                                 </tr>
                                 
-                                {this.props.cells.map((cell, index) => // Map only few cells in the 'prices' table
+                                {cells.map((cell, index) => // Map only few cells in the 'prices' table
                                 <tr key={index}>
                                     <td>{cell.name}</td>
                                     <td>{cell.duration}</td>
@@ -57,12 +55,10 @@ class Prices extends Component {
                                 </tr>
                             </table>
                         </tr>
-                    </table>
-                </div>
-                
-            </aside>
-        )
-    }
+                </table>
+            </div>  
+        </aside>
+    )
 }
 
 export default Prices;
