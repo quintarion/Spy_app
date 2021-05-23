@@ -111,8 +111,9 @@
 margin-top:20px;
 
 .btn-modal-close-security-save{
- 
-        @include button;
+    
+    @include nav;
+        //@include button;
         width: 20vw;
         margin: auto;
         margin-bottom: auto;
@@ -130,9 +131,9 @@ margin-top:20px;
     // cursor: pointer;
     // margin-left:9vw;
 
-    &:hover {
-        @include button-hover;
-    }
+    // &:hover {
+    //     @include button-hover;
+    // }
    
 }
 

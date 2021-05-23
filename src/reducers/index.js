@@ -7,4 +7,4 @@ import fetch_data from './FetchPerson';
     persons: fetch_data
   })
 
-  export default RootReducers;
+export default RootReducers;

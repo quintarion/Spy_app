@@ -1,7 +1,9 @@
 import React from 'react';
 import Brand from '../layouts/Brand';
+import Heading from '../layouts/Heading';
 import Therapy from '../layouts/Therapy';
 import maya_8 from '../../assets/icons/maya_8.png';
+import './At.scss';
 import '../../style/main.scss';
 
 export const elements = [
@@ -17,7 +19,7 @@ export const elements = [
         innerpath: "/#contact",
         innerpage: "Contact",
         path: "https://www.ifat-asso.org/",
-        page: "En savoir plus sur l'Analyse Transactionnelle",
+        page: "En savoir plus",
     },
 ];
 
@@ -25,10 +27,11 @@ const At = () => {
     return (
         <>
             <section className="pageTherapy" id="at">
-                <div>
+               
                     <Brand/>
+                    <Heading img={maya_8} alt="" caption="A.T."/>
                     <Therapy elements={elements} />
-                </div>
+               
             </section>
         </>
     )

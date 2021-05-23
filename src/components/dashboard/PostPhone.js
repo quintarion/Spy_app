@@ -1,8 +1,14 @@
+// works without redux by adding the id by hand //
+
 import React from 'react';
 import axios from 'axios';
 import { Redirect, Link } from 'react-router-dom';
-import Button from '../layouts/Button';
+//import Button from '../layouts/Button';
+
 import FrenchPhoneField from '../layouts/FrenchPhoneField';
+//Redux :
+import { connect } from 'react-redux';
+import { select_person } from "../../actions/rootActions";
 
 import '../../style/main.scss';
 
@@ -14,7 +20,7 @@ class PostPhone extends React.Component {
         phone_number: '',
         phone_kind: '',
         phone_mobile: '',
-        fk_idperson: 94,
+        fk_idperson: {select_person},
 
         redirect: false,
     };
@@ -28,13 +34,14 @@ class PostPhone extends React.Component {
     }
 
     setPhoneState = (value) => {
-        this.setState({ phone_number: value });
+        this.setState({phone_number: value = value.replace(/ /g,"") }); //permet de remplacer tous les espaces (et uniquement les espaces)
     }
 
     handleChange = (event) => {
         this.setState({[event.target.name]: event.target.value});
     }
 
+    //submit the information entered by the user 
     onSubmit = (event) => {
         console.log(this.state)
 
@@ -43,14 +50,14 @@ class PostPhone extends React.Component {
         if (process.env.NODE_ENV === 'production') {
           pathApi = process.env.REACT_APP_PATH_API_PROD + '/phone/add_phone'
         }
-        axios.post(`${pathApi}`, 
-        {
-            phone_number: this.state.phone_number,
-            phone_kind: this.state.phone_kind,
-            phone_mobile: this.state.phone_mobile,
-            fk_idperson: this.state.fk_idperson,
-        }
         
+        axios.post(`${pathApi}`, 
+            {
+                phone_number: this.state.phone_number,
+                phone_kind: this.state.phone_kind,
+                phone_mobile: this.state.phone_mobile,
+                fk_idperson: this.state.fk_idperson,
+            }
         //this.state
         )
             .then(res => {
@@ -58,21 +65,23 @@ class PostPhone extends React.Component {
                     alert(res.error);
                 } else {
                     alert(`Le numéro de téléphone a été ajouté au contact id ` + this.state.fk_idperson);
-                    //Redirect
+                    //redirect
                     this.setState({redirect: true});
                     //refreshed page
-                    window.location.reload() 
+                    window.location.reload(); 
                 }
             })
-            .catch(e => {
-                console.error(e);
-                alert(`Erreur lors de l'ajout du contact`);
+            .catch(event => {
+                console.error(event);
+                alert(`Erreur lors de l'ajout du numéro de téléphone`);
             });
     }
 
+    //then retrieve the id created
+
     render() {
         //Redirect
-        const {redirect} = this.state;
+        let {redirect} = this.state;
 
         return (
             <div className="layout_form postphone">
@@ -106,7 +115,8 @@ class PostPhone extends React.Component {
                 </span>
                 
                 <span className="form_input">
-                    <label htmlFor="phone">Numéro professionnel</label>
+                    <p>Numéro</p>
+                    <label htmlFor="phone">Numéro</label>
                     <FrenchPhoneField getPhone={this.setPhoneState} />
                     {/* <input 
                         id="phone"
@@ -121,7 +131,7 @@ class PostPhone extends React.Component {
                         readonly={false}
                         value={this.state.phone_number}
                         onChange={this.handleChange}
-                    /> */}
+                    />  */}
                 </span>
 
                 <span>
@@ -166,5 +176,12 @@ class PostPhone extends React.Component {
         );
     }
 }
+
+//Use store'state to props
+const mapStateToProps = (state /*, ownProps*/) => {
+    return {
+        fk_idperson: state.select_person,
+    }
+}
         
-export default PostPhone;
+export default connect(mapStateToProps)(PostPhone);

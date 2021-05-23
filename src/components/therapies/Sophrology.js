@@ -1,14 +1,16 @@
 import React from 'react';
 import Brand from '../layouts/Brand';
+import Heading from '../layouts/Heading';
 import {HashLink as Link} from 'react-router-hash-link';
 import Therapy from '../layouts/Therapy';
-import maya_8 from '../../assets/icons/maya_8.png';
+import maya_7 from '../../assets/icons/maya_7.png';
+import './Sophrology.scss';
 import '../../style/main.scss';
 
 export const elements = [
     {
         class: "",
-        img: maya_8,
+        img: maya_7,
         iframe: "https://www.youtube.com/embed/hfTs4WKdKgs",
         alt: "",
         title: "Relaxation Sophronique",
@@ -28,14 +30,15 @@ export const elements = [
         innerpath: "/#contact",
         innerpage: "Contact",
         path: "http://relax.sophro.free.fr/techsoph.htm",
-        page: "En savoir plus sur la Relaxation Sophronique",
+        page: "En savoir plus",
     },
 ];
 
 const Sophrology = () => {
     return (
-        <section className="pageTherapy" id="sophology">
+        <section className="pageTherapy" id="sophrology">
             <Brand/>
+            <Heading img={maya_7} alt="" caption="Sophrologie"/>
             <Therapy elements={elements} />
         </section>
     )

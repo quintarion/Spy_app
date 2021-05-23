@@ -1,7 +1,9 @@
 import React from 'react';
 import Brand from '../layouts/Brand';
+import Heading from '../layouts/Heading';
 import Therapy from '../layouts/Therapy';
 import raincoat from '../../assets/icons/raincoat.png';
+import './Icv.scss';
 import '../../style/main.scss';
 
 export const elements = [
@@ -20,7 +22,7 @@ export const elements = [
         innerpath: "/#contact",
         innerpage: "Contact",
         path: "http://aficv.com/",
-        page: "En savoir plus sur l'ICV",
+        page: "En savoir plus",
     },
 ];
 
@@ -28,6 +30,7 @@ const Icv = () => {
     return (
         <section className="pageTherapy" id="icv">
             <Brand/>
+            <Heading img={raincoat} alt="" caption="I.C.V"/>
             <Therapy elements={elements} />
         </section>
     )

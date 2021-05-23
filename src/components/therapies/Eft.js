@@ -1,7 +1,9 @@
 import React from 'react';
 import Brand from '../layouts/Brand';
+import Heading from '../layouts/Heading';
 import Therapy from '../layouts/Therapy';
 import maya_2 from '../../assets/icons/maya_2.png';
+import './Eft.scss';
 import '../../style/main.scss';
 
 export const elements = [
@@ -21,7 +23,7 @@ export const elements = [
         innerpath: "/#contact",
         innerpage: "Contact",
         path: "https://technique-eft.com/decouvrir-eft.html",
-        page: "En savoir plus sur l'E.F.T",
+        page: "En savoir plus",
     },
 ];
 
@@ -29,6 +31,7 @@ const Eft = () => {
     return (
         <section className="pageTherapy" id="eft">
             <Brand/>
+            <Heading img={maya_2} alt="" caption="E.F.T"/>
             <Therapy elements={elements} />
         </section>
     )

@@ -1,8 +1,10 @@
 import React from 'react';
 import Brand from '../layouts/Brand';
+import Heading from '../layouts/Heading';
 import Prices from '../layouts/Prices';
 import Category from '../layouts/Category';
 import children from '../../assets/pictures/children.jpg';
+import treeSwing from '../../assets/icons/treeSwing.png';
 import './Child.scss';
 
 const elements = [
@@ -32,9 +34,11 @@ const cells = [
 ];
 
 const Child = () => {
+    
     return (
         <>
             <Brand/>
+            <Heading img={treeSwing} alt='' caption='adulte'/>
             <section className="child pageCategory" id="child">
                 <h2>Enfants &amp; Adolescents</h2>
                 <div className="pageCategory_box">

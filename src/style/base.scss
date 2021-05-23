@@ -111,6 +111,8 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
+  scrollbar-width: none; //Hide scrollbar
+  scroll-behavior: smooth; //Allows to show scrolling effect
 }
  
 $dark-primary-color    : #C1185B; 
@@ -147,16 +149,16 @@ em {
 /* external links, target all anchor tags that have an href beginning with http */
 a[href^="http"] {
   background: url('../assets/icons/external-link-square-alt-solid.svg') no-repeat;
-  background-position-x: 100%;
-  background-size: 4%;
-  padding-left: 10px;
+  background-position-x: 87%;
+  background-size: 5%;
 }
 
 /* List */
 
 ul li {
-  display: list-item;
-  list-style-type: disc;
+  //display: list-item;
+  list-style: inside;
+  @include p-font;
 }
 
 ul {
@@ -166,10 +168,11 @@ ul {
 //   //-moz-bengali
 }
 
-p {
+p, li {
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
   word-break: break-word;
+  @include p-font;
 }

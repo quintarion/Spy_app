@@ -1,3 +1,5 @@
+// works without redux by adding the id by hand //
+
 import React from 'react';
 import axios from 'axios';
 import { connect } from 'react-redux';
@@ -9,14 +11,12 @@ import './PostEmail.scss';
 // IMPORT CONFIG 
 //const config = require('../../config/config');
 
-
-
 class PostEmail extends React.Component {
 
     state = {
         email: '',
         email_kind: '',
-        fk_idperson: this.props.select_person, // data exported from the store (select_person action)
+        fk_idperson: 129,//this.props.select_person, // data exported from the store (select_person action)
 
         redirect: false
     };
@@ -31,12 +31,13 @@ class PostEmail extends React.Component {
 
     onSubmit = (event) => {
         console.log(this.state)
-        
+
         event.preventDefault();
         let pathApi = process.env.REACT_APP_PATH_API_DEV + '/email/add_email'
         if (process.env.NODE_ENV === 'production') {
           pathApi = process.env.REACT_APP_PATH_API_PROD + '/email/add_email'
         }
+
         axios.post(`${pathApi}`, 
             {
                 email: this.state.email,
@@ -56,15 +57,16 @@ class PostEmail extends React.Component {
                     window.location.reload(); 
                 }
             })
-            .catch(e => {
-                console.error(e);
+            .catch(event => {
+                console.error(event);
                 alert(`Erreur lors de l'adresse électronique`);
             });
     }
 
     render() {
         //redirect
-        const {redirect} = this.state
+        let {redirect} = this.state
+        
         return (
             <div className="layout_form postemail">
             {!redirect?
@@ -103,10 +105,14 @@ class PostEmail extends React.Component {
                         //className="contact-firstname"
                         name="email"
                         //placeholder=""
-                        requiered="requiered"
+                        //pattern=".+@globex.com" 
+                        pattern="[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([_\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})"
+                        size="30" 
+                        required
+                        //requiered="requiered"
                         type="email"
                         autoFocus
-                        maxlength={42}
+                        //maxlength={42}
                         readonly={false}
                         value={this.state.email}
                         onChange={this.handleChange}
@@ -134,8 +140,7 @@ class PostEmail extends React.Component {
 const mapStateToProps = (state) => {
     console.log('redux state :', state) // state, give an object with all the persons
         return {
-            //select_person: 12 
-            select_person
+            select_person     
         }
 }
     

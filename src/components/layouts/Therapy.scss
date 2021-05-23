@@ -1,14 +1,14 @@
 @import './../../style/main.scss';
 
 .layout-therapy {
-    background-color: #f1e1cf;
-    border: 1.1px solid rgba(0,0,0,.3);
-    border-radius: 2%;
+    //background-color: rgba(0,0,0,.08);
+    //border: 1.1px solid rgba(0,0,0,.3);
+    //border-radius: 2%;
     height: auto;
     max-height: 95vh;
     padding: 3rem;
     
-    width: 75vw;
+    width: 85vw;
     
     &_container {
         align-items: flex-start;
@@ -16,18 +16,18 @@
         flex-flow: row nowrap;
         
         a {
-            @include button;
+            @include nav;
             margin: 1rem auto;
             padding: 1rem 2rem;
         }
 
-        a:hover {
-            @include button-hover;
-        }
+        // a:hover {
+        //     @include button-hover;
+        // }
 
-        div {
-            align-self: center;
-        }
+        // div {
+        //     align-self: center;
+        // }
 
         h2 {
             font-size: 3rem;
@@ -43,6 +43,10 @@
             // color: #241C15;
         }
 
+        li {
+            @include p-font;
+        }
+
         Iframe::backdrop {
             background-color: rgba(0,0,0,.3);
         }
@@ -54,10 +58,16 @@
         p {
             max-height: 40vh;
             text-align: left;
+            //margin-bottom: 3rem;
         }
 
         &-text {
             padding-right: 2rem;
+
+            div {
+                text-align: center;
+                padding-top: 3rem;
+            }
         }
     }
         @media screen and (max-width:799px) {

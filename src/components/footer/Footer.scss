@@ -1,14 +1,15 @@
 @import '../../style/main.scss';
 
 .footer {
-    background-color: $secondary;
+    //background-color: $secondary;
+    padding-top: 25vh;
 
     hr {
         height: .5px;
         width: 90%;
         margin: auto;
         padding: 0;
-        background-color: lighten($color-link, $amount: 30%);
+        background-color: #bde9db;
         border: 0;
     }
 
@@ -49,7 +50,7 @@
             
 
             &:hover {
-                color: #007C89;
+                color: #fafafa;
             }
         }
     }

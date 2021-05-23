@@ -21,18 +21,18 @@ class FilterPersonList extends Component {
     const {redirect} = this.state
     return (
       <>
-      {!redirect ? 
-        (<ul className="filter-person-list">
-          {this.props.filter_results.map((person) => {
-            return (
-              <li onClick={() => this.OnChangeSelect(person.idperson)}><span>{person.firstname}</span> <span>{person.lastname}</span></li>
-            );
-          })}
-        </ul>)
-        :
-        (<Redirect to="navAddContact"/>)
-      }
-    </>
+        {!redirect ? 
+          (<ul className="filter-person-list">
+            {this.props.filter_results.map((person) => {
+              return (
+                <li onClick={() => this.OnChangeSelect(person.idperson)}><span>{person.firstname}</span> <span>{person.lastname}</span></li>
+              );
+            })}
+          </ul>)
+          :
+          (<Redirect to="navAddContact"/>)
+        }
+      </>
     );
   }
 }

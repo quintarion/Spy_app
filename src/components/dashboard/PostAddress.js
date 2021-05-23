@@ -1,7 +1,9 @@
+// works without redux by adding the id by hand //
+
 import React from 'react';
 import axios from 'axios';
 import { Redirect, Link } from 'react-router-dom';
-import Button from '../layouts/Button';
+//import Button from '../layouts/Button';
 
 import '../../style/main.scss';
 
@@ -12,13 +14,13 @@ class PostAddress extends React.Component {
     state = {
         add_kind: '',
         add_supplement: '',
-        add_number: '',
+        add_housenumber: '',
         add_track: '',
         add_street: '',
-        add_postalcode: '',
+        add_postcode: '',
         add_town: '',
         add_country: '',
-        fk_idperson: 92,
+        fk_idperson: 129,
 
         redirect: false
     };
@@ -30,7 +32,6 @@ class PostAddress extends React.Component {
     handleChange = (event) => {
         this.setState({[event.target.name]: event.target.value});
     }
-
 
     onSubmit = (event) => {
         console.log(this.state)
@@ -46,14 +47,13 @@ class PostAddress extends React.Component {
         axios.post(`${pathApi}`, 
             {
             add_kind: this.state.add_kind,
-            add_supplement: this.state.add_supplement,
-            add_number: this.state.add_number,
+            add_locality: this.state.add_locality, 
+            add_housenumber: this.state.add_housenumber,
             add_track: this.state.add_track,
             add_street: this.state.add_street,
-            add_postalcode: this.state.add_postalcode,
+            add_postcode: this.state.add_postcode,
             add_town: this.state.add_town,
             add_country: this.state.add_country,
-            //fk_idperson: this.state.fk_idperson
             fk_idperson: this.state.fk_idperson
             })
         .then((res) =>  { 
@@ -107,41 +107,41 @@ class PostAddress extends React.Component {
                         />
                     </div>
                 </span>
-
+                <br/>
                 <span className="form_input">
-                    <label htmlFor="supplement">Supplément</label>
+                    <label htmlFor="locality">Supplément/Lieu-dit</label>
                     <input 
-                        id="supplement"
+                        id="locality"
                         aria-required="true" // ?
                         //className="contact-firstname"
-                        name="add_supplement"
-                        placeholder="Supplement d'adresse"
+                        name="add_locality"
+                        placeholder=""
                         //requiered="requiered"
                         type="text"
                         autoFocus
                         maxlength={42}
                         readonly={false}
-                        value={this.state.add_supplement}
+                        value={this.state.add_locality}
                         onChange={this.handleChange}
                     />
                 </span>
-  
+                <br/>
                 <span className="form_input">
-                    <label htmlFor="number">Numéro de voie</label>
+                    <label htmlFor="housenumber">Numéro de voie</label>
                     <input
-                        id="text"
+                        id="housenumber"
                         //className="contact-lastname"
-                        name="add_number"
-                        type="text"
+                        name="add_housenumber"
+                        type="number"
                         //requiered="requiered"
                         autoFocus
                         maxlength={42}
                         readonly={false}
-                        value={this.state.add_number}
+                        value={this.state.add_housenumber}
                         onChange={this.handleChange}
                     />
                 </span>
-
+                <br/>
                 <span>
                     <label htlm="track">Type de voie</label>
                     <input 
@@ -152,7 +152,7 @@ class PostAddress extends React.Component {
                         onChange={this.handleChange}
                         />
                 </span>
-
+                <br/>
                 <span className="form_input">
                     <label htmlFor="street">Nom de la voie</label>
                     <input
@@ -168,23 +168,24 @@ class PostAddress extends React.Component {
                         onChange={this.handleChange}
                     />
                 </span>
-
+                <br/>
                 <span className="form_input">
-                    <label htmlFor="postalcode">Code postal</label>
+                    <label htmlFor="postcode">Code postal</label>
                     <input
-                        id="postalcode"
+                        id="postcode"
                         //className="contact-lastname"
-                        name="add_postalcode"
-                        type="text"
+                        name="add_postcode"
+                        type="number"
+                        pattern="([A-Z]+[A-Z]?\-)?[0-9]{1,2} ?[0-9]{3}" //Regex Code postal au format 31 100 ou 31100
                         // requiered="requiered"
                         // autoFocus ??
                         maxlength={42}
                         // readonly={false} ??
-                        value={this.state.add_postalcode}
+                        value={this.state.add_postcode}
                         onChange={this.handleChange}
                     />
                 </span>
-
+                <br/>
                 <span className="form_input">
                     <label htmlFor="town">Ville</label>
                     <input
@@ -200,7 +201,7 @@ class PostAddress extends React.Component {
                         onChange={this.handleChange}
                     />
                 </span>
-
+                <br/>
                 <span className="form_input">
                     <label htmlFor="country">Pays</label>
                     <input
@@ -232,7 +233,7 @@ class PostAddress extends React.Component {
                 </nav>    
             </form>)
             :
-            (<Redirect to="dashboard/navAddContact"/>)
+            (<Redirect to='/dashboard/navAddContact'/>)
             }
         </div>
         );

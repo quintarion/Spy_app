@@ -34,9 +34,9 @@ class SignIn extends React.Component {
                             (<div className="cont signin-cont" id="signin"> 
                                 <form>
                                     <input type="email" name="email" id="email" className="inpt" required="required" placeholder="Adresse électronique"/>
-                                    {/* <label for="email">Votre adresse électronique</label> */}
+                                   
                                     <input type="password" name="password" id="password" className="inpt" required="required" placeholder="Mot de passe"/>
-                                    {/* <label forHtml="password">Votre mot de passe</label> */}
+                                   
                                     <input type="checkbox" id="remember" className="checkbox" checked/>
                                     <label forHtml="remember">Se souvenir de moi</label>
                                     <div className="submit-wrap">
@@ -53,11 +53,11 @@ class SignIn extends React.Component {
                             <div className="cont signup-cont" id="signup">
                                 <form>
                                     <input type="name" name="name" id="name" className="inpt" required="required" placeholder="Prénom"/>
-                                    {/* <label forHtml="name">Votre prénom</label> */}
+                                   
                                     <input type="email" name="email" id="email" className="inpt" required="required" placeholder="Adresse électronique"/>
-                                    {/* <label for="email">Votre adresse électronique</label> */}
+                                   
                                     <input type="password" nameName="password" id="password" class="inpt" required="required" placeholder="Mot de passe"/>
-                                    {/* <label forHtml="password">Votre mot de passe</label> */}
+                                    
                                     <div className="submit-wrap">
                                         <input type="submit" value="S'inscrire" className="submit"/>
                                         <a href="#" className="more">Terms and conditions</a>

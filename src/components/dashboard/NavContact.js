@@ -10,13 +10,14 @@ const items = [
         icon: 'fas fa-user-plus'
     },
     {
-        title: 'Modifier le contact',
+        title: 'Modifier un contact',
         path: '/dashboard/searchPerson',
         icon: 'fas fa-user-edit'
     },
     {
-        title: 'Supprimer le contact',
-        path: '/dashboard/searchPersonTwo',
+        title: 'Supprimer un contact',
+        //path: '/dashboard/searchPersonTwo',
+        path: '/dashboard/deleteContact',
         icon: 'fas fa-user-minus'
     }
 ];

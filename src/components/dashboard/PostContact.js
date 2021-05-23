@@ -1,6 +1,10 @@
+// works without redux by adding the id by hand //
+
 import React from 'react';
 import axios from 'axios';
 import { Link, Redirect } from "react-router-dom";
+
+//Style
 import './PostContact.scss';
 
 // IMPORT CONFIG 
@@ -9,12 +13,12 @@ import './PostContact.scss';
 class PostContact extends React.Component {
 
     state = {
-        firstname: '',
-        lastname: '',
-        genre: '',
-        birth: '',
-        client: '',
-        occupation: '',
+        firstname: null,
+        lastname: null, //fullname
+        genre: null, //gender
+        birth: null,
+        client: null,
+        occupation: null,
 
         redirect: false,
     };
@@ -31,8 +35,9 @@ class PostContact extends React.Component {
         this.setState({[event.target.name]: event.target.value});
     }
 
+    //submit the information entered by the user
     onSubmit = (event) => {
-        console.log(this.state)
+        //console.log(this.state)
         event.preventDefault();
         console.log(this.state)
 
@@ -54,7 +59,7 @@ class PostContact extends React.Component {
             if (res.error) {
                 alert(res.error);
             } else {
-                alert( `le contact ` + this.state.firstname + ` a bien été ajouté(e) à votre liste de contacts`);
+                alert( `le contact ` + this.state.firstname + ` a bien été ajouté à votre liste de contacts`);
                 //REDIRECT
                 this.setState({redirect: true});
                 //REFRESHED PAGE
@@ -69,17 +74,19 @@ class PostContact extends React.Component {
         });
     }
 
+    // then how retrieve the id created ?
+       
     render() {
 
         // REDIRECT
-        const { redirect } = this.state;
+        let { redirect } = this.state;
 
         return (
             <div className="layout_form postcontact">
             
             {!redirect?
 
-            (<form onSubmit={this.onSubmit} className="formA">
+            (<form onSubmit={this.onSubmit} className="formA" method="POST">
                 <h2 class="heading">Créer un nouveau contact - Etat Civil</h2>
                
                 <fieldset>
@@ -151,6 +158,7 @@ class PostContact extends React.Component {
                         value={this.state.firstname}
                         onChange={this.handleChange}
                     />
+                    <p>{this.state.firstname}</p>
                 </div>
   
                 <div className="controls">
@@ -208,7 +216,8 @@ class PostContact extends React.Component {
                         <i class="fas fa-check"></i>
                     </button>
                 </nav>
-            </form>)
+            </form>
+            )
            : 
            (<Redirect to='/dashboard/navAddContact'/>)}
            
@@ -217,5 +226,5 @@ class PostContact extends React.Component {
         );
     }
 }
-  
+
 export default PostContact;

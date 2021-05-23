@@ -32,7 +32,7 @@ const elements = [
     img: myYouth,
     alt: "",
     path: "/",
-    page: "Accueil",
+    page: "retour",
     }
 ];
 

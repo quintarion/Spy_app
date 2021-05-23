@@ -1,7 +1,9 @@
 import React from 'react';
 import Brand from '../layouts/Brand';
+import Heading from '../layouts/Heading';
 import Therapy from '../layouts/Therapy';
 import maya_5 from '../../assets/icons/maya_5.png';
+import './Reflexology.scss';
 import '../../style/main.scss';
 
 export const elements = [
@@ -18,7 +20,7 @@ export const elements = [
         innerpath: "/#contact",
         innerpage: "Contact",
         path: "https://www.reflexologues.fr/reflexologie-reflexologues-informations.html",
-        page: "En savoir plus sur la Réflexologie Polarisée",
+        page: "En savoir plus",
     },
 ];
 
@@ -26,6 +28,7 @@ const Reflexology = () => {
     return (
         <section className="pageTherapy" id="reflexology">
             <Brand/>
+            <Heading img={maya_5} alt="" caption="Réfléxologie"/>
             <Therapy elements={elements} />
         </section>
     )

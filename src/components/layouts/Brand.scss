@@ -7,12 +7,10 @@
     top: 1vw;
 
     a {
-        font-family: 'Staatliches', cursive;
-        font-size: 18px;
-        text-transform: uppercase;
+        @include nav;
     }
 
-    i:hover {
+    &:hover {
         @include animate(icon-bounce, 0.5s, alternate);
     }
     // figcaption {

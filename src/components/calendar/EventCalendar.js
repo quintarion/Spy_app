@@ -136,8 +136,7 @@ class EventCalendar extends Component {
     return (
       <>
       {/* <GetAllContacts/> */}
-      <div className="animated fadeIn p-4 demo-app">
-  
+      <div className="">
             <div
               id="external-events"
               style={{

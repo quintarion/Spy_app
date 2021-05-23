@@ -5,13 +5,13 @@
     //padding: 2rem auto 3rem 2rem;
 
     &-btn {
-        @include button;
+        @include nav;
         float: right;
         margin: 1rem;
 
-        &:hover {
-            @include button-hover;
-        }
+        // &:hover {
+        //     @include button-hover;
+        // }
     }
 
     &-icon {

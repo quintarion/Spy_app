@@ -1,9 +1,11 @@
 import React from 'react';
 import Brand from '../layouts/Brand';
+import Heading from '../layouts/Heading';
 import {NavLink} from 'react-router-dom';
 import Prices from '../layouts/Prices';
 import Category from '../layouts/Category';
 import couple from '../../assets/pictures/couple.jpg';
+import kiss from '../../assets/icons/kiss.png';
 import './Couple.scss';
 
 const elements = [
@@ -53,6 +55,7 @@ const Couple = () => {
     return (
         <>
             <Brand/>
+            <Heading img={kiss} alt='' caption='couple'/>
             <section className="couple pageCategory" id="couple">
                 <h2>En couple</h2>
                 <div className="pageCategory_box">

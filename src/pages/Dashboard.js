@@ -18,6 +18,8 @@ import PostPhone from '../components/dashboard/PostPhone';
 import PostEmail from '../components/dashboard/PostEmail';
 import PostAddress from "../components/dashboard/PostAddress";
 import Navigation from '../components/dashboard/Navigation';
+import Scheduler from '../components/dashboard/Scheduler';
+import DeleteContact from '../components/dashboard/DeleteContact';
 
 import './Dashboard.scss';
 
@@ -58,6 +60,8 @@ const Dashboard = () => {
                     <Route path="/dashboard/postEmail" component={PostEmail}/>
                     <Route path="/dashboard/postAddress" component={PostAddress}/>
                     <Route path="/dashboard/searchPerson" component={SearchPerson}/>
+                    <Route path="/dashboard/scheduler" component={Scheduler}/>
+                    <Route path="/dashboard/deleteContact" component={DeleteContact}/>
                 </Switch>
                 
             </div>

@@ -20,6 +20,7 @@
     transition: .25s ease-in-out; 
 
     nav {
+        position: absolute; //"Fix" the element
           //@include shadow;
     align-items: baseline; /* by default: align-items: strech -> child elements' heights = the container's height */
     align-self: flex-start;
@@ -34,14 +35,10 @@
     
     width: 100vw;
 
-        &:hover {
-            height: 7rem;
-        }
+        // &:hover {
+        //     height: 40vh;
+        // }
     }
-
-
-    
-
 
     a {
         pointer-events: auto;
