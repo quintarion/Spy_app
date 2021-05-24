@@ -1,64 +1,73 @@
 export const items = { 
+    accueil: {
+      link: "/#home",
+      sub_items: [
+        {
+          li: "",
+          link: "",
+        },
+      ]
+    },
     consultations: {
-      link: "#who",
+      link: "/#who",
       sub_items: [
         {
           li: "Pour qui ?",
-          link: "#who"
+          link: "/#who"
         },
         {
           li: "Adulte",
-          link: "adult"
+          link: "/adult"
         },
         {
           li: "Couple",
-          link: "couple"
+          link: "/couple"
         },
         {
           li: "Enfant / Adolescent",
-          link: "child"
+          link: "/child"
         },
         {
           li: "Déroulé d'une thérapie",
-          link: "#step"
+          link: "/#step"
         }
       ]
     },
     thérapies: {
-      link: "#therapies",
+      link: "/#therapies",
       sub_items: [
         {
           li: "E.M.D.R",
-          link: "emdr"
+          link: "/emdr"
         },
         {
           li: "I.C.V",
-          link: "icv"
+          link: "/icv"
         },
         {
           li: "E.F.T",
-          link: "eft"
+          link: "/eft"
         },
         {
           li: "A.T",
-          link: "at"
+          link: "/at"
         },
         {
           li: "Réfléxologie polarisée",
-          link: "reflexology"
+          link: "/reflexology"
         },
         {
           li: "Relaxation sophronique",
-          link: "sophrology"
+          link: "/sophrology"
         }
       ]
     },
-    'à propos': {
-      link: "#training",
+    "à propos": {
+      link: "/#training",
       sub_items: [
         {
           li: "Ma formation",
-          link: "#training"
+          link: "/#training"
         },
         {
           li: "Mon parcours",
@@ -66,16 +75,20 @@ export const items = {
         }
       ]
     },
-    Contact: {
-      link: "#contact",
+    "Le coin des échanges": {
+      link: "/#contact",
       sub_items: [
         {
-          li: "envoyer un message",
-          link: "#contact"
+          li: "Envoyer un message",
+          link: "/#contact"
         }, 
         {
           li: "Informations pratiques",
-          link: "#information"
+          link: "/#information"
+        },
+        {
+          li: "Espace collaboratif",
+          link: "/#collaboration"
         }
       ]
     },

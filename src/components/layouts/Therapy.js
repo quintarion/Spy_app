@@ -6,6 +6,7 @@ import './Therapy.scss';
 class Therapy extends Component {
   state = {
     hideVideo: true,
+    clodeWarning : true
   }
 
 //Adding an event listener after mounting the components
@@ -17,6 +18,11 @@ componentDidMount() {
 resize() { 
   this.setState({hideVideo: window.innerWidth <= 800}); 
 } 
+
+handleClick = (event) => {    
+  event.preventDefault();
+  this.setState(state => ({ closeWarning: !state.closeWarning }));  
+}
 
 render() {
   return (
@@ -35,20 +41,33 @@ render() {
 
       <div className="layout-therapy_container">
       {
-      (this.state.hideVideo)? 
-      <img src={element.img} className="layout-icon" alt={element.alt} id="picture"/> 
+        (this.state.hideVideo)? 
+        <img src={element.img} className="layout-icon" alt={element.alt} id="picture"/> 
         :
         <div className="video">
-        <Iframe 
-          url={element.iframe} 
-          id="video"
-          width="450px"
-          height="450px"
-          display="initial"
-          position="relative"
-        /> 
+
+          <div className={this.state.closeWarning ? "video-warning_close" : "video-warning" }>
+            
+            <div id="video-warning">
+              <p>YouTube conditionne la lecture de ses vidéos au dépôt de traceurs afin de vous proposer de la publicité ciblée en fonction de votre navigation.<br/>
+              Pour plus d’information, visitez la politique<br/>
+              <a href="https://policies.google.com/privacy?hl=fr&gl=fr" target="_blank" rel="nofollow noreferrer noopener">« cookies » de YouTube</a>
+              </p>
+              <div onClick={(event)=>this.handleClick(event)} role="button">
+                <span className="close"><i className="fa fa-times" aria-hidden="true"></i></span>
+              </div>
+            </div>
+
+            <Iframe 
+              url={element.iframe} 
+              id="video"
+            />
+          </div>
+          
         </div>
+
         ||
+
         <img src={element.img} className="layout-icon" alt={element.alt} id="picture"/>
       }
       </div>
