@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from '../header/Header';
 import Brand from '../layouts/Brand';
 import Heading from '../layouts/Heading';
 import Therapy from '../layouts/Therapy';
@@ -26,11 +27,14 @@ export const elements = [
 
 const Reflexology = () => {
     return (
-        <section className="pageTherapy" id="reflexology">
-            <Brand/>
-            <Heading img={maya_5} alt="" caption="Réfléxologie"/>
-            <Therapy elements={elements} />
-        </section>
+        <>
+            <Header />
+            <section className="pageTherapy" id="reflexology">
+                {/* <Brand/>
+                <Heading img={maya_5} alt="" caption="Réfléxologie"/> */}
+                <Therapy elements={elements} />
+            </section>
+        </>
     )
 }
 

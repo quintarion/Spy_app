@@ -149,7 +149,8 @@ em {
 /* external links, target all anchor tags that have an href beginning with http */
 a[href^="http"] {
   background: url('../assets/icons/external-link-square-alt-solid.svg') no-repeat;
-  background-position-x: 87%;
+  background-position-x: 100%;
+  background-position-y: 50%;
   background-size: 5%;
 }
 

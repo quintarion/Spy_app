@@ -1,15 +1,15 @@
 import React from 'react';
-import Brand from '../layouts/Brand';
-import Heading from '../layouts/Heading';
+// import Brand from '../layouts/Brand';
+// import Heading from '../layouts/Heading';
+import Header from '../header/Header';
 import Therapy from '../layouts/Therapy';
-import maya_2 from '../../assets/icons/maya_2.png';
+//import maya_2 from '../../assets/icons/maya_2.png';
 import './Eft.scss';
 import '../../style/main.scss';
 
 export const elements = [
     {
         class: "",
-        img: maya_2,
         iframe: "https://www.youtube.com/embed/baOkLy4wmgE",
         alt: "",
         title: "E.F.T",
@@ -19,7 +19,7 @@ export const elements = [
         Vous conservez la mémoire de l'évènement qui vous a dérangé, mais n'en ressentez plus la charge émotive qui l'accompagnait.
         C'est dire comme cette méthode peut trouver de nombreuses utilisations.
         Les enfants l'adorent car elle les aide à gérer de nombreux petits maux au quotidien :
-        <strong>peurs</strong> ou <strong>phobies</strong>(du noir, des araignées, de l'école...), colères, moqueries, anxiété de séparation, pipi au lit...</p>],
+        peurs ou phobies (du noir, des araignées, de l'école...), colères, moqueries, anxiété de séparation, pipi au lit...</p>],
         innerpath: "/#contact",
         innerpage: "Contact",
         path: "https://technique-eft.com/decouvrir-eft.html",
@@ -29,11 +29,14 @@ export const elements = [
 
 const Eft = () => {
     return (
-        <section className="pageTherapy" id="eft">
-            <Brand/>
-            <Heading img={maya_2} alt="" caption="E.F.T"/>
-            <Therapy elements={elements} />
-        </section>
+        <>
+            <Header />
+            <section className="pageTherapy" id="eft">
+                {/* <Brand/> */}
+                {/* <Heading img={maya_2} alt="" caption="E.F.T"/> */}
+                <Therapy elements={elements} />
+            </section>
+        </>
     )
 }
 

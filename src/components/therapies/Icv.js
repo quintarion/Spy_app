@@ -1,15 +1,15 @@
 import React from 'react';
-import Brand from '../layouts/Brand';
-import Heading from '../layouts/Heading';
+//import Brand from '../layouts/Brand';
+//import Heading from '../layouts/Heading';
+import Header from '../header/Header';
 import Therapy from '../layouts/Therapy';
-import raincoat from '../../assets/icons/raincoat.png';
+//import raincoat from '../../assets/icons/raincoat.png';
 import './Icv.scss';
 import '../../style/main.scss';
 
 export const elements = [
     {
         class: "",
-        img: raincoat,
         iframe: "https://www.youtube.com/embed/NC5l1YImueg",
         alt: "",
         title: "I.C.V",
@@ -18,7 +18,7 @@ export const elements = [
         L’outil principal du psychothérapeute est une liste de souvenirs succincte <i>(ligne du temps)</i> que le patient établit seul ou avec l’aide du psychothérapeute.
         Elle va permettre au patient de realiser que les souvenirs du passé sont réellement passés et que les stratégies développées dans le passé pour y faire face n’ont plus de raison d’être. Le cerveau comprend que l’événement est bien terminé. Nous sommes constitués de la somme de nos expériences, lorsque les émotions liées aux souvenirs s’estompent, le comportement change.
         La répétition de la ligne de temps, permet la connexion entre les différents neurones sollicités grâce à l’imagerie mentale, et démontre au cerveau que les événements douloureux sont terminés.
-        Grace à la plasticité du cerveau, cette thérapie permet d’obtenir de nouvelles fondations, un soi central solide en permettant la connexion entre le corps et l’esprit. <a className="linkNoStyle" href='https://www.cairn.info/publications-de-Peggy-Pace--698781.htm#:' target="_blank" rel="nofollow noreferrer noopener">Bibliographie de Peggy Pace.</a></p>],
+        Grace à la plasticité du cerveau, cette thérapie permet d’obtenir de nouvelles fondations, un soi central solide en permettant la connexion entre le corps et l’esprit. <a className="linkNoStyle" href='https://www.cairn.info/publications-de-Peggy-Pace--698781.htm#:' target="_blank" rel="nofollow noreferrer noopener">Bibliographie de Peggy Pace.&emsp;</a></p>],
         innerpath: "/#contact",
         innerpage: "Contact",
         path: "http://aficv.com/",
@@ -28,11 +28,14 @@ export const elements = [
 
 const Icv = () => {
     return (
-        <section className="pageTherapy" id="icv">
-            <Brand/>
-            <Heading img={raincoat} alt="" caption="I.C.V"/>
-            <Therapy elements={elements} />
-        </section>
+        <>
+            <Header />
+            <section className="pageTherapy" id="icv">
+                {/* <Brand/> */}
+                {/* <Heading img={raincoat} alt="" caption="I.C.V"/> */}
+                <Therapy elements={elements} />
+            </section>
+        </>
     )
 }
 
