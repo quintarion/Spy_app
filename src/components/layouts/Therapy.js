@@ -6,7 +6,7 @@ import './Therapy.scss';
 class Therapy extends Component {
   state = {
     hideVideo: true,
-    clodeWarning : true
+    closeWarning : false
   }
 
 //Adding an event listener after mounting the components

@@ -1,15 +1,18 @@
 @import '../../style/main.scss';
 
 .footer {
-    //background-color: $secondary;
     padding-top: 25vh;
+    //background-color: $secondary;
+    //background-color: #062521;
+    //background-image: url("../../assets/pictures/blob-bkd.svg");
+    //background-repeat: no-repeat;
 
     hr {
         height: .5px;
         width: 90%;
         margin: auto;
         padding: 0;
-        background-color: #bde9db;
+        background-color: #17644c;
         border: 0;
     }
 

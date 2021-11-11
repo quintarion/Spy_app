@@ -32,8 +32,9 @@ const Prices = ({cells}) => {
                             <table className="notice">
                                 <caption>Paiment</caption>
                                 <tr>
-                                    <td><i class="fas fa-money-check payment">&nbsp;&nbsp;par chèque</i></td>
-                                    <td><i class="fas fa-coins payment">&nbsp;&nbsp;en espèce</i></td>
+                                    <td><i class="fas fa-money-check payment" aria-hidden="true"><span>&nbsp;&nbsp;chèque</span></i></td>
+                                    <td><i class="fas fa-coins payment" aria-hidden="true"><span>&nbsp;&nbsp;espèce</span></i></td>
+                                    <td><i class="fas fa-paypal paypal" aria-hidden="true"><span>&nbsp;&nbsp;paypal</span></i></td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> 

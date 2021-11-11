@@ -8,7 +8,9 @@
 
         h2 {
             text-align: left !important;
-            @include big-title;
+            //@include main-title;
+            @include title-medium;
+            text-transform: uppercase;
         }
 
         i {

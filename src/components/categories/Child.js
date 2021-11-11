@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from '../header/Header';
 import Brand from '../layouts/Brand';
 import Heading from '../layouts/Heading';
 import Prices from '../layouts/Prices';
@@ -37,13 +38,14 @@ const Child = () => {
     
     return (
         <>
-            <Brand/>
-            <Heading img={treeSwing} alt='' caption='adulte'/>
-            <section className="child pageCategory" id="child">
+            <Header />
+            {/* <Brand/> */}
+            {/* <Heading /> */}
+            <section className="pageCategory child" id="child">
                 <h2>Enfants &amp; Adolescents</h2>
                 <div className="pageCategory_box">
                     <Category elements={elements} />
-                    <Prices cells={cells} />
+                    <Prices cells={cells} /> 
                 </div>
             </section>
         </>

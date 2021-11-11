@@ -74,7 +74,10 @@ class Who extends Component {
         <div className="who_container">
             <div className="who_intro">
               <h2>Quel public puis-je accueillir ?</h2>
-              <p> Mes consultations s’adressent aux adultes (<i>mon local est accessible <mark>personne en situation de handicap</mark> et <mark>personne à mobilité réduite</mark></i>), mais aussi aux enfants quelque soit leur âge (<i>toujours accompagnés de leurs parents ou de toutes les personnes partageant leur domicile au moins lors de la première séance</i>), aux adolescents,  aux couples.</p>
+              <p> Mes consultations s’adressent * aux adultes, mais aussi aux enfants quelque soit leur âge (<i>toujours accompagnés de leurs parents ou de toutes les personnes partageant leur domicile au moins lors de la première séance</i>), aux adolescents,  aux couples.
+              <br/>
+              <br/>
+              <i>* mon cabinet est accessible <mark>aux personnes en situation de handicap</mark> et <mark>aux personnes à mobilité réduite</mark></i></p>
             </div>
             <div className="who_flex">
                 <Subcategory elements={elements} />

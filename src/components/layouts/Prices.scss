@@ -1,8 +1,8 @@
 @import '../../style/main.scss';
 
 .price {
-    font-family: Helvetica,Arial,Verdana,sans-serif;
-    font-size: 13px;
+    //font-family: Helvetica,Arial,Verdana,sans-serif;
+    //font-size: 1rem;
     height: 60vw;
     padding: 0 2rem;
     text-align: justify;
@@ -12,9 +12,9 @@
         text-align: justify;
     }
 
-    hr {
-        border: .5px solid #dab5b5;
-    }
+    // hr {
+    //     border: .5px solid #dab5b5;
+    // }
 
     /* animation*/
     animation: moveleft 2s 1 normal forwards;
@@ -42,19 +42,36 @@
     /* Table properties */
 
     caption { 
+        @include link;
         caption-side: top;
         padding: 1rem 0;
         text-align: right;
+    }
+
+    td {
+        @include p-font;
+        padding: .75rem;
+        text-align: justify;
+    }
+
+    th {
+        @include link;
+    }
+
+    tr {
+        color: rgba(0,0,0,.5);
     }
 
     .notice {
         margin-bottom: 1rem;
 
         td {
-
+            
             border-bottom: 1px solid rgba(0,0,0,.3);
             
-        
+            i span {
+                @include link;
+            }
             // & ~ td {
             //     border-bottom: 1px solid rgba(0,0,0,.3);
             //     border-right: 1px solid rgba(0,0,0,.3);
@@ -66,8 +83,9 @@
             
         }
 
-        ul li {
-            font-size: 13px;
+        ul li i {
+            @include p-font;
+            //font-size: 13px;
         }
 
 
@@ -93,7 +111,7 @@
     table { 
         border: .5px solid rgba(0,0,0,.3);
         border-collapse: separate;
-        border-radius: 14px;
+        border-radius: 9px;
         border-spacing: 0px; 
         margin: auto;
         text-align: center;
@@ -106,7 +124,7 @@
         //background-color: white;
 	    border-collapse: separate; /* or collapse */
 	    border-spacing: 0px;
-	    border-radius: 14px;
+	    border-radius: 9px;
     }
 
     th, td {

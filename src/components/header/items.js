@@ -86,10 +86,10 @@ export const items = {
           li: "Informations pratiques",
           link: "/#information"
         },
-        {
-          li: "Espace collaboratif",
-          link: "/#collaboration"
-        }
+        //{
+          //li: "Espace collaboratif",
+          //link: "/#collaboration"
+        //}
       ]
     },
     // actu: {

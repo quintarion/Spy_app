@@ -27,7 +27,8 @@
 
         h2 {
             text-align: center;
-            @include big-title;
+            @include title-medium;
+            text-transform: uppercase;
         }
 
         .one {
@@ -43,7 +44,7 @@
         p {
 
             mark {
-                font-weight: bold;
+                //font-weight: bold;
                 background-color: #fffbcb;
             }
         }

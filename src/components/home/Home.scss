@@ -5,12 +5,119 @@
 //@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 
 .home {
+
+    // .cookies {
+    //     &cookies {
+    //         display: flex;
+    //         width: 100%;
+    //         padding: 3rem;
+    //         justify-content: center;
+                
+    //         #cookies {
+    //             align-self: center;
+    //             width: 20rem;
+    //             position: absolute;
+    //             z-index:2;
+
+    //             p, a {
+    //                 font-weight: 900;
+    //                 color: white;
+    //                 text-align: center;
+    //             }
+
+    //             a {
+    //                 text-decoration: underline;
+    //             }
+
+                
+    //             .close i {
+    //                 color: white;
+    //                 cursor: grab;
+    //                 display: block;
+    //                 width: 100%;
+    //                 margin: auto;
+    //                 text-align: center;
+    //             }
+    //         }
+
+    //         #cookies {
+    //             width: 25rem;
+    //             height: 25rem;
+    //             display: none;
+    //             position: relative;
+    //             z-index:1;
+    //             /* This effect allows you to change the brightness of the image */
+    //             filter: brightness(15%);
+    //             -webkit-filter: brightness(15%);
+    //             -moz-filter: brightness(15%);
+    //             -o-filter: brightness(15%);
+    //             -ms-filter: brightness(15%); 
+    //         }
+
+    //     }
+
+    //     &-cookies_close {
+    //         display: flex;
+    //         width: 100%;
+    //         padding: 3rem;
+    //         justify-content: center;
+
+    //         #cookies {
+    //             display: none;
+    //         }
+
+    //         #cookies {
+    //             width: 25rem;
+    //             height: 25rem;
+    //             display: initial;
+    //             position: relative;
+    //             z-index:1;
+    //             filter: none;
+    //             display: initial;
+    //         }
+
+    //     }
+
+    // }
+
+    // //// CLOSE COOKIES LEGACY ////
+    // #cookies {
+    //     align-self: center;
+    //     width: 20rem;
+    //     position: absolute;
+    //     z-index:2;
+
+    //     p, a {
+    //         font-weight: 900;
+    //         color: white;
+    //         text-align: center;
+    //     }
+
+    //     a {
+    //         text-decoration: underline;
+    //     }
+
+        
+    //     .close i {
+    //         color: white;
+    //         cursor: grab;
+    //         display: block;
+    //         width: 100%;
+    //         margin: auto;
+    //         text-align: center;
+    //     }
+    // }
+
+    //////////////////////
+
     background-color: #fafafa;
     background-image: url('../../assets/pictures/blob-cloud.svg');
-    background-size: 60%;
+    //background-image: url('../../assets/pictures/eucalyptus.jpg');
+    background-size: 120%;
     background-repeat: no-repeat;
-    background-position: 120%;
-    height: 100vh;
+    background-position: 140%;
+    //height: 90vh;
+    //height: 100vh;
     max-width: 100vw;
     top: 0;
     //padding-top: 5rem;
@@ -20,17 +127,30 @@
     // border-bottom-left-radius: 0;
     // border-bottom-right-radius: 50%;
 
-    h2 {
-        @include title-medium;
+    //h2 {
+        //@include title-medium;
+    //}
+    a {
+        left: 50vw;
+        top: 30vw;
+        //padding-top: 8vw;
+        position: absolute;
+
+        &:hover {
+            background-color: #bde9db;
+        }
     }
 
+
     img {
-        border-radius: 50%;
-        filter: grayscale(50%);
+        border-radius: 50% 40%;
+        filter: grayscale(20%);
         //transform: translateY(-15%);
-        width: 250px !important;
-        margin-left: 50vw;
+        width: 200px !important;
+        margin-left: 70vw;
+        //margin-top: 4vw;
         //display: block;
+        padding-bottom: 7vw;
     }
 
     p {
@@ -54,11 +174,25 @@
     }
 
     &-title {
+        
         h1 {
+            // @include title-medium;
+            // text-transform: uppercase;
             @include main-title;
             text-align: left;
             padding: 2rem 4rem;
             font-size: 29px;
+            color: #443c37;
+            font-weight: unset;
+        }
+
+        span {
+            // display: inline-block; //(pseudo element)
+            @include subtitle;
+
+            // &::first-letter {
+            //     text-transform: capitalize;
+            // }
         }
     }
 
