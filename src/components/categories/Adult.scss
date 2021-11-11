@@ -1,9 +1,14 @@
 @import '../../style/main.scss';
 
 .adult {
-    background-image: url('../../assets/pictures/blob9.svg');
+    // background-image: url('../../assets/pictures/blob9.svg');
 
     img {
-        border-radius: 34% 12%/23% 54%;
+        //border-radius: 34% 12%/23% 54%;
+        border-radius: 67% 55%/89% 14%;
+    }
+
+    .pageCategory_box {
+        display: flex;
     }
 }

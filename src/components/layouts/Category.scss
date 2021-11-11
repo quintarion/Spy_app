@@ -2,27 +2,27 @@
 
 .layout-category {
     width: 100vw;
-    //padding: 2rem auto 3rem 2rem;
+    display: flex;
+
+    //&-text {
+        // p {
+            
+        // }
+    //}
 
     &-btn {
         @include nav;
         float: right;
         margin: 1rem;
-
-        // &:hover {
-        //     @include button-hover;
-        // }
     }
 
     &-icon {
-        //float: left;
         margin-bottom: 1rem;
     }
 
     p {
         margin: 0 0 2rem 2rem;
         max-height: 60vh;
-        //max-width: 50vw;
     }
 
     @media screen and (max-width:799px) {

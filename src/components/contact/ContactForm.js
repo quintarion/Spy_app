@@ -162,7 +162,7 @@ class ContactForm extends React.Component {
                                 //cols={50}
                                 maxlength={400}
                                 spellcheck="false" //INHIBER CORRECTEUR ORTHOGRAPHE :)
-                                placeholder="Écrivez votre message à l'attention d'Hélène Quintana - ici - merci !"
+                                placeholder="Écrivez votre message à l'attention d'Hélène Quintana-Fauré - ici - merci !"
                                 value={this.state.message = this.state.message.charAt(0).toUpperCase() + this.state.message.substr(1)} //
                                 onChange={this.handleChange}
                             >

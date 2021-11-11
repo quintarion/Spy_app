@@ -19,7 +19,10 @@ const Caterogy = ({elements}) => {
           <p>
             {element.paragraph3}
           </p>
-          <Parallax className="custom-class" x={[-5, 10]} y={[20,-10]} tagOuter="figure">
+          
+        </div>
+        <div>
+          <Parallax className="custom-class" x={[-10, 40]} y={[50,-10]} tagOuter="figure">
             <img src={element.img} className="layout-category-icon" alt={element.alt}/>
           </Parallax>
         </div>

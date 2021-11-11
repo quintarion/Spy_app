@@ -4,6 +4,7 @@ import Contact from '../components/contact/Contact';
 import Footer from '../components/footer/Footer';
 import Header from '../components/header/Header';
 import Home from '../components/home/Home';
+import Info from '../components/contact/Info';
 import MoreTherapies from '../components/therapies/MoreTherapies';
 import Therapies from '../components/therapies/Therapies';
 import Training from '../components/about/Training';
@@ -52,6 +53,7 @@ const Main = () => {
                 <Therapies/>
                 <MoreTherapies/>
                 <Contact/>
+                <Info />
             </main>
             <div className="site-footer">
                 <Footer/>

@@ -10,7 +10,8 @@
 
         h2 {
             text-align: center;
-            @include big-title;
+            @include title-medium;
+            text-transform: uppercase;
         }
 
         .one {

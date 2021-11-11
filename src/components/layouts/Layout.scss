@@ -19,10 +19,10 @@
             white-space: nowrap;
         }
 
-        div {
+        //div {
             //align-self: center;
-            width: 60%; /* DO NOT CHANGE '%' UNIT */
-        }
+            //width: 60%; /* DO NOT CHANGE '%' UNIT */
+        //}
 
         &-icon {
             display: block;
@@ -36,7 +36,9 @@
 
         h2 {
             @include title-medium;
-            margin-bottom: .5rem;
+            text-transform: uppercase;
+            padding-bottom: 2rem;
+            //margin-bottom: .5rem;
             text-align: left;
         }
 
@@ -47,8 +49,21 @@
         }
 
         span a {
-            margin-top: 2rem;
-            @include nav;
+            //margin-top: 2rem;
+            //@include nav;
+            font-weight: bold;
+            left: 65vw;
+            padding-top: 1rem;
+            position: absolute; 
+            
+            &::after {
+                content: '[ . . . ]';
+            }
+    
+            &:hover::after {
+                content: '[ en savoir plus ]';
+            }
+    
         }
 
         //span a:hover {

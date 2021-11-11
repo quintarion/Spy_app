@@ -8,18 +8,28 @@
     width: 85vw;
     
     &_container {
+
+        display: flex;
+        
    
         a {
             @include nav;
             margin: 1rem auto;
-            padding: 1rem 2rem;
+            padding: .5rem .5rem;
+            
+            &:hover {
+                background-color: #bde9db;
+            }
         }
 
         h2 {
+            @include title-medium;
+            text-transform: uppercase;
+            //@include main-title;
             font-size: 3rem;
-            @include big-title;
-            text-align: left;
+            //@include big-title;
             padding-top: 0;
+            text-align: left;
         }
 
         li {
@@ -35,7 +45,7 @@
         }
 
         p {
-            max-height: 40vh;
+            max-height: 60vh;
             text-align: left;
         }
 
@@ -126,25 +136,24 @@
 }
 
 @media screen and (max-width:799px) {
-            flex-direction: column;
-            //font-size: 60%;
-            border-radius: none;
-            padding: .5rem;
+    flex-direction: column;
+    //font-size: 60%;
+    border-radius: none;
+    padding: .5rem;
 
-            &_container {
+    &_container {
 
-                &-text {
-                    padding: 0;
-                }
-            }
-            
-            
-            .layout-icon {
-                display: none;
-            }
-
-            h2 {
-                text-align: center;
-            }
+        &-text {
+            padding: 0;
         }
+    }
+               
+    .layout-icon {
+        display: none;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
     

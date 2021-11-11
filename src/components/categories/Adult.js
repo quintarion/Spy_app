@@ -1,10 +1,11 @@
 import React from 'react';
-import AtHome from '../layouts/AtHome';
-import Heading from '../layouts/Heading';
+import Header from '../header/Header';
+// import AtHome from '../layouts/AtHome';
+// import Heading from '../layouts/Heading';
 import Prices from '../layouts/Prices';
 import Category from '../layouts/Category';
 import adults from '../../assets/pictures/adluts.jpg';
-import touristWoman from '../../assets/icons/touristWoman.png';
+//import touristWoman from '../../assets/icons/touristWoman.png';
 import './Adult.scss';
 
 const elements = [
@@ -37,20 +38,24 @@ const cells = [
     },
 ];
 
-const Adult = () => {
-    return (
-        <>
-            <AtHome/>
-            <Heading img={touristWoman} alt="" caption="adulte"/>
-            <section className="adult pageCategory" id="adult">
-            {/* <h2>Adulte</h2> */}
-                <div className="pageCategory_box">
-                    <Category elements={elements} />
-                    <Prices cells={cells} />
-                </div>
-            </section>
-        </>
-    )
+class Adult extends React.Component {
+
+    render() {
+        return (
+            <>
+                <Header />
+                {/* <AtHome/> */}
+                {/* <Heading /> */}
+                <section className="adult pageCategory" id="adult">
+                    <h2>Adulte</h2>
+                    <div className="pageCategory_box">
+                        <Category elements={elements} />
+                        <Prices cells={cells} /> 
+                    </div>
+                </section>
+            </>
+        )
+    }
 }
 
 export default Adult;

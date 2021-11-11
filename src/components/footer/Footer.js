@@ -1,6 +1,6 @@
 import React from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
-import ContactInfo from '../contact/ContactInfo';
+//import { HashLink as Link } from 'react-router-hash-link';
+//import ContactInfo from '../contact/ContactInfo';
 import Modal from '../layouts/Modal';
 import SiteMap from './SiteMap';
 import './Footer.scss';

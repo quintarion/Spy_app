@@ -1,9 +1,14 @@
 @import '../../style/main.scss';
 
 .couple {
-    background-image: url('../../assets/pictures/blob.svg');
+    // background-image: url('../../assets/pictures/blob.svg');
 
     img {
-        border-radius: 123%;
+        //border-radius: 123%;
+        border-radius: 10% 110% / 50% 30%!important;
+    }
+
+    .pageCategory_box {
+        display: flex;
     }
 }

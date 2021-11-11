@@ -9,23 +9,32 @@
     padding-top: 1rem;
     width: 100vw;
 
-    a, h3, h4, p {
+    a, address, h3, h4, p {
         display: block;
         margin: auto;
         text-align: center;
     }
 
-    a, h3, h4, p {
+    a, address, h3, h4, p, u  {
         font-family: NeutraText-Light,Arial,sans-serif !important;
-        font-size: 11px !important;
+        font-size: .80rem !important;
         font-weight: 700 !important;
         color: #454545 !important;
         text-transform: uppercase;
         text-align: center;
+        font-style: normal;
     }
 
-    span a {
-        text-decoration: underline;
+    a {
+        padding: .5rem 0;
+    }
+
+    a:hover {
+        background-color: #bde9db;
+    }
+
+    i {
+        font-size: 1.5rem;
     }
     
     @media screen and (max-width:799px) {

@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from '../header/Header';
 import Brand from '../layouts/Brand';
 import Heading from '../layouts/Heading';
 import {NavLink} from 'react-router-dom';
@@ -54,13 +55,14 @@ const cells = [
 const Couple = () => {
     return (
         <>
-            <Brand/>
-            <Heading img={kiss} alt='' caption='couple'/>
+            <Header />
+            {/* <Brand/> */}
+            {/* <Heading /> */}
             <section className="couple pageCategory" id="couple">
                 <h2>En couple</h2>
                 <div className="pageCategory_box">
                     <Category elements={elements} />
-                    <Prices cells={cells} />
+                    <Prices cells={cells} /> 
                 </div>
             </section>
         </>

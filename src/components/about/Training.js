@@ -6,7 +6,7 @@ import './Training.scss';
 
 const elements = [
     {
-    title: "Domaines d'expertise",
+    title: "Mes domaines d'expertise",
     text: [<ul>
             <li><NavLink to="/emdr" target="_blank" rel="nofollow noreferrer noopener">EMDR</NavLink> (<i>Eye Mouvement Desensitization et Reprocessing</i>) tout âge</li>
             <li>Traitement de la dissociation structurelle</li>
@@ -17,7 +17,8 @@ const elements = [
     img: woman,
     alt: "",
     path: "career",
-    page: "en savoir plus",
+    page: "",
+    //page: "en savoir plus",
     }
 ];
 

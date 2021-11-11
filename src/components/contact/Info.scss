@@ -1,14 +1,15 @@
 @import '../../style/main.scss';
 
-.page-contact {
-    padding-top: 6rem;
+.page-info {
+    padding-top: 10rem;
     max-width: 85vw;
     margin: auto;
 
     h2 {
+        //@include big-title;
+        //margin-bottom: 3rem;
         @include title-medium;
         text-transform: uppercase;
-        margin-bottom: 3rem;
         text-align: center;
     }
 
