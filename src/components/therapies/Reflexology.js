@@ -28,7 +28,9 @@ export const elements = [
 const Reflexology = () => {
     return (
         <>
-            <Header />
+            <div className="sticky-up">
+                <Header/>
+            </div>
             <section className="pageTherapy" id="reflexology">
                 {/* <Brand/>
                 <Heading img={maya_5} alt="" caption="Réfléxologie"/> */}

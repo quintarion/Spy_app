@@ -15,17 +15,30 @@ export const items = {
           li: "Pour qui ?",
           link: "/#who"
         },
+
         {
           li: "Adulte",
-          link: "/adult"
+          link: "/adult",
+        },   
+        {
+          li: "Tarifs adultes",
+          link: "/adultPrice"
         },
         {
           li: "Couple",
-          link: "/couple"
+          link: "/couple",
+        },
+        {
+          li: "Tarifs couples",
+          link: "/couplePrice"
         },
         {
           li: "Enfant / Adolescent",
           link: "/child"
+        },
+        {
+          li: "Tarifs mineurs",
+          link: "/childPrice"
         },
         {
           li: "Déroulé d'une thérapie",
@@ -78,14 +91,18 @@ export const items = {
     "Le coin des échanges": {
       link: "/#contact",
       sub_items: [
-        {
-          li: "Envoyer un message",
-          link: "/#contact"
-        }, 
+        // {
+        //   li: "Envoyer un message",
+        //   link: "/#contact"
+        // }, 
         {
           li: "Informations pratiques",
           link: "/#information"
         },
+        {
+          li: "Evènements",
+          link: "/news"
+        }
         //{
           //li: "Espace collaboratif",
           //link: "/#collaboration"

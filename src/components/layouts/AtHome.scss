@@ -16,7 +16,6 @@
 
     a {
         text-align: center;
-        margin: 0 40px;
         color: $color-link;
         z-index: 100;
         // display: -webkit-box;
@@ -98,5 +97,13 @@
         font-size: 11px;
         color: #454545 !important;
         text-transform: uppercase;
+    }
+
+    @media screen and (max-width: 799px) {
+    
+    }
+
+    @media screen and (max-width:545px) {
+    
     }
 }

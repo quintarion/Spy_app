@@ -18,11 +18,11 @@ const Menu = () => {
                       {
                         items[item_name].sub_items.map((sub_item, index) => {
                         return(
-                          <li key={index}><NavLink to={sub_item.link} activeClassName="selected">{sub_item.li}</NavLink></li>)
-                        })
+                          <li key={index}><NavLink to={sub_item.link} activeClassName="selected">{sub_item.li}</NavLink></li>
+                        )})
                       }
                     </ul> 
-                  </li>
+                  </li>  
               </ul>
             </div>
           )

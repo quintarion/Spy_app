@@ -30,10 +30,15 @@ render() {
       {this.props.elements.map((element, index) =>
       <div key={index} className="layout-therapy_container">
         <div className="layout-therapy_container-text">
-          <h2>{element.title}</h2>
-          <h3>{element.subtitle}</h3>
+          <div className="layout-therapy_container-text--title">
+            <img src={element.img} alt=""/>
+            <div>
+              <h2>{element.title}</h2>
+              <h3>{element.subtitle}</h3>
+            </div>
+          </div>
           {element.text}
-          <div>
+          <div className="layout-therapy_container-text--link">
             <NavLink activeClassName="selected" to={element.innerpath}>{element.innerpage}</NavLink>
             <a href={element.path} target='_blanck' rel="nofollow noreferrer noopener">{element.page}</a>
           </div>

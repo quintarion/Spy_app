@@ -10,7 +10,7 @@
 
         h2 {
             text-align: center;
-            @include title-medium;
+            //@include title-medium;
             text-transform: uppercase;
         }
 
@@ -51,12 +51,16 @@
         display: flex;
     }
 
-    @media screen and (max-width:799px) {
+    @media screen and (max-width: 799px) {
         padding: 1rem;
         
         h2 {
             //line-height: .8em;
-            font-size: 2.5rem;
+            //font-size: 2.5rem;
         }
+    }
+
+    @media screen and (max-width: 545px) {
+    
     }
 }

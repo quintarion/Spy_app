@@ -148,10 +148,10 @@ em {
 
 /* external links, target all anchor tags that have an href beginning with http */
 a[href^="http"] {
-  background: url('../assets/icons/external-link-square-alt-solid.svg') no-repeat;
+  background: url('../assets/icons/open.svg') no-repeat;
   background-position-x: 100%;
   background-position-y: 50%;
-  background-size: 5%;
+  background-size: 6%;
 }
 
 /* List */
@@ -165,8 +165,8 @@ ul li {
 ul {
   //display: list-item;
   list-style-type: disc;
-//   //list-style-type: bengali !important;
-//   //-moz-bengali
+  //list-style-type: bengali !important;
+  //-moz-bengali
 }
 
 p, li {

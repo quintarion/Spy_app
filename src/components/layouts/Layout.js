@@ -22,11 +22,11 @@ const Layout = ({elements}) => {
               <img src={element.img} className="layout_container-icon" alt={element.alt} />
             </Parallax>
             {/* little screens picture */}
-            <img src={element.imgsmall} className="layout_container-icon-small" alt={element.altsmall} />
+            {/* <img src={element.imgsmall} className="layout_container-icon-small" alt={element.altsmall} /> */}
         </div>
-     </div> )}
+      </div>)}
     </div>
-  )
+    )
 }
 
 export default Layout;

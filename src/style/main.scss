@@ -10,7 +10,7 @@
 * I use 7–1 pattern
 */
 
-$bgd-primary: #FBEECA;
+$bgd-primary: white;
 $bgd-secondary: #FFE01B;
 $color-white: #FFFFFF;
 $color-dark: #241C15;
@@ -133,7 +133,7 @@ $color-green: #DAEACD;
   overflow: auto;
   word-wrap: break-word; 
   @include p-font;
-}
+};
 
 @mixin title-large {
   color: $color-dark;
@@ -159,7 +159,11 @@ $color-green: #DAEACD;
   line-height: 34px;
   //@include title-font;
   @include p-font();
-}
+};
+
+@mixin title-small {
+  font-size: 1.4rem !important;
+};
 
 @mixin link {
   font-family: NeutraText-Light,Arial,sans-serif;
@@ -178,11 +182,11 @@ $color-green: #DAEACD;
   vertical-align: baseline;
   //font-family: Helvetica,Arial,Verdana,sans-serif;
   //@include p-font;
-}
+};
 
 * {
   box-sizing: border-box;
-}
+};
 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -206,13 +210,25 @@ time, mark, audio, video {
   //overflow: hidden;
   //min-height: 100vh;
 
-  @media screen and (max-width:545px) {
+  @media screen and (max-width: 799px) {
+    
+  }
+
+  @media screen and (max-width: 545px) {
     font-size: 80%;
   }
 
 }
 
-@media screen and (max-width:545px) {
+// @media screen and (max-width:799px) {
+  
+// }
+
+@media screen and (max-width: 799px) {
+    
+}
+
+@media screen and (max-width: 545px) {
   h3 {
     font-size: 1.2rem;
   }
@@ -257,6 +273,13 @@ h2, h3 {
   @include title-medium;
 }
 
+@media screen and (max-width: 799px) {
+  h2, h3 {
+    @include title-small;
+  }
+}
+
+
 figcaption, p, li {
   @include p-large;
 }
@@ -266,7 +289,7 @@ figcaption, p, li {
 // }
 
 @mixin width {
-  width: 75%;
+  width: 85%;
 }
 
 html {

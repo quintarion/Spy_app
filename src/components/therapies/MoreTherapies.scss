@@ -3,11 +3,11 @@
 .moreTherapies {
     padding-bottom: 3rem;
     padding-top: 3rem;
-    background-color: #fafafa;
-    height: 120vh;
+    background-color: $bgd-primary;
+    height: auto;
     /* curve effect */
-    border-bottom-left-radius: 60%;
-    border-bottom-right-radius: 99%;
+    //border-bottom-left-radius: 60%;
+    //border-bottom-right-radius: 99%;
     
 
     &__container {
@@ -16,7 +16,7 @@
 
         h2 {
             text-align: center;
-            @include title-medium;
+            //@include title-medium;
             text-transform: uppercase;
         }
 
@@ -60,11 +60,15 @@
         display: flex;
     }
 
-    @media screen and (max-width:799px) {
+    @media screen and (max-width: 799px) {
 
         h2 {
             font-size: 2.5rem;
         }
+    }
+
+    @media screen and (max-width: 545px) {
+    
     }
 }
  

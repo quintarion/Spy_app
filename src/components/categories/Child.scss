@@ -1,16 +1,42 @@
 @import '../../style/main.scss';
 
-.child {
-    // background-image: url('../../assets/pictures/blob-blue.svg');
+.sticky-up {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#child {
 
     img {
-        float: left;
-        width: 50vw;
-        border-radius: 10% 110% / 50% !important;
-        margin-left: 5rem;
+        width: 20%;
+        background: url(../../assets/pictures/blob-twingo.svg);
+        background-repeat: no-repeat;
+    }
+}
+
+.child {
+    margin-top: -15vh;
+
+    // img {
+    //     width: 40vw;
+    //     border-radius: 10% 110% / 50% !important;
+    // }
+
+    
+
+    
+}
+
+@media screen and (max-width: 799px) {
+
+    #child {
+        img {
+            width: 45%;
+            display: flex;
+            margin: auto;
+        }
     }
 
-    .pageCategory_box {
-        display: flex;
-    }
 }

@@ -1,10 +1,14 @@
 .calendar {
     background-color: whitesmoke;
-    max-height: 90vh;
-    //margin-left: 5.2vw;
-    width: 80%;
     display: grid;
+    margin: auto;
+    max-height: 90vh;
+    width: 80%;
+    
     grid-template-columns: 1fr 4fr;
     grid-template-rows: auto;
-    margin: auto;
+   
+    @media screen and (max-width: 799px) {
+        
+    }
 }

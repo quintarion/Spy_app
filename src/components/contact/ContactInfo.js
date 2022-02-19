@@ -23,26 +23,24 @@ class Contact extends React.Component {
         return (
             <div className="contactInfo">
                 <div>
-                <h3>Hélène QUINTANA-FAUR&Eacute;</h3>
-                    <h4>Psychologue Clinicienne-Psychothérapeute</h4><br/>
-                        <p>Diplômée d'état</p>
+                <h3>Hélène Quintana-Fauré</h3>
+                    <h4>Psychologue Clinicienne-Psychothérapeute Diplômée d'état</h4>
                         <p>SIRET: 38288842800036<br/>
                         ADELI: 349309914</p>
                         <br/>
                     <h4><u>Adresse du cabinet</u></h4>
-                        <br/>
                         <address>19 Chemin du Mas de Bouran<br/>
-                        34 290 SERVIAN<br/>
+                        34 290 Servian<br/>
                         FRANCE M&Eacute;TROPOLITAINE
                         </address>
                         <br/>
                         <p>A.P.M.R <i class="fas fa-wheelchair"></i></p>
+                        <p>Praticienne francophone</p>
                         <br/>
                         <a href="https://goo.gl/maps/jTw3MxJvPuxNK2Gd7" target="_blank">Comment m'y rendre ?</a>
                         <br/>
                     <h4><u>Prendre un rendez-vous</u></h4>
-                    <br/>
-                        <p>La prise de rendez-vous se fait par téléphone au :<br/> 
+                        <p>La prise de rendez-vous se fait par téléphone au : 
                         {/* change content according to screen size */}
                         {!smaller ? (<a href="sms:0602010304">SMS</a>) : 
                         (<a href="tel:0602010304">06 02 01 03 04</a>)}</p>

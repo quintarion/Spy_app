@@ -16,6 +16,15 @@
 
     .layout_container-text {
         order: 2;
+
+        li {
+            list-style: inside url('../../assets/icons/chevron-right.svg');
+
+            // &:before { 
+            //     content: url('../../assets/icons/chevron-right.svg') ; 
+            //     size: .5rem; 
+            // }
+        }
     }
 
     .layout_container-img {
@@ -30,6 +39,8 @@
     @media screen and (max-width:799px) {
 
         background-image: none;
+        height: auto;
+        
 
         // img {
         //     border-radius: 0;

@@ -1,9 +1,7 @@
 import React from 'react';
-//import Brand from '../layouts/Brand';
-//import Heading from '../layouts/Heading';
 import Header from '../header/Header';
 import Therapy from '../layouts/Therapy';
-//import raincoat from '../../assets/icons/raincoat.png';
+import raincoat from '../../assets/icons/raincoat.png';
 import './Icv.scss';
 import '../../style/main.scss';
 
@@ -14,6 +12,7 @@ export const elements = [
         alt: "",
         title: "I.C.V",
         subtitle: "L’Intégration des Cycles de la Vie",
+        img: raincoat,
         text: [<p> L’ICV permet la « <i>digestion</i> » des émotions du passé en connectant des réseaux de neurones les uns aux autres afin de dater les événements passés et faire en sorte que le corps n’y réagisse plus malgré nous; sentir dans son corps que le passé est terminé est ce qui assure le changement.
         L’outil principal du psychothérapeute est une liste de souvenirs succincte <i>(ligne du temps)</i> que le patient établit seul ou avec l’aide du psychothérapeute.
         Elle va permettre au patient de realiser que les souvenirs du passé sont réellement passés et que les stratégies développées dans le passé pour y faire face n’ont plus de raison d’être. Le cerveau comprend que l’événement est bien terminé. Nous sommes constitués de la somme de nos expériences, lorsque les émotions liées aux souvenirs s’estompent, le comportement change.
@@ -29,10 +28,10 @@ export const elements = [
 const Icv = () => {
     return (
         <>
-            <Header />
+            <div className="sticky-up">
+                <Header/>
+            </div>
             <section className="pageTherapy" id="icv">
-                {/* <Brand/> */}
-                {/* <Heading img={raincoat} alt="" caption="I.C.V"/> */}
                 <Therapy elements={elements} />
             </section>
         </>

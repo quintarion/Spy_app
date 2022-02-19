@@ -1,62 +1,70 @@
+
 /*
 * Pages: Have a single scss for each specific page
 */
 
-.pageCategory {
-    background-repeat: no-repeat;
-    height: auto;
-    padding-top: 2rem;
-    max-width: 100vw;
+// .pageCategory {
+//     display: flex;
+//     background-repeat: no-repeat;
+//     height: auto;
+//     //padding-top: 2rem;
+//     max-width: 100vw;
 
-    h2 {
-        @include title-medium;
-        //text-transform: uppercase;
-        padding: 3rem 2rem 2rem !important;
-        text-align: left;
-        //@include big-title;
-        font-weight: 100 !important;
-        max-width: 55vw;
-    }
+//     h2 {
+//         @include title-medium;
+//         //text-transform: uppercase;
+//         padding: 3rem 2rem 2rem !important;
+//         text-align: left;
+//         font-weight: 100 !important;
+//         max-width: 55vw;
+//     }
 
-    img {
-        margin: 0 0 2rem 1rem;
-        width: 55vw;
-    }
+//     img {
+//         margin: 0 0 2rem 1rem;
+//         width: 55vw;
+//     }
 
-    p {
-        font-size: 1rem;
-        max-width: 55vw;
-        margin:auto;
-    }
+//     p {
+//         font-size: 1rem;
+//         max-width: 55vw;
+//         margin:auto;
+//     }
 
-    &_box {
-        // display: flex;
-        // max-width: 80vw;
-        // margin: auto;
-    }
+//     &_box {
+//         display: flex;
+//         // max-width: 80vw;
+//         // margin: auto;
+//     }
 
-    @media screen and (max-width:799px) {
+//     @media screen and (max-width: 799px) {
+//         flex-direction: column;
+//         //margin: 2rem 0 2rem;
 
-        margin: 2rem 0 2rem;
+//         h2 {
+//             @include title-small;
+//             //font-size: 1.4rem;
+//             margin-top: -10vh;
+//             padding: 0;
+//             text-align: center;
+//         }
 
-        h2 {
-            margin: 0;
-            text-align: center;
-        }
+//         &_box {
+//             flex-direction: column;
+//             //top: 0;
 
-        &_box {
-            flex-direction: column;
+//             .layout-cathegory {
+//                 margin: auto;
+//             }
+//         }
+//     }
 
-            .layout-cathegory {
-                margin: auto;
-            }
-        }
-    }
-}
+//     @media screen and (max-width: 545px) {
+    
+//     }
+// }
 
 .pageTherapy {
     align-items: center;
-    background-color: #fafafa;
     //background-image: url('../assets/pictures/shapes.jpg');
     background-size: cover;
     display: flex;
@@ -66,6 +74,10 @@
     //background-image: url('../assets/pictures/gradient6.jpg');
     background-repeat: no-repeat; 
 
+    p {
+        margin: 1.5rem auto;
+    }
+
     figcaption {
         font-size: 11px !important;
         font-weight: 900;
@@ -73,13 +85,29 @@
     }
 
     h3 {
-        font-size: 15px;
+        font-size: 29px !important;
         padding-bottom: 1rem;
     }
 
-    em, i, p, strong {
-        font-size: 16px !important;
+    em, p, strong {
         text-align: justify;
+        font-family: "Lato",serif !important;
+        font-size: 16px !important;
+        font-weight: 300 !important;
+        color: #241C15 !important;
+        font-style: normal;
+    }
+
+    @media screen and (max-width: 799px) {
+
+        h3 {
+            font-size: 1.4rem !important;
+        }
+
+    }
+
+    @media screen and (max-width: 545px) {
+    
     }
 }
 

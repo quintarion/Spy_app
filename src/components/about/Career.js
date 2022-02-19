@@ -11,7 +11,7 @@ const elements = [
     id: "#career",
     title: "Mon parcours professionnel",
     text: [<div>
-    <h4>de 2007 à aujourd'hui</h4>
+    <h3>de 2007 à aujourd'hui</h3>
     <br/>
     <ul>
         <li>Auxiliaire de puéricultrice</li>
@@ -43,7 +43,9 @@ const elements = [
 const Career = () => {
     return (
         <section className="career" id="career">
-            <Header />
+            <div classname="career-menu sticky-up">
+                <Header />
+            </div>
             <Layout elements={elements}/>
         </section>
     )

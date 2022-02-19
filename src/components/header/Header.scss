@@ -22,22 +22,24 @@
     nav {
         position: absolute; //"Fix" the element
           //@include shadow;
-    align-items: baseline; /* by default: align-items: strech -> child elements' heights = the container's height */
-    align-self: flex-start;
-    background-color: $bg-primary;
-    display: flex;  /* flex container */
-    flex-flow: row nowrap;
-    //height: 5.8rem;
-    justify-content: space-evenly;
-    //justify-content: space-between;
-    left: 0;
-    padding: 1rem 5%;
-    
-    width: 100vw;
+        align-items: baseline; /* by default: align-items: strech -> child elements' heights = the container's height */
+        align-self: flex-start;
+        background-color: $bgd-primary;
+        display: flex;  /* flex container */
+        flex-flow: row nowrap;
+        //height: 5.8rem;
+        justify-content: space-evenly;
+        //justify-content: space-between;
+        left: 0;
+        padding: 1rem 5%;
+        width: 100vw;
 
-        // &:hover {
-        //     height: 40vh;
-        // }
+        &:hover {
+            height: 100vh;
+            background-image: url('../../assets/pictures/birds.jpg');
+            background-size: cover;
+            transition: background-color 1s ease, height 1s linear;
+        }
     }
 
     a {
@@ -110,12 +112,27 @@
     *
     */
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 799px) {
         
         //background-color: white;
         display: inline;
+        //display: flex;
         flex-direction: column; /* change the direction of the container */
         margin-top: 0;
+
+        
+
+            nav {
+                height: 100vh !important;
+                background-color: $bgd-primary !important;
+
+                &:hover {
+                    background-image: none;
+                }
+
+            }  
+
+        
 
         .closed {
             display: none;
@@ -124,8 +141,9 @@
         &-home {
             align-items: center;
             display: flex;
-            justify-content: space-between;
+            //justify-content: space-between;
             //margin: 0 1rem;
+            justify-content: flex-end;
         }
         
         &-home, &-links {  
@@ -143,12 +161,13 @@
         }
 
         .opened {
-            //border-top: solid 1.6px khaki;
-            margin-top: 1rem;
+            top: 0;
         }
 
         .toggle {
             display: inline-block;
+            padding: 1.5rem 2rem 2rem;
+            z-index: 1;
         }
         
     }
@@ -158,6 +177,8 @@
         .toggle {
             font-size: 2rem;
         }
+
+        
 
     }
 }
