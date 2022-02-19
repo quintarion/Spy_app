@@ -1,5 +1,7 @@
 @import '../../style/main.scss';
 
+//overflow: scroll !important;
+
 .modal_overlay {
     top: 0;
     right: 0;
@@ -8,118 +10,189 @@
     width: 100%;
     height: 100%;
     position: fixed;
-    background-color: rgba(0,0,0,0.5);
+}
+
+hr {
+    color:cadetblue;
 }
 
 .btn-security-save2 .btn-save-modif{
-    cursor: pointer;
+    //cursor: pointer;
 }
 
-.container-security-save{
-    position: fixed;
-    top:25%;
-    margin-left: 10vw;
-    z-index:1;
-    width: 80vw;
+.container-security-save {
+    cursor: grab !important;
+    position: fixed !important;
+    margin: 10% 5%;
+    z-index:1 !important;
 
     h2 {
-        text-transform: uppercase;
+        //text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    h3 {
+        font-size: 18px !important;
+        font-weight: 400;
     }
 
     p, h2, h3, li, table {
-        font-size: .9375rem;
+        //font-size: .9375rem;
         //font-weight: 600;
         letter-spacing: 0.134em;
         padding-left: 0;
         padding-right: 0;
         text-decoration: none; 
         vertical-align: baseline;
-        font-family: Helvetica,Arial,Verdana,sans-serif;
+        //font-family: Helvetica,Arial,Verdana,sans-serif;
+        text-align: left !important;
     }
 
     table {
+        cursor: grab !important;
         @include table;
         margin: auto;
 
         td {
             text-align: left;
         }
+
+        th, caption {
+            font-size: .77rem !important;
+            color: #241C15;
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: 0;
+            line-height: 25px;
+            text-align: justify;
+            overflow: auto;
+            word-wrap: break-word;
+            overflow: auto;
+            word-wrap: break-word;
+            font-family: "Lato",serif;
+            font-size: 16px !important;
+        }
+
+        caption {
+            text-align: center;
+            font-weight: 400;
+        }
     }
     
-  .display-block-save{
+  .display-block-save {
+    cursor: grab !important;
     display: block;
     @include shadow;
     text-align: center;
     align-items: center;
     margin-bottom: 5%;
-    color: black;
-    background-color: white; 
+    color: #241C15;
+    background-color: $bgd-primary;
     height: 60vh;
     padding-left:0!important;
     overflow: auto;
+    border: solid 2px #241C15;
   
-    .modal-security-save-bloc-title{
-      background-color:#ffe74c;
-      @include shadow;
-      position: fixed;
-      width: 80vw;
-    
-      padding:1px;
-      .security-modal-save{
+    .modal-security-save-bloc-title {
+        cursor: grab !important;
+      //background-color:#bfddb9;
+      //@include shadow;
+      //position: fixed;
+      //width: 90vw;
+      //border-bottom: 1px solid #241C15;
+      position: sticky;
+        background-color: #f2f4f8;
+    top: 0;
+     /* curve effect */
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 90%;
+      
+      h2 {
+        //color: black;
+        text-align: center !important;
+        letter-spacing: .034rem !important;
+        font-size: 18px !important;
+      }
+      
+      .security-modal-save {
+        cursor: grab !important;
        font-size:16px;
-       color:white;
-       padding: 2rem;
+       //color:white;
+       padding: 1rem;
     }
   
   }
 
   .container-open-security-save {
-    display:flex;
+    cursor: grab !important;
+    display: flex;
     flex-direction: column;
+    margin-top: 2rem;
 
+    img {
+        width: 100%;
+        background-image: url(../../assets/pictures/blob-beige.svg);
+    }
+
+    .text-modal-security-save {
+        cursor: grab !important;
+        //margin-top: 11vh;
     
-
-
-    .text-modal-security-save{
-        margin-top: 6rem;
-
-        hr {
-            color: rgba(17, 30, 71, 0.15);
-        }
-
-        h3 {
-            font-weight: 600;
-        }
-
-        span {
-            font-weight: 900;
-        }
-
-        h2, h3, li {
-            padding: 0 40px 10px 30px;
-            text-align: left;
-        }
-   
-        p{
-            padding: 0 40px 10px 30px;
-            margin-top:10px;
+        p, li {
+            font-size: .77rem !important;
+            color: #241C15;
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: 0;
+            line-height: 25px;
+            text-align: justify;
+            overflow: auto;
+            word-wrap: break-word;
+            overflow: auto;
+            word-wrap: break-word;
+            font-family: "Lato",serif;
+            font-size: 16px !important;
         }
     }
 
 }
-.container-open-security-save{
-margin-top:20px;
+.container-open-security-save {
+    cursor: grab !important;
+//margin-top:20px;
 
-.btn-modal-close-security-save{
-    
-    @include nav;
+.scroller {
+    width: 300px;
+    height: 100px;
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+}
+
+.btn-modal-close-security-save {
+    cursor: grab !important;
+    //@include nav;
         //@include button;
-        width: 20vw;
+        width: 10vw;
         margin: auto;
-        margin-bottom: auto;
-        margin-bottom: 2rem;
-        
+        //margin-bottom: auto;
+        margin-bottom: 1rem;
+        background-color: transparent;
 
+        color: #241C15;
+        font-weight: 300;
+        letter-spacing: 0;
+        line-height: 1.3;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 34px;
+        font-family: "Lato",serif;
+        border: none;
+
+        //border: 1px solid #241C15;
+
+        button {
+           cursor: pointer;
+        }
    
     // padding:10px;
     // width: 250px;
@@ -142,11 +215,54 @@ margin-top:20px;
 }
   }
 
-  .display-none-save{
+  .display-none-save {
     display: none;
     
   }
 
  
- }
+}
  
+@media screen and (max-width: 799px) {
+    
+    .modal_overlay {
+        
+
+        h2 {
+            font-size: .77rem !important;
+        }
+    }
+
+    .container-security-save {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90vw;
+        top: 15%;
+    }
+
+    .container-security-save .display-block-save {
+        display: block;
+        box-shadow: 3px 3px 3px -1px rgba(17, 30, 71, 0.15);
+        text-align: center;
+        align-items: center;
+        margin-bottom: 5%;
+        color: black;
+        background-color: white;
+        height: 70vh;
+        padding-left: 0 !important;
+        overflow: auto;
+    }
+
+    .container-open-security-save {
+
+
+        article {
+            //margin-top: 11vh;
+        }
+        
+    }
+}
+
+@media screen and (max-width: 545px) {
+
+}

@@ -12,6 +12,10 @@
     &_container {
         display: flex;
         flex-flow: row nowrap;
+        justify-content: center; /* align horizontally */
+        align-items: center; /* align vertically */
+        height: 100vh;
+        //margin-top: 10vh;
 
         a, ul, li, strong, em, i {
             @include p-large;
@@ -37,8 +41,8 @@
         h2 {
             @include title-medium;
             text-transform: uppercase;
-            padding-bottom: 2rem;
-            //margin-bottom: .5rem;
+            //padding-bottom: 2rem;
+            margin-bottom: 3vh;
             text-align: left;
         }
 
@@ -86,22 +90,49 @@
 
     @media screen and (max-width:799px) {
 
-        height: auto;
-        max-width: 80vw;
+        //height: auto;
+        width: 100vw;
         padding: 0 0 3rem;
+        display: inline-block;
+        height: auto;
+        margin: auto;
 
         span a {
-            margin: 2rem 0;
-            padding: 0;
+            display: block;
+            left: 0;
+            position: relative;
+            text-align: center;
+            //margin: 2rem 0;
+            //padding: 0;
         }
         
         &_container {
+
             flex-direction: column;
             height: auto;
-            width: 100vw;
+            width: auto;
+
+            h2 {
+                padding-bottom: 2rem;
+            }
+
+            ul {
+                padding: 0 2rem 0;
+            }
+
+            &-text {
+                font-family: "Lato",serif;
+                padding-left: 0;
+
+                ul li {
+                    white-space: normal;
+                    text-align: start !important;
+
+                }
+            }
 
             div {
-                width: 100%;
+                width: 100vw;
             }
 
              /* hide the big picture */
@@ -115,17 +146,19 @@
             }
 
             &-img {
-                width: 60vw;
-                height: 60vw;
+                display: none;
             }
 
-            &-text {
-                padding: 2rem;
-            }
         }
 
         h2 {
             text-align: center;
+            font-size: 1.4rem !important;
+            margin-bottom: 0;
         }
+    }
+
+    @media screen and (max-width: 545px) {
+    
     }
 }

@@ -1,15 +1,19 @@
 import React, { Component } from "react";
 import Subcategory from "../layouts/Subcategory";
-import kiss from '../../assets/icons/kiss.png';
-import touristWoman from '../../assets/icons/touristWoman.png';
-import treeSwing from '../../assets/icons/treeSwing.png';
+import adult from '../../assets/icons/noun_maya.png';
+import child from '../../assets/icons/noun_fox.png';
+//import kiss from '../../assets/icons/kiss.png';
+import kiss from '../../assets/icons/noun_the kiss.png';
+//import touristWoman from '../../assets/icons/touristWoman.png';
+//import treeSwing from '../../assets/icons/treeSwing.png';
 import './Who.scss';
 import '../../style/main.scss';
 
 const elements = [
   {
     class: "one",
-    img: treeSwing,
+    img: child,
+    //img: treeSwing,
     alt: "",
     title: "Enfant, Adolescent",
     text: [<p>Votre enfant est hyper actif, trop rêveur, a des terreurs nocturnes ou cauchemars récurrents,  ne peut pas dormir seul, souffre de perturbation du transit intestinal, est énurétique ou violent... N’oubliez pas que je demanderai à rencontrer toutes les personnes vivant au foyer de l’enfant lors de la première séance et la plus part du temps chercherai à contacter l’autre parent en cas de séparation.</p>],
@@ -21,7 +25,8 @@ const elements = [
   },
   {
     class: "two",
-    img: touristWoman,
+    img: adult,
+    //img: touristWoman,
     alt: "",
     title: "Adulte",
     text: [<p>Powder halvah tart powder sugar plum liquorice marzipan. Oat cake chupa chups liquorice carrot cake macaroon. Liquorice gummies oat cake cookie pastry cake gingerbread dessert dessert. Powder chocolate brownie icing sweet brownie.</p>],
@@ -73,7 +78,7 @@ class Who extends Component {
       <div className="who" id="who">
         <div className="who_container">
             <div className="who_intro">
-              <h2>Quel public puis-je accueillir ?</h2>
+              <h2>Quel public puis-je accueillir ?</h2>
               <p> Mes consultations s’adressent * aux adultes, mais aussi aux enfants quelque soit leur âge (<i>toujours accompagnés de leurs parents ou de toutes les personnes partageant leur domicile au moins lors de la première séance</i>), aux adolescents,  aux couples.
               <br/>
               <br/>

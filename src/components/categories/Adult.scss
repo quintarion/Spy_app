@@ -1,14 +1,151 @@
 @import '../../style/main.scss';
 
-.adult {
-    // background-image: url('../../assets/pictures/blob9.svg');
-
-    img {
-        //border-radius: 34% 12%/23% 54%;
-        border-radius: 67% 55%/89% 14%;
-    }
-
-    .pageCategory_box {
-        display: flex;
-    }
+.sticky-up {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
+
+.pageTherapy {
+  margin-top: -15vh;
+}
+
+#adult {
+    img {
+      width: 20%;
+      background: url(../../assets/pictures/blob14.svg);
+      background-repeat: no-repeat;
+  }
+}
+    //background-image: url('../../assets/pictures/blob9.svg');
+    // display: grid;
+    // place-content: center;
+    // align-items: center;
+    // height: 100vh;
+    // box-sizing: border-box;
+
+    //font-family:"nunito", sans-serif;
+    //background-color:#0099ff;
+
+    //img {
+      //border-radius: 34% 12%/23% 54%;
+      //border-radius: 67% 55%/89% 14%;
+      //width: 40vw;
+    //}
+
+    // .pageCategory_box {
+    //   //display: flex;
+    //   position: absolute;
+    //   top: 10vh;
+    // }
+
+
+    //// test ////
+  
+      // .card {
+      //   position: relative;
+      //   padding: 2rem;
+      //   //padding: 2rem;
+      //   //padding: 42px 32px;
+      //   clip-path: circle(5% at 95% 11%);
+      //   transition: all ease-in-out .3s;
+      //   background-color:rgba(235, 0, 83, .9);
+      //   max-width: 80vw;
+      //   margin-left: auto;
+      //   margin-right: auto;
+      //   z-index: 1;
+        
+      //   &_infoicon {
+      //       position: absolute;
+      //       top: 5rem;
+      //       right: 1.5rem;
+      //       transition:ease-out .3s;
+      //       z-index: 1;
+
+      //       i {
+      //           @include link;
+      //           color: #ffff;
+      //       }
+      //   }
+    
+        
+      //   &:hover, &:focus {
+      //     clip-path: circle(75%);
+      //     border-radius: 3rem;
+      //     //box-shadow: 0px 3px 9px rgba(0,0,0,0.12),
+      //                 //0px 3px 18px rgba(0,0,0,0.08);
+      //     //background:#ffffff;
+          
+      //     outline: none;
+
+      //     .card_infoicon {
+      //           opacity: 0;
+      //     }
+
+      //   }
+
+        // &:focus {
+        //   box-shadow: 0px 3px 9px rgba(0,0,0,0.12), 
+        //               0px 3px 18px rgba(0,0,0,0.08), 
+        //               0px 0px 0px 4px rgba(0,0,0,0.2);
+        // }
+      //}
+
+      @media screen and (max-width: 799px) {
+
+        img {
+          display: flex;
+          margin: auto;
+        }
+
+        &-menu {
+          display: inline-block;
+          padding: 2rem 2rem .9rem .9rem;
+        
+          
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        
+        }
+
+        
+
+        //background-image: url('../../assets/icons/noun_maya_adult.svg');
+        
+
+        
+      
+        //background-color: #febf63;
+        //-webkit-mask-image: url('../../assets/icons/noun_maya_adult.svg');
+        //mask-image: url('../../assets/icons/noun_maya_adult.svg');
+
+        // svg {
+        //   fill:#febf63 !important;
+        // }
+
+        // background-color: #febf63;
+        // -webkit-mask-image: url('../../assets/icons/noun_maya_adult.svg');
+        // mask-image: url('../../assets/icons/noun_maya_adult.svg');
+        // background-repeat: no-repeat;
+
+        // .card {
+        //   display: none;
+        // }
+
+      }
+
+      @media screen and (max-width: 799px) {
+
+        #adult {
+            img {
+                width: 45%;
+                display: flex;
+                margin: auto;
+            }
+        }
+    
+    }
+

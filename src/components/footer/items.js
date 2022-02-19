@@ -46,7 +46,7 @@ export const items = {
                 section: 'Ma formation'
             },
             {
-                path: '/#career',
+                path: '/career',
                 section: 'Mon parcours professionnel'
             },
         ]
@@ -61,18 +61,18 @@ export const items = {
                 path: "/news",
                 section: 'Fil d\'actualité'
             },
-            {
-                path: "/mentions",
-                section: 'Mentions légales'
-            },
-            {
-                path: "/peers",
-                section: 'Le coin des partenaires'
-            },  
-            {
-                path: "/signIn",
-                section: 'Le coin de l\'administrateur'
-            }
+            // {
+            //     path: "/mentions",
+            //     section: 'Mentions légales'
+            // },
+            // {
+            //     path: "/peers",
+            //     section: 'Le coin des partenaires'
+            // },  
+            // {
+            //     path: "/signIn",
+            //     section: 'Le coin de l\'administrateur'
+            // }
         ]
     }
 };

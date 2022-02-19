@@ -7,6 +7,9 @@
     background-position:  70% 19%;
     background-size: 100%;
     background-repeat: no-repeat;
+    background-color: $bgd-primary;
+    //margin-top: 10vh;
+    cursor: grab;
 
      /* curve effect */
     //  border-top-left-radius: 10%;
@@ -20,8 +23,12 @@
         margin-left: 1rem;
     }
 
-    h4 {
-        @include title-medium;
+    h2 {
+        margin-top: 5vh;
+    }
+
+    h3 {
+        text-align: left;
     }
 
     .layout_container-text {
@@ -33,6 +40,25 @@
     }
 
     @media screen and (max-width:799px) {
+
+        h2, h3 {
+            text-align: center;
+            margin-top: 0;
+            padding-bottom: 0;
+        }
+
+        &-menu {
+            display: inline-block;
+            padding: 2rem 2rem .9rem .9rem;
+            //position: sticky;
+        }
+
+        .sticky-up {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
 
         background-image: none;
 
@@ -47,7 +73,6 @@
             background-size: 150%;
             background-repeat: no-repeat;
         }
-
     }
 }
    

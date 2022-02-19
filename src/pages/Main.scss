@@ -1,7 +1,8 @@
 @import '../style/main.scss';
 
 .main {
-    background-color: $bg-primary;
+    background-color: $bgd-primary;
+    cursor: grab;
 
     /* site that takes all the available height */
     margin: 0;
@@ -25,5 +26,15 @@
         position: -webkit-sticky;
         position: sticky;
         top: 80vh;
+    }
+
+    @media screen and (max-width: 799px) {
+        .sticky-down {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 545px) {
+    
     }
 }

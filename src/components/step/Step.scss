@@ -8,10 +8,11 @@
     &_container {
         margin: auto;
         @include width;
+        padding-top: 20vh;
 
         h2 {
             text-align: center;
-            @include title-medium;
+            //@include title-medium;
             text-transform: uppercase;
             padding-bottom: 3rem;
         }
@@ -27,16 +28,69 @@
             //scrollbar-width: none; //Hide scrollbar
             //text-overflow: ellipsis;
 
+            
+
             .one {
                 grid-area: one;
+                display: flex;
+                align-items: center;
+ 
+                &-img {
+                    width: 10vw;
+                    height: 10vw;
+                    border-radius: 50%;
+                    float: left;
+                    
+                    img {
+                        width: 10vw;
+                        height: 10vw;
+                        background: url(../../assets/pictures/blob.svg) no-repeat center top 4px transparent;
+                    }
+                }
+
+                p {
+                    float: left;
+                }
+                
             }
 
             .two {
                 grid-area: two;
+                display: flex;
+                align-items: center;
+
+                &-img {
+                    width: 10vw;
+                    height: 10vw;
+                    border-radius: 50%;
+
+                    img {
+                        width: 10vw;
+                        height: 10vw;
+                        background: url(../../assets/pictures/blob15.svg) no-repeat center top 4px transparent;
+                        
+                    }
+                } 
             }
 
             .three {
                 grid-area: three;
+                display: flex;
+                align-items: center;
+                
+
+                &-img {
+                    width: 10vw;
+                    height: 10vw;
+                    border-radius: 50%;
+
+                    img {
+                        width: 10vw;
+                        height: 10vw;
+                        background: url(../../assets/pictures/blob6.svg) no-repeat center top 4px transparent;
+                    }
+                } 
+                
             }
 
             p {
@@ -48,8 +102,29 @@
 
     @media screen and (max-width:799px) {
 
+        &_container {
+
+            padding-top: 0;
+
+            img {
+                display: none; 
+            }
+
+            &-text {
+
+                p {
+                    padding: 0;
+                }
+            }
+        }
+        
+
         h2 {
             line-height: auto;
         }
+    }
+
+    @media screen and (max-width: 545px) {
+    
     }
 }

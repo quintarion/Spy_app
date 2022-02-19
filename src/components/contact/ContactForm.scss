@@ -7,6 +7,12 @@
         //display: block;
         float: right;
         //margin: .9rem;
+        padding: 1rem;
+
+        &:hover {
+            background-color: #bde9db;
+            padding: 1rem;
+        }
     }
 
     h2 {
@@ -16,7 +22,6 @@
     p {
         color: black;
         font-family: 'Open Sans Condensed',Helvetica,sans-serif;
-        font-size: 16px;
         font-weight: 300;
         letter-spacing: .144rem;
         padding: 2rem;
@@ -66,7 +71,7 @@
         }
 
         i {
-            color: black;
+            color: #241C15;
             font-size: .6rem;
         }
 

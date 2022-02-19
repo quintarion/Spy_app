@@ -1,44 +1,209 @@
 @import '../../style/main.scss';
 
 .layout-category {
-    width: 100vw;
-    display: flex;
+        height: auto;
+        max-height: 95vh;
+        padding: 3rem;
+        //width: 85vw;
+        background-color: $bgd-primary;
+        cursor: grab;
+
+        &_container {
+            display: flex;
+            flex-direction: column;
+            
+           
+            &-link {
+                text-align: right;
+
+                a {
+                    @include nav;
+                    margin: 1rem auto;
+                    padding: .5rem .5rem;
+                    cursor: pointer;
+                    
+                    &:hover {
+                        background-color: #bde9db;
+                    }
+                }
+
+            }
+            
+            h2 {
+                //@include title-medium;
+                text-transform: uppercase;
+                //@include main-title;
+                //font-size: 3rem;
+                //@include big-title;
+                padding-top: 0;
+                text-align: left;
+            }
+    
+            li {
+                @include p-font;
+            }
+    
+            Iframe::backdrop {
+                background-color: rgba(0,0,0,.3);
+            }
+    
+            .linkNoStyle {
+                @include linkNoStyle;
+            }
+    
+            p {
+                max-height: 60vh;
+                text-align: left;
+            }
+    
+            &-text {
+                max-width: 100vw;
+                padding-top: 20vh;
+                //margin: 2vh auto 10vh 10vw;
+                padding-bottom: 2rem;
+                //overflow: auto;
+                
+                p, ul li{
+                @include p-font;
+                max-height: 60vh;
+                }
+
+                &--style {
+                    //border: 1px blueviolet solid;
+                    //padding: 12px;
+                    .float {
+                        float: left;
+                    }
+                }
+            }
+            
+        }
+    
+        @media screen and (max-width: 799px) {
+            width: 85%;
+            max-height: auto;
+            margin: auto;
+            flex-direction: column;
+        //font-size: 60%;
+        border-radius: none;
+        padding: .5rem;
+
+        h3, p, u {
+            font-family: "Lato",serif !important;
+        font-size: 16px !important;
+        font-weight: 300 !important;
+        color: #241C15 !important;
+        text-align: center;
+        font-style: normal;
+
+        }
+        
+    
+        &_container {
+    
+            &-text {
+                padding: 0;
+                padding-top: 10vh;
+
+                //background-color: chartreuse;
+            }
+
+            &-text--style {
+                //background-color: red;
+                .float {
+                    float: none;
+                }
+
+            }
+
+            &-link {
+                text-align: center;
+                margin-bottom: 3vh;
+            }
+        }
+                   
+        .layout-icon {
+            display: none;
+        }
+    
+        h2 {
+            text-align: center;
+        }
+        
+        }
+    
+        @media screen and (max-width: 545px) {
+        
+        }
+        
+    }
+    
+  
+
+
+
+    //max-width: 100vw;
+    //height: auto;
+    //display: flex;
+    //margin-left: 19vw;
+
+    // .costum-class {
+    //     position: absolute;
+    //     height: 100vh;
+    //     bottom: 0;
+    // }
 
     //&-text {
-        // p {
-            
-        // }
+        //max-width: 100vw;
+        //top: 20vh;
+        //margin: 2vh auto 10vh 10vw;
+        // padding-bottom: 2rem;
+
+    
+
+        //p, ul li{
+            //@include p-font;
+            //max-height: 60vh;
+        //}
     //}
 
-    &-btn {
-        @include nav;
-        float: right;
-        margin: 1rem;
-    }
+    // &-btn {
+    //     position: absolute;
+    //     @include nav;
+    //     //float: right;
+    //     margin: auto 0 auto;
+    //     //margin: 1rem;
+    //     bottom: 10vh;
+    // }
 
-    &-icon {
-        margin-bottom: 1rem;
-    }
+    // &-icon {
+    //     margin-bottom: 1rem;
+    // }
 
-    p {
-        margin: 0 0 2rem 2rem;
-        max-height: 60vh;
-    }
+    
 
-    @media screen and (max-width:799px) {
+    //@media screen and (max-width: 799px) {
         //margin: auto;
         //width: 100vw;
         //max-height: 100vh;
+        //display: flex;
+        //flex-direction: column;
 
-        p {
-            margin: auto;
-            width: 80vw;
-        }
+//         p {
+//             margin: auto;
+//             width: 80vw;
+//         }
 
-        &-icon {
-            display: none;
-        }
+//         &-text {
+//             margin: auto;
+//         }
 
-       
-    }
-}
+//         &-icon {
+//             display: none;
+//         }
+//     }
+
+//     @media screen and (max-width: 545px) {
+    
+//     }
+// }

@@ -7,7 +7,7 @@
         @include width;
 
         h2 {
-            text-align: left !important;
+            //text-align: left !important;
             //@include main-title;
             @include title-medium;
             text-transform: uppercase;
@@ -24,10 +24,9 @@
         }
     }
 
-    @media screen and (max-width:799px) {
-        margin: auto;
-        padding: 0;
-        padding-top: 5rem;
+    @media screen and (max-width: 799px) {
+        margin: visible;
+        //padding-top: 5rem;
 
         &_container {
 
@@ -36,8 +35,26 @@
             }
 
             h2 {
+                text-align: center;
                 padding: .5rem;
+                font-size: 1.4rem !important;
+                text-align: center;
+            }
+
+            ul {
+                white-space: normal !important; //nowrap break-space
+                text-overflow: "-";
+
+                li {
+                white-space: normal !important; //nowrap break-space
+                text-overflow: "-";
+                font-family: "Lato",serif;
+                }
             }
         }
+    }
+
+    @media screen and (max-width: 545px) {
+    
     }
 }

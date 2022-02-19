@@ -1,9 +1,7 @@
 import React from 'react';
-// import Brand from '../layouts/Brand';
-// import Heading from '../layouts/Heading';
 import Header from '../header/Header';
 import Therapy from '../layouts/Therapy';
-//import maya_2 from '../../assets/icons/maya_2.png';
+import maya from '../../assets/icons/maya_2.png';
 import './Eft.scss';
 import '../../style/main.scss';
 
@@ -14,6 +12,7 @@ export const elements = [
         alt: "",
         title: "E.F.T",
         subtitle: "Emotional Freedom Technique",
+        img: maya,
         text: [<p>Il s'agit de tapoter certains points spécifiques situés sur nos méridiens.
         En tapotant ainsi tout en pensant à ce qui nous dérange, on équilibre les méridiens perturbés.
         Vous conservez la mémoire de l'évènement qui vous a dérangé, mais n'en ressentez plus la charge émotive qui l'accompagnait.
@@ -30,10 +29,10 @@ export const elements = [
 const Eft = () => {
     return (
         <>
-            <Header />
+            <div className="sticky-up">
+                <Header/>
+            </div>
             <section className="pageTherapy" id="eft">
-                {/* <Brand/> */}
-                {/* <Heading img={maya_2} alt="" caption="E.F.T"/> */}
                 <Therapy elements={elements} />
             </section>
         </>

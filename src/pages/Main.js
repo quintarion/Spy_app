@@ -8,7 +8,7 @@ import Info from '../components/contact/Info';
 import MoreTherapies from '../components/therapies/MoreTherapies';
 import Therapies from '../components/therapies/Therapies';
 import Training from '../components/about/Training';
-import ScrollSpy from '../components/layouts/ScrollSpy';
+//import ScrollSpy from '../components/layouts/ScrollSpy';
 import Step from '../components/step/Step';
 import Who from '../components/categories/Who';
 import Why from '../components/why/Why';
@@ -34,7 +34,6 @@ const Main = () => {
     return (
         <div className="main">
             <div className="site-header">
-                
             </div>
             <main className="site-content">
                 <Home/>
@@ -52,7 +51,7 @@ const Main = () => {
                 <Step/>
                 <Therapies/>
                 <MoreTherapies/>
-                <Contact/>
+                {/* <Contact/> */}
                 <Info />
             </main>
             <div className="site-footer">

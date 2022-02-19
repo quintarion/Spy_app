@@ -18,12 +18,11 @@ export const elements = [
         subtitle: "",
         text: [<>
         <p>Avec le <i>«  terpnos logos  »</i>, la relaxation sophronique, s’adresse au système parasympathique et permet une détente  d’où vont émerger des pensées  et visualisations positives.</p>
-        <br/><p>Options :</p><br/>
+        <p><u>Options:</u></p>
         <ul>
-            <li>Je peux, <u><Link className="linkNoStyle" to="/#contact">sur rendez-vous</Link></u> spécifiques dans le cadre  cours d’un travail psychothérapeutique,  proposer des séances d’<Link className="linkNoStyle" to="/icv">ICV</Link> portant sur la vie intra <i>(protocole de l’être céllulaire)</i> en hammam 1h30 (100  €).</li>
-            <br/>
+            <li>Je peux, <u><Link className="linkNoStyle" to="/#contact">sur rendez-vous</Link></u> spécifiques dans le cadre  cours d’un travail psychothérapeutique,  proposer des séances d’<Link className="linkNoStyle" to="/icv">ICV</Link> portant sur la vie intra <i>(protocole de l’être céllulaire)</i> en hammam 1h30 (100 €).</li>
             <li>Séances de <i>« travail régressif »</i>, <b>type Watsu</b> (60 € pour une heure).
-            <a className="linkNoStyle" href="https://iswatsu.com/fr/le-watsu-c-est-quoi#Therapeutic-benefits-of-Watsu" target="_blank" rel="nofollow noreferrer noopener"> Pour en savoir plus sur le Watsu.&emsp;</a>
+            <a className="linkNoStyle" href="https://iswatsu.com/fr/le-watsu-c-est-quoi#Therapeutic-benefits-of-Watsu" target="_blank" rel="nofollow noreferrer noopener">Pour en savoir plus sur le Watsu.&emsp;</a>
             </li>
         </ul>
         </>
@@ -38,7 +37,9 @@ export const elements = [
 const Sophrology = () => {
     return (
         <>  
-            <Header />
+            <div className="sticky-up">
+                <Header/>
+            </div>
             <section className="pageTherapy" id="sophrology">
                 {/* <Brand/>
                 <Heading img={maya_7} alt="" caption="Sophrologie"/> */}

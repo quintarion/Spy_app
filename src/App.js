@@ -3,15 +3,19 @@ import { Route, Switch } from "react-router-dom";
 //import ReCAPTCHA from "react-google-recaptcha";
 
 import Adult from './components/categories/Adult';
+import AdultPrice from './components/categories/AdultPrice';
 import At from './components/therapies/At';
 import Career from './components/about/Career';
 import Child from './components/categories/Child';
+import ChildPrice from './components/categories/ChildPrice';
 import Couple from './components/categories/Couple';
+import CouplePrice from './components/categories/CouplePrice';
 import Dashboard from './pages/Dashboard';
 import Eft from './components/therapies/Eft';
 import Emdr from './components/therapies/Emdr';
 import Icv from './components/therapies/Icv';
 import Main from './pages/Main';
+import News from './components/news/News';
 import Reflexology from './components/therapies/Reflexology';
 import SignIn from './components/dashboard/SignIn';
 import Sophrology from './components/therapies/Sophrology';
@@ -79,8 +83,13 @@ class App extends React.Component {
               <Route exact path='/sophrology' component={Sophrology} />
               {/* Description clients*/}
               <Route exact path='/adult' component={Adult} />
+              <Route exact path='/adultPrice' component={AdultPrice} />
               <Route exact path='/couple' component={Couple} />
+              <Route exact path='/couplePrice' component={CouplePrice} />
               <Route exact path='/child' component={Child} />
+              <Route exact path='/childPrice' component={ChildPrice} />
+              {/* News  */}
+              <Route exact path='/news' component={News} />
               {/* Section ADMIN  */}
               <Route path="/signIn" component={SignIn} />
               <Route path="/dashboard" component={Dashboard}/>
