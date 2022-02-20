@@ -2,9 +2,6 @@ import React from 'react';
 import Header from '../header/Header';
 import Category from '../layouts/Category';
 import adult from '../../assets/icons/noun_maya.png';
-//import adults from '../../assets/pictures/adluts.jpg';
-//import adult from '../../assets/icons/noun_maya_adult.svg';
-//import '../layouts/Category.scss'; 
 import './Adult.scss';
 import '../../style/main.scss';
 

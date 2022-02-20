@@ -1,17 +1,15 @@
 @import '../../style/main.scss';
 
 .page-info {
-    max-width: 85vw;
     margin: auto;
+    max-width: 85vw;
     padding-top: 10vh;
 
     h2 {
-        //@include big-title;
-        //margin-bottom: 3rem;
         @include title-medium;
-        text-transform: uppercase;
-        text-align: center;
         margin-bottom: 3rem;
+        text-align: center;
+        text-transform: uppercase;
     }
 
     &_content {
@@ -27,9 +25,4 @@
             margin-bottom: 1rem;
         }
     }
-
-    @media screen and (max-width:545px) {
-
-    }
 }
-

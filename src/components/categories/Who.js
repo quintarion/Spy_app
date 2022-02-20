@@ -2,10 +2,7 @@ import React, { Component } from "react";
 import Subcategory from "../layouts/Subcategory";
 import adult from '../../assets/icons/noun_maya.png';
 import child from '../../assets/icons/noun_fox.png';
-//import kiss from '../../assets/icons/kiss.png';
 import kiss from '../../assets/icons/noun_the kiss.png';
-//import touristWoman from '../../assets/icons/touristWoman.png';
-//import treeSwing from '../../assets/icons/treeSwing.png';
 import './Who.scss';
 import '../../style/main.scss';
 
@@ -13,7 +10,6 @@ const elements = [
   {
     class: "one",
     img: child,
-    //img: treeSwing,
     alt: "",
     title: "Enfant, Adolescent",
     text: [<p>Votre enfant est hyper actif, trop rêveur, a des terreurs nocturnes ou cauchemars récurrents,  ne peut pas dormir seul, souffre de perturbation du transit intestinal, est énurétique ou violent... N’oubliez pas que je demanderai à rencontrer toutes les personnes vivant au foyer de l’enfant lors de la première séance et la plus part du temps chercherai à contacter l’autre parent en cas de séparation.</p>],
@@ -26,7 +22,6 @@ const elements = [
   {
     class: "two",
     img: adult,
-    //img: touristWoman,
     alt: "",
     title: "Adulte",
     text: [<p>Powder halvah tart powder sugar plum liquorice marzipan. Oat cake chupa chups liquorice carrot cake macaroon. Liquorice gummies oat cake cookie pastry cake gingerbread dessert dessert. Powder chocolate brownie icing sweet brownie.</p>],
@@ -59,19 +54,6 @@ const elements = [
 
 class Who extends Component {
   state = {};
-
-  // const str= "I am gonna teach you he typing text effect";
-  // const split = str.split("");
-  // const counter = 0;
-
-  // const SI=setInterval(function(){
-  // const h1 = $("h1");
-  
-  // h1.append(split[counter]);
-  // counter++;
-  // if(counter==str.length){clearInterval(SI)}
- 
-  // },200)
 
   render() {
     return (

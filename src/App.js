@@ -1,7 +1,6 @@
 import React from 'react';
 import { Route, Switch } from "react-router-dom";
 //import ReCAPTCHA from "react-google-recaptcha";
-
 import Adult from './components/categories/Adult';
 import AdultPrice from './components/categories/AdultPrice';
 import At from './components/therapies/At';
@@ -10,31 +9,13 @@ import Child from './components/categories/Child';
 import ChildPrice from './components/categories/ChildPrice';
 import Couple from './components/categories/Couple';
 import CouplePrice from './components/categories/CouplePrice';
-import Dashboard from './pages/Dashboard';
 import Eft from './components/therapies/Eft';
 import Emdr from './components/therapies/Emdr';
 import Icv from './components/therapies/Icv';
 import Main from './pages/Main';
 import News from './components/news/News';
 import Reflexology from './components/therapies/Reflexology';
-import SignIn from './components/dashboard/SignIn';
 import Sophrology from './components/therapies/Sophrology';
-
-import Calendar from './components/calendar/Calendar';
-import Contact from './components/dashboard/Contact';
-import Event from './components/dashboard/Event';
-import Home from './components/dashboard/Home';
-import NavAddContact from './components/dashboard/NavAddContact';
-import PostContact from './components/dashboard/PostContact';
-import EditContact from './components/dashboard/EditContact';
-import DeleteContact from './components/dashboard/DeleteContact';
-import PostAddress from './components/dashboard/PostAddress';
-import PostEmail from './components/dashboard/PostEmail';
-import PostPhone from './components/dashboard/PostPhone';
-import NavContact from './components/dashboard/NavContact';
-import SearchPerson from './components/dashboard/SearchPerson';
-import SearchPersonTwo from './components/dashboard/SearchPersonTwo';
-
 import './App.scss';
 
 // const TEST_SITE_KEY = "6Lcla7oZAAAAAIKh5o4dv9HdCYIantCOo5peI0VT";
@@ -90,9 +71,6 @@ class App extends React.Component {
               <Route exact path='/childPrice' component={ChildPrice} />
               {/* News  */}
               <Route exact path='/news' component={News} />
-              {/* Section ADMIN  */}
-              <Route path="/signIn" component={SignIn} />
-              <Route path="/dashboard" component={Dashboard}/>
             </Switch>
           </div>
 

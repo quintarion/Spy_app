@@ -1,7 +1,5 @@
 import React from 'react';
 import Header from '../header/Header';
-import Brand from '../layouts/Brand';
-import Heading from '../layouts/Heading';
 import {HashLink as Link} from 'react-router-hash-link';
 import Therapy from '../layouts/Therapy';
 import maya_7 from '../../assets/icons/maya_7.png';
@@ -41,8 +39,6 @@ const Sophrology = () => {
                 <Header/>
             </div>
             <section className="pageTherapy" id="sophrology">
-                {/* <Brand/>
-                <Heading img={maya_7} alt="" caption="Sophrologie"/> */}
                 <Therapy elements={elements} />
             </section>
         </>

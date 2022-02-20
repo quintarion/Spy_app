@@ -1,7 +1,5 @@
 import React from 'react';
 import Header from '../header/Header';
-import Brand from '../layouts/Brand';
-import Heading from '../layouts/Heading';
 import Therapy from '../layouts/Therapy';
 import maya_5 from '../../assets/icons/maya_5.png';
 import './Reflexology.scss';
@@ -32,8 +30,6 @@ const Reflexology = () => {
                 <Header/>
             </div>
             <section className="pageTherapy" id="reflexology">
-                {/* <Brand/>
-                <Heading img={maya_5} alt="" caption="Réfléxologie"/> */}
                 <Therapy elements={elements} />
             </section>
         </>

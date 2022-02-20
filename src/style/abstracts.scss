@@ -29,39 +29,13 @@ $color-green: #DAEACD;
   font-weight: 600;
 }
 
-
-// @mixin button {
-//   display:block; // [display:block and text-align] both properties to center element in the bloc
-//   text-align:center; 
-//   box-shadow: inset 0 0 0 .0625rem rgba(0,124,137,.3);
-//   background-color: transparent;
-//   box-shadow: inset 0 0 0 .0625rem rgba(0,124,137,.3);
-//   color: #007c89;
-//   font-family: Helvetica,Arial,Verdana,sans-serif;
-//   font-size: .9375rem;
-//   font-weight: 600;
-//   padding: 1.25rem 2.5rem;
-//   transition: all .15s linear;
-// }
-
-// @mixin button-hover {
-//   color: white;
-//   cursor: grab;
-//   background-color: #007C89;
-//   text-decoration: none;
-// }
-
 @mixin big-title {
-  //text-align: right;
-    //padding-right: 2rem;
   font-family: 'Raleway Dots', cursive;
-  //position: absolute;
   font-size: 3rem;
 }
 
 @mixin title-font {
   font-family: 'Lato', sans-serif;
-  //font-family: 'Amiri', serif;
 }
 
 @mixin bold-text {
@@ -118,7 +92,6 @@ $color-green: #DAEACD;
   text-decoration: none; 
   vertical-align: baseline;
   font-family: Helvetica,Arial,Verdana,sans-serif;
-  //@include p-font;
 }
 
 @mixin hand-written {
@@ -132,16 +105,6 @@ $color-green: #DAEACD;
     background-repeat: no-repeat;
     transition: background-color 1s ease, height 1s linear;
 }
-
-/*selecteur {
-    transition:
-        <transition-property>
-        <transition-duration>
-        <transition-timing-function> 
-        <transition-delay>;
-}*/
-
-
 
 @mixin hoverEffect {
     a {
@@ -166,8 +129,7 @@ $color-green: #DAEACD;
           
           &::after {
               transform: translateX(-50%) scaleX(1);
-          }
-          
+          } 
       }
     }
   }

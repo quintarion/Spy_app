@@ -1,18 +1,13 @@
 @import '../../style/main.scss';
-// @font-face {
-//     font-family: 'NeutraText-Light';
-//     src: url('../../assets/fonts/NeutraTextLight/NeutraTextLight.otf');
-// }
 
 .menu {
     align-items: baseline;
     display: flex;
     flex-flow: row nowrap;
-    z-index: 200;
     height: auto;
+    z-index: 200;
 
     &-title:hover {
-        //height: 40vh;
         transition: 2s 3s;
     }
 
@@ -23,58 +18,45 @@
 
     ul li {
         list-style: none;
-        //padding: 0 3.5rem;
     }
 
     /* on mouseover display the submenu */
     ul li:hover .menu-sub {
-        //background-color: $bgd-primary;
+        background-color: $bgd-primary;
         display: flex;
         flex-direction: column;
-        //font-size: 11px;
-        //width: auto;
-        height: auto;
+        padding: 1rem;
     }
 
     /* position : absolute, remove from normal page flow and no impact the content */
     &-sub {
-        //border: solid 2px khaki;
         display: none;
-        //max-width: 15vw;
+        height: auto;
         padding-top: 10vh;
         position: absolute;
         width: 100vw;
         z-index: 100;
-        height: auto;
     }
 
     &-sub li {
-        //margin-bottom: 1rem;
+        padding: 0 0.8rem !important;
         text-align: left;
         transform: translateX(-10px);
-        padding: 0 0.8rem !important;
     }
 
     a {
+        color: #454545 !important;
         font-family: NeutraText-Light,Arial,sans-serif;
         font-size: 11px;
-        color: #454545 !important;
+        font-weight: 100;
         line-height: 2rem;
         text-transform: uppercase;
-        font-weight: 100;
     }
 
     a:hover {
         font-weight: 900;
     }
 
-    /* add a symbol after the title mouse over use unicode and symbol */
-    // &-title:hover::after {
-    //     color: #454545;
-    //     content: "\00a0▼"; 
-    //     font-size: 11px;
-    // } 
-    
     /**
     *
     * Smaller screen + Mobile
@@ -82,8 +64,6 @@
     */
 
     @media screen and (max-width: 799px) {
-        //background-color: white;
-        //border: 2px solid khaki;
         flex-direction: column;
         padding-bottom: 1rem;
 
@@ -99,28 +79,16 @@
             li {
                 padding-top: 0;
             }
-            
         }
 
         &-wrap {
-            //color: khaki;
             margin: 0;
 
-            /* on mouseover DO NOT display the submenu */
-            // ul li:hover .menu-sub {
-            //     display: none;
-            // }
-
             ul:first-child {
+                height: auto;
                 margin: 1.3rem auto 0 1rem;
                 width: auto;
-                height: auto;
             }
         }
     }
-
-    @media screen and (max-width:545px) {
-    
-    }
-
 }

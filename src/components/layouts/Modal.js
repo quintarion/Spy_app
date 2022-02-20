@@ -28,9 +28,7 @@ class ModalSaveSecurity extends React.Component {
                     <div role="alert dialog"  className="container-security-save" role="dialog">
                         <div className={this.state.isModalSaveSecurity ? 'display-block-save' : 'display-none-save'}>
                             <div className="modal-security-save-bloc-title">
-                                
-                                    <h2 className="security-modal-save" aria-labelledby="alert box-title">{this.props.title}</h2>
-                                
+                                <h2 className="security-modal-save" aria-labelledby="alert box-title">{this.props.title}</h2>
                             </div>
                                 <div className="container-open-security-save scroller">
                                     <div className="text-modal-security-save">

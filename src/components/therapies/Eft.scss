@@ -1,6 +1,8 @@
+@import './../../style/main.scss';
+
 #eft {
     img {
-        background-image: url(/static/media/blob16.7cca3f92.svg);
+        background-image: url('../../assets/pictures/blob16.svg');
         background-size: cover;
         background-repeat: no-repeat;
         width: 30%;

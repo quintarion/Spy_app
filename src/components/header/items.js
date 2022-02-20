@@ -91,10 +91,6 @@ export const items = {
     "Le coin des échanges": {
       link: "/#contact",
       sub_items: [
-        // {
-        //   li: "Envoyer un message",
-        //   link: "/#contact"
-        // }, 
         {
           li: "Informations pratiques",
           link: "/#information"
@@ -103,23 +99,6 @@ export const items = {
           li: "Evènements",
           link: "/news"
         }
-        //{
-          //li: "Espace collaboratif",
-          //link: "/#collaboration"
-        //}
       ]
     },
-    // actu: {
-    //   link: "/event",
-    //   sub_items: [
-    //     {
-    //       li: "évènements",
-    //       link: "/event"
-    //     },
-    //     {
-    //       li: "Autres ressources",
-    //       link: "/other"
-    //     }
-    //   ]
-    // }
-  }
+}

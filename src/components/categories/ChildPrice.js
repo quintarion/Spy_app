@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from '../header/Header';
 import Prices from '../layouts/Prices';
-//import '../../style/main.scss';
 
 const title = {title: [<span>TARIFS CONSULTATIONS ENFANTS &amp; ADOLESCENTS</span>]};
 

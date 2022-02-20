@@ -2,18 +2,14 @@
 
 .footer {
     padding-top: 10vh;
-    //background-color: #F2F4F8;
-     /* curve effect */
-    //border-top-left-radius: 60%;
-    //border-top-right-radius: 69%;
 
     hr {
-        height: 1.75px;
-        width: 90%;
-        margin: auto;
-        padding: 0;
         background-color: #241C15;
         border: 0;
+        height: 1.75px;
+        margin: auto;
+        padding: 0;
+        width: 90%;
     }
 
     &_content {
@@ -24,21 +20,12 @@
         display: flex;
         justify-content: flex-end;
         padding: 1rem 3rem 1rem;
-        // font-family: 'Open Sans Condensed',Helvetica,sans-serif;
-        // font-size: 13px;
-        // font-weight: 300;
-        // letter-spacing: .144rem;
 
         p {
-            // color: darken(#e6e5e7, 30%);
-            // font-family: 'Open Sans Condensed',Helvetica,sans-serif;
-            // font-size: 13px;
-            // font-weight: 300;
-            // letter-spacing: .144rem;
             @include link;
+            cursor: none;
             font-size: 11px;
             font-weight: 200;
-            cursor: none;
         }
 
         div:nth-child(2) {
@@ -50,13 +37,7 @@
             i {
                 text-decoration: underline;
             }
-
-            i:hover {
-                color: #241C15;
-                background-color: #bde9db;
-            }
             
-
             &:hover {
                 color: $bgd-primary;
             }
@@ -80,16 +61,11 @@
             width: 60%;
         }
 
-        // &_bottom {
-        //     margin-left: 5%;
-        // }
-
         &_content {
             display: none;
         }
 
         &_bottom {
-            //justify-content: space-evenly;
             flex-direction: column;
             
             p, div menu i {
@@ -100,22 +76,11 @@
 
             div:nth-child(2) {
                 text-align: center;
-
-                &:hover {
-                    color: #241C15;
-                    background-color: #bde9db;
-                }
-                
-    
             }
         }
 
         &_container {
             display: none;
         }
-    }
-
-    @media screen and (max-width:545px) {
-    
     }
 }

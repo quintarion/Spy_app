@@ -1,6 +1,8 @@
+@import './../../style/main.scss';
+
 #emdr {
     img {
-        background-image: url(/static/media/blob12.443b5ddb.svg);
+        background-image: url('../../assets/pictures/blob12.svg');
         background-size: cover;
         background-repeat: no-repeat;
         width: 30%;

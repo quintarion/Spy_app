@@ -1,12 +1,5 @@
 @import '../../style/main.scss';
 
-.sticky-up {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
 #child {
 
     img {
@@ -17,16 +10,14 @@
 }
 
 .child {
-    margin-top: -15vh;
+    margin-top: -15vh; 
+}
 
-    // img {
-    //     width: 40vw;
-    //     border-radius: 10% 110% / 50% !important;
-    // }
-
-    
-
-    
+.sticky-up {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 @media screen and (max-width: 799px) {

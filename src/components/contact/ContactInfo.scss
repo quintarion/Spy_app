@@ -1,20 +1,15 @@
 @import '../../style/main.scss';
 
 .contactInfo {
-    // align-content: flex-start;
-    // align-items: flex-start;
+    background-image: url('../../assets/icons/speaking-bubble.png'), url('../../assets/pictures/blob10.svg');
+    background-position: left;
+    background-repeat: no-repeat no-repeat;
+    background-size: 50% 100%;
     display: flex;
+    height: 100vh;
     justify-content: center;
     margin: auto;
     width: 100vw;
-
-    //drawing//
-    background-image: url('../../assets/icons/speaking-bubble.png'), url('../../assets/pictures/blob10.svg');
-    background-size: 50% 100%;
-    //background-size: contain;
-    background-repeat: no-repeat no-repeat;
-    height: 100vh;
-    background-position: left;
 
     a, address, h3, h4, p {
         display: block;
@@ -23,16 +18,12 @@
     }
 
     a, address, h3, h4, p, u  {
+        color:#241C15 !important;
         font-family: "Lato",serif !important;
         font-size: 16px !important;
-        
-        //font-family: NeutraText-Light,Arial,sans-serif !important;
-        //font-size: .80rem !important;
-        font-weight: 300 !important;
-        color:#241C15!important;
-        //text-transform: uppercase;
-        text-align: center;
         font-style: normal;
+        font-weight: 300 !important;
+        text-align: center;
     }
 
     a {
@@ -50,11 +41,10 @@
     @media screen and (max-width:799px) {
         align-content: center;
         align-items: center;
-        justify-content: center;
-
         background-image: none;
         height: auto;
-
+        justify-content: center;
+        
         a, address, h3, h4, p, u  {
             padding-top: .5rem;
         }

@@ -27,7 +27,6 @@ hr {
     z-index:1 !important;
 
     h2 {
-        //text-transform: uppercase;
         font-weight: 400;
     }
 
@@ -37,20 +36,17 @@ hr {
     }
 
     p, h2, h3, li, table {
-        //font-size: .9375rem;
-        //font-weight: 600;
         letter-spacing: 0.134em;
         padding-left: 0;
         padding-right: 0;
+        text-align: left !important;
         text-decoration: none; 
         vertical-align: baseline;
-        //font-family: Helvetica,Arial,Verdana,sans-serif;
-        text-align: left !important;
     }
 
     table {
-        cursor: grab !important;
         @include table;
+        cursor: grab !important;
         margin: auto;
 
         td {
@@ -58,69 +54,57 @@ hr {
         }
 
         th, caption {
-            font-size: .77rem !important;
             color: #241C15;
-            font-size: 18px;
+            font-family: "Lato",serif;
+            font-size: 16px !important;
             font-weight: 300;
             letter-spacing: 0;
             line-height: 25px;
             text-align: justify;
             overflow: auto;
             word-wrap: break-word;
-            overflow: auto;
-            word-wrap: break-word;
-            font-family: "Lato",serif;
-            font-size: 16px !important;
         }
 
         caption {
-            text-align: center;
             font-weight: 400;
+            text-align: center;
         }
     }
     
   .display-block-save {
+    @include shadow;
+    align-items: center;
+    background-color: $bgd-primary;
+    border: solid 2px #241C15;
+    color: #241C15;
     cursor: grab !important;
     display: block;
-    @include shadow;
-    text-align: center;
-    align-items: center;
-    margin-bottom: 5%;
-    color: #241C15;
-    background-color: $bgd-primary;
     height: 60vh;
-    padding-left:0!important;
+    margin-bottom: 5%;
     overflow: auto;
-    border: solid 2px #241C15;
+    padding-left:0 !important;
+    text-align: center;
   
     .modal-security-save-bloc-title {
-        cursor: grab !important;
-      //background-color:#bfddb9;
-      //@include shadow;
-      //position: fixed;
-      //width: 90vw;
-      //border-bottom: 1px solid #241C15;
-      position: sticky;
         background-color: #f2f4f8;
-    top: 0;
-     /* curve effect */
-    border-bottom-left-radius: 20%;
-    border-bottom-right-radius: 90%;
+        cursor: grab !important;
+        position: sticky;
+        top: 0;
+        /* curve effect */
+        border-bottom-left-radius: 20%;
+        border-bottom-right-radius: 90%;
       
-      h2 {
-        //color: black;
-        text-align: center !important;
-        letter-spacing: .034rem !important;
+        h2 {
         font-size: 18px !important;
+        letter-spacing: .034rem !important;
+        text-align: center !important;
       }
       
-      .security-modal-save {
+    .security-modal-save {
         cursor: grab !important;
-       font-size:16px;
-       //color:white;
-       padding: 1rem;
+        font-size:16px;
+        padding: 1rem;
     }
-  
   }
 
   .container-open-security-save {
@@ -130,54 +114,44 @@ hr {
     margin-top: 2rem;
 
     img {
-        width: 100%;
         background-image: url(../../assets/pictures/blob-beige.svg);
+        width: 100%;
     }
 
     .text-modal-security-save {
         cursor: grab !important;
-        //margin-top: 11vh;
     
         p, li {
-            font-size: .77rem !important;
             color: #241C15;
-            font-size: 18px;
+            font-family: "Lato",serif;
+            font-size: 16px !important;
             font-weight: 300;
             letter-spacing: 0;
             line-height: 25px;
+            overflow: auto;
             text-align: justify;
-            overflow: auto;
             word-wrap: break-word;
-            overflow: auto;
-            word-wrap: break-word;
-            font-family: "Lato",serif;
-            font-size: 16px !important;
         }
     }
-
 }
+
 .container-open-security-save {
     cursor: grab !important;
-//margin-top:20px;
 
-.scroller {
-    width: 300px;
-    height: 100px;
-    overflow-y: scroll;
-    scrollbar-color: rebeccapurple green;
-    scrollbar-width: thin;
-}
+    .scroller {
+        width: 300px;
+        height: 100px;
+        overflow-y: scroll;
+        scrollbar-color: rebeccapurple green;
+        scrollbar-width: thin;
+    }
 
-.btn-modal-close-security-save {
-    cursor: grab !important;
-    //@include nav;
-        //@include button;
+    .btn-modal-close-security-save {
+        cursor: grab !important;
         width: 10vw;
         margin: auto;
-        //margin-bottom: auto;
         margin-bottom: 1rem;
         background-color: transparent;
-
         color: #241C15;
         font-weight: 300;
         letter-spacing: 0;
@@ -188,46 +162,23 @@ hr {
         font-family: "Lato",serif;
         border: none;
 
-        //border: 1px solid #241C15;
-
-        button {
-           cursor: pointer;
+            button {
+                cursor: pointer;
+            }
         }
-   
-    // padding:10px;
-    // width: 250px;
-    // border-image:linear-gradient(to right, #3ab9c0 0%,#2d9db9 50%,#208abf 100%);
-    // border-image-slice: 1;
-    // border-width: 2px;
-    // background:none;
-    // color:#34bed3;
-    // cursor: pointer;
-    // margin-left:9vw;
-
-    // &:hover {
-    //     @include button-hover;
-    // }
-   
+    }
 }
-
-
-
-}
-  }
 
   .display-none-save {
     display: none;
     
   }
-
- 
 }
  
 @media screen and (max-width: 799px) {
     
     .modal_overlay {
         
-
         h2 {
             font-size: .77rem !important;
         }
@@ -241,28 +192,23 @@ hr {
     }
 
     .container-security-save .display-block-save {
-        display: block;
-        box-shadow: 3px 3px 3px -1px rgba(17, 30, 71, 0.15);
-        text-align: center;
         align-items: center;
-        margin-bottom: 5%;
-        color: black;
-        background-color: white;
+        background-color: $bgd-primary;
+        box-shadow: 3px 3px 3px -1px rgba(17, 30, 71, 0.15);
+        color: #241C15;
+        display: block;
         height: 70vh;
+        margin-bottom: 5%;
         padding-left: 0 !important;
+        text-align: center;
         overflow: auto;
     }
 
     .container-open-security-save {
 
-
-        article {
-            //margin-top: 11vh;
+        img {
+            width: 20vw !important;
         }
         
     }
-}
-
-@media screen and (max-width: 545px) {
-
 }

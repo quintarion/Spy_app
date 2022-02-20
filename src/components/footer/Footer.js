@@ -1,6 +1,4 @@
 import React from 'react';
-//import { HashLink as Link } from 'react-router-hash-link';
-//import ContactInfo from '../contact/ContactInfo';
 import Modal from '../layouts/Modal';
 import SiteMap from './SiteMap';
 import './Footer.scss';
@@ -14,9 +12,9 @@ const props = {
         19 chemin du mas de Bouran<br/>
         34 290 SERVIAN<br/>
         Téléphone: +33 (0)6 25 23 09 05<br/>
-        Courriel: ...@....</p>
-        <p>Siret: </p>
-        <p>Code ape : </p>
+        Courriel: quinhel@orange.fr</p>
+        <p>Siret: 38288842800036</p>
+        <p>ADELI: 349309914</p>
         <br/>
         <h3>Activité</h3>
         <p>Pour une activité réglementée, le site internet doit mentionner les informations suivantes :<br/>

@@ -18,7 +18,6 @@ const elements = [
     alt: "",
     path: "career",
     page: "",
-    //page: "en savoir plus",
     }
 ];
 

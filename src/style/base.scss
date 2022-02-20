@@ -52,9 +52,6 @@
 
 @mixin main-title {
   font-family: 'Raleway Dots', cursive;
-  //font-family: 'Noto Serif TC', serif;
-  //font-family: 'Poiret One', cursive;
-  //font-family: 'Cedarville Cursive', cursive;
   font-weight: 100;
   font-size: 3rem;
   padding-top: 3rem;
@@ -67,30 +64,12 @@
 
 * {
     -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-          //text-overflow: ellipsis; //three dots = ellipsis
-          //scrollbar-color: transparent;
-    //scroll-behavior: smooth; //smoothly animates the transition when a user clicks a link that targets an anchored position within a scrolling box
+    box-sizing: border-box;
 }
-
-// p::-webkit-scrollbar { 
-//   display: none; 
-// }
 
 * {
   overflow: -moz-scrollbars-none; 
 }
-// *::-webkit-scrollbar {
-//   -webkit-appearance: none;
-// }
-
-// *::-webkit-scrollbar:vertical {
-//   width: 0px;
-// }
-
-// *::-webkit-scrollbar:horizontal {
-//   height: 0px;
-// }
 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -111,8 +90,8 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
-  scrollbar-width: none; //Hide scrollbar
-  scroll-behavior: smooth; //Allows to show scrolling effect
+  scrollbar-width: none; //Hide scrollbar//
+  scroll-behavior: smooth; //Allows to show scrolling effect//
 }
  
 $dark-primary-color    : #C1185B; 
@@ -157,16 +136,12 @@ a[href^="http"] {
 /* List */
 
 ul li {
-  //display: list-item;
   list-style: inside;
   @include p-font;
 }
 
 ul {
-  //display: list-item;
   list-style-type: disc;
-  //list-style-type: bengali !important;
-  //-moz-bengali
 }
 
 p, li {

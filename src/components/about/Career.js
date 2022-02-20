@@ -4,7 +4,6 @@ import Header from '../header/Header';
 import Layout from '../layouts/Layout';
 import myYouth from '../../assets/pictures/myYouth.jpg';
 import './Career.scss';
-//import { Form } from "reactstrap";
 
 const elements = [
     {
@@ -36,7 +35,6 @@ const elements = [
     img: myYouth,
     alt: "",
     path: "/",
-    //page: "retour",
     }
 ];
 

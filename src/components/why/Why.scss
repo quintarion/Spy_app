@@ -7,8 +7,6 @@
         @include width;
 
         h2 {
-            //text-align: left !important;
-            //@include main-title;
             @include title-medium;
             text-transform: uppercase;
         }
@@ -19,14 +17,13 @@
         }
 
         ul {
-            padding: 2rem 0;
             list-style-type: disc !important;
+            padding: 2rem 0;
         }
     }
 
     @media screen and (max-width: 799px) {
         margin: visible;
-        //padding-top: 5rem;
 
         &_container {
 
@@ -35,26 +32,21 @@
             }
 
             h2 {
-                text-align: center;
-                padding: .5rem;
                 font-size: 1.4rem !important;
+                padding: .5rem;
                 text-align: center;
             }
 
             ul {
-                white-space: normal !important; //nowrap break-space
                 text-overflow: "-";
+                white-space: normal !important; //nowrap break-space//
 
                 li {
-                white-space: normal !important; //nowrap break-space
-                text-overflow: "-";
-                font-family: "Lato",serif;
+                    font-family: "Lato", serif;
+                    text-overflow: "-";
+                    white-space: normal !important; //nowrap break-space//
                 }
             }
         }
-    }
-
-    @media screen and (max-width: 545px) {
-    
     }
 }

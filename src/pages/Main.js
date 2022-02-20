@@ -1,6 +1,5 @@
 import React from 'react';
 import AtHome from '../components/layouts/AtHome';
-import Contact from '../components/contact/Contact';
 import Footer from '../components/footer/Footer';
 import Header from '../components/header/Header';
 import Home from '../components/home/Home';
@@ -8,7 +7,6 @@ import Info from '../components/contact/Info';
 import MoreTherapies from '../components/therapies/MoreTherapies';
 import Therapies from '../components/therapies/Therapies';
 import Training from '../components/about/Training';
-//import ScrollSpy from '../components/layouts/ScrollSpy';
 import Step from '../components/step/Step';
 import Who from '../components/categories/Who';
 import Why from '../components/why/Why';
@@ -51,7 +49,6 @@ const Main = () => {
                 <Step/>
                 <Therapies/>
                 <MoreTherapies/>
-                {/* <Contact/> */}
                 <Info />
             </main>
             <div className="site-footer">

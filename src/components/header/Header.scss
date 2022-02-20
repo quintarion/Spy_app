@@ -20,23 +20,20 @@
     transition: .25s ease-in-out; 
 
     nav {
-        position: absolute; //"Fix" the element
-          //@include shadow;
+        position: absolute; //"Fix" the element //
         align-items: baseline; /* by default: align-items: strech -> child elements' heights = the container's height */
         align-self: flex-start;
         background-color: $bgd-primary;
         display: flex;  /* flex container */
         flex-flow: row nowrap;
-        //height: 5.8rem;
         justify-content: space-evenly;
-        //justify-content: space-between;
         left: 0;
         padding: 1rem 5%;
         width: 100vw;
 
         &:hover {
-            height: 100vh;
-            background-image: url('../../assets/pictures/birds.jpg');
+            height: auto;
+            //background-image: url('../../assets/pictures/birds.jpg');
             background-size: cover;
             transition: background-color 1s ease, height 1s linear;
         }
@@ -95,17 +92,6 @@
         }
     }
 
-   
-
-    /* different properties for the additional pages */
-    // .header-out {
-    //     background-color: transparent !important;
-    // }
-
-    // .links-out {
-    //     color: #2c2c62 !important;
-    // }
-
     /**
     *
     * Smaller screen + Mobile
@@ -114,13 +100,9 @@
 
     @media screen and (max-width: 799px) {
         
-        //background-color: white;
         display: inline;
-        //display: flex;
         flex-direction: column; /* change the direction of the container */
         margin-top: 0;
-
-        
 
             nav {
                 height: 100vh !important;
@@ -128,11 +110,9 @@
 
                 &:hover {
                     background-image: none;
+                    height: 100vh;
                 }
-
             }  
-
-        
 
         .closed {
             display: none;
@@ -141,8 +121,6 @@
         &-home {
             align-items: center;
             display: flex;
-            //justify-content: space-between;
-            //margin: 0 1rem;
             justify-content: flex-end;
         }
         
@@ -177,8 +155,5 @@
         .toggle {
             font-size: 2rem;
         }
-
-        
-
     }
 }
